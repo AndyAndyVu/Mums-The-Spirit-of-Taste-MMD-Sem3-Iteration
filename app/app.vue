@@ -1,9 +1,7 @@
-<script setup>
-import forside from "../pages/forside.vue";
-</script>
+<script setup></script>
 <template>
   <div>
-    <forside />
+    <NuxtPage />
   </div>
 </template>
 
