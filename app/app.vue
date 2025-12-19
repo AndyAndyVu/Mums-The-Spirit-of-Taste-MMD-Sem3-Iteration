@@ -1,10 +1,11 @@
+<script setup>
+import forside from "../pages/forside.vue";
+</script>
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <forside />
   </div>
 </template>
-
 
 <!-- 
 TEST TEST TEST 2nd Commit
