@@ -45,11 +45,11 @@
       <p><b>VÆLG EN MENU</b></p>
       <p>Normal pris: 1 Burger og en spand sovs, 1 Pommes frites og 2 Dips kr. 154,- SPAR KR. 25,-</p>
       <p><b>KUN kr. 129,-</b></p>
-      <button>Bestil Her</button>
+      <button><a href="https://takeaway.mumsshop.dk/menu/1428/product/9405">Bestil Her</a></button>
       </div>
       <div class="maanedensRetBillede">
-    <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed">
-    <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger">
+    <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy">
+    <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy">
   </div>
     </section>
   </main>
@@ -96,10 +96,16 @@
   .maanedensRetForside{
     display: flex;
     justify-content: space-between;
+    background-color: var(--hvid-100) ;
+    padding: var(--spacing-xlSmlDesk);
   }
 
   .maanedensRetText{
     max-width: 75ch;
+  }
+
+  .grontext{
+    color: var(--moerke-dyb-groend);
   }
 
   .maanedensRetBillede{
