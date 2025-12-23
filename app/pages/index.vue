@@ -91,16 +91,19 @@
  <section class="infoForside">
   <h3>Kontakt MUMS i Ålborg</h3>
   <div class="kontakt">
+    <div class="nummer">
     <img src="../assets/pictures/Phoneicon.svg" alt="Telefon nummer">
-    <h4>98 12 50 17</h4>
+    <h4>98 12 50 17</h4></div>
+    <div class="email">
     <img src="../assets/pictures/Mailicon.svg" alt="Email">
-    <h4>mums@mumsshop.dk</h4>
+    <h4>mums@mumsshop.dk</h4></div>
   </div>
   <div class="lokation">
     <img src="../assets/pictures/Homeicon.svg" alt="Lokation">
     <h4>Mums v/Charlotte Blak Frost Gugvej 1849210 Aalborg SØ</h4>
     <button><a href="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D">Se på Google Maps</a></button></div>
  </section>
+ <img src="../assets/pictures/patterenKlover.svg" class="pynt">
   </main>
 </template>
 
@@ -209,6 +212,10 @@
     background-blend-mode: overlay;
     background-color: var(--moerke-dyb-groend);
     color: var(--hvid-skrift);
+  }
+
+  .nummer, .email, .lokation{
+    display: flex;
   }
 
 </style>
