@@ -71,8 +71,21 @@
   </article>
  </section>
  <section>
-  <article class="deli">
-
+  <article class="delikatesseForside">
+    <img src="../assets/pictures/delikatesseForside.png" alt="billedea af mums delikatesse butik" loading="lazy">
+    <div class="forsideText">
+    <h3>Deliktatesse</h3>
+    <p>Glæd din familie, venner, medarbejdere og forretningsforbindelser med engave der ”smager” af MUMS. Vi har samlet de bedste danske og udenlandske producenter og er glade for også at kunne præsentere egne hjemmelavede produkter.</p>
+    <p>Vi sælger et bredt udvalg af premium fødevarer, herunder vin, øl, te, kaffe, chokolade, slik, spiritus, olie og eddike fra Oil & Vinegar, pesto, tapenader, pasta, oliven, brødsnacks, tapas rette, samt et bredt udvalg fra de bedste danske og udenlandske specialvarer producenter.</p>
+    <button><a href="#">Læs om vores deliktatesse</a></button>
+  </div>
+  </article>
+  <article class="omOsForside">
+    <div class="forsideText">
+    <h3>Om os</h3>
+    <p>I hjertet af Aalborg finder du MUMS, hvor takeaway er hævet til et nyt niveau. Vi har sammensmeltet det bedste fra gourmet mad i Aalborg med behageligheden af mad ud af huset, hvilket resulterer i en unik smagsoplevelse. Uanset om du vælger vores tapas retter, lun leverpostej, eller en af de mange internationale smagsoplevelser, leverer MUMS hver gang.</p>
+    <button><a href="#">Læs mere om os</a></button></div>
+    <img src="../assets/pictures/omOsForside.png" alt="billedea af mums delikatesse butik" loading="lazy">
   </article>
  </section>
   </main>
@@ -161,6 +174,28 @@
 
   .menuForsideCard p, .menuForsideCard h3{
     padding: var(--spacing-xlSmlDesk);
+  }
+
+  .delikatesseForside, .omOsForside{
+    display: flex;
+    margin-top: var(--spacing-mdDesk);
+  }
+
+  .delikatesseForside img, .omOsForside img{
+    width: 45rem;
+  }
+
+  .forsideText{
+    padding-left: var(--spacing-SmlDesk);
+  }
+
+  .omOsForside{
+    background-image: url("../assets/pictures/mumsM.png") ;
+    background-repeat: repeat;
+    background-size: 90px;
+    background-blend-mode: overlay;
+    background-color: var(--moerke-dyb-groend);
+    color: var(--hvid-skrift);
   }
 
 </style>
