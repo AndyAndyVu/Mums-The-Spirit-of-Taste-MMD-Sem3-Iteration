@@ -51,7 +51,30 @@
     <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy">
     <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy">
   </div>
-    </section>
+  </section>
+ <img src="../assets/pictures/patterenFirkant.svg" class="pynt">
+ <img src="../assets/pictures/patterenDiamant.svg" class="pynt" alt="ny section">
+ <section class="menuForside">
+  <article class="menuForsideCard">
+    <img src="../assets/pictures/TakeawayForside.png" alt="Take-away menu bugers">
+    <h3>Take-away Menu</h3>
+    <p>Vores nye menukort er skabt med respekt for den gastronomiske udvikling, som hele Take Away branchen gennemgår i disse år.</p>
+    <p>Vi koger, sylter, braiserer og steger ud fra en regel om, at alt vi kan lave fra bunden det gør vi. Gerne med danske og lokale råvarer, som vi i tilberedningen giver vores helt eget lille twist, for at ramme den gode MUMS smag.</p>
+    <button><a href="#">Se take-away menu</a></button>
+  </article>
+  <article class="menuForsideCard">
+    <img src="../assets/pictures/CateringForside.png" alt="Take-away menu bugers">
+    <h3>Catering Menu</h3>
+    <p>Lad os tage os af madlavningen, mens du fokuserer på at have det sjovt og nyde tiden sammen med dine gæster!</p>
+    <p>Vores fantastiske menuer er skræddersyet til enhver fest og garanterer at tilfredsstille enhver smag og appetit. Så hvorfor bruge tid på at bekymre dig om maden, når du kan stole på os til at levere en mindeværdig madoplevelse, som vil imponere alle dine gæster.</p>
+    <button><a href="#">Se catering menu</a></button>
+  </article>
+ </section>
+ <section>
+  <article class="deli">
+
+  </article>
+ </section>
   </main>
 </template>
 
@@ -91,6 +114,7 @@
 
   .pynt{
     width: 100%;
+    padding-top: var(--spacing-xlSmlDesk);
   }
 
   .maanedensRetForside{
@@ -117,6 +141,26 @@
     position: absolute;
     left: 0px;
     top: 1rem;
+  }
+
+  .menuForside{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menuForsideCard img{
+    width: 32rem;
+  }
+
+  .menuForsideCard{
+    max-width: 32rem;
+    background-color: var(--lys-blaa);
+    border-radius: 10px 4px;
+    border: 1.5px dashed var(--brun-ikon);
+  }
+
+  .menuForsideCard p, .menuForsideCard h3{
+    padding: var(--spacing-xlSmlDesk);
   }
 
 </style>
