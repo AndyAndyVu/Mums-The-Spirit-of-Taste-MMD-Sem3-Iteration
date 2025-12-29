@@ -60,6 +60,7 @@
 
     footer p,footer h4, footer a{
         color: var(--hvid-skrift);
+        padding: 0 0,3rem ;
     }
 
     .nummerFooter, .emailFooter{
@@ -71,16 +72,26 @@
   }
 
   footer section{
-    padding-right: var(--spacing-mdDesk);
-  }
-
-  footer p{
-    padding: 0 0,2rem ;
+    padding: var(--spacing-SmlDesk) var(--spacing-mdDesk);
   }
 
   .footerNyhedsBrev a{
     color: black;
     text-decoration: none;
+    font-size: 15px;
+  }
+
+  .footerNyhedsBrev button{
+    padding: var(--spacing-xlSmlDesk) ;
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  footer img{
+    padding: 0 var(--spacing-xlSmlDesk) ;
+  }
+
+  .footerBilleder img{
+    padding: var(--spacing-mdDesk) 0;
   }
   
 

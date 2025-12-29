@@ -152,7 +152,7 @@
 
   .pynt{
     width: 100%;
-    padding-top: var(--spacing-xlSmlDesk);
+    padding: var(--spacing-SmlDesk) 0 ;
   }
 
   .maanedensRetForside{
