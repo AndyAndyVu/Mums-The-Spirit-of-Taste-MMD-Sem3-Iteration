@@ -90,6 +90,7 @@
  </section>
  <section class="infoForside">
   <h3>Kontakt MUMS i Ålborg</h3>
+  <div class="info">
   <div class="kontakt">
     <div class="nummer">
     <img src="../assets/pictures/Phoneicon.svg" alt="Telefon nummer">
@@ -102,8 +103,15 @@
     <img src="../assets/pictures/Homeicon.svg" alt="Lokation">
     <h4>Mums v/Charlotte Blak Frost Gugvej 1849210 Aalborg SØ</h4>
     <button><a href="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D">Se på Google Maps</a></button></div>
- </section>
+ </div></section>
  <img src="../assets/pictures/patterenKlover.svg" class="pynt">
+ <section class="forsideReviws">
+  <button><img src="../assets/pictures/pilV.svg" alt="gaa til venstre i andmeldser"></button>
+  <review/>
+  <review/>
+  <review/>
+  <button><img src="../assets/pictures/pilH (2).svg" alt="gaa til hojre i andmeldser"></button>
+ </section>
   </main>
 </template>
 
@@ -213,9 +221,30 @@
     background-color: var(--moerke-dyb-groend);
     color: var(--hvid-skrift);
   }
-
   .nummer, .email, .lokation{
     display: flex;
   }
 
+  .info{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .info img{
+    width: 35px;
+  }
+
+  .forsideReviws{
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--spacing-SmlDesk);
+  }
+.forsideReviws button{
+  background-color: rgba(0, 0, 128, 0);
+  border: none;
+}
+
+.forsideReviws img{
+  width: 5rem;
+}
 </style>
