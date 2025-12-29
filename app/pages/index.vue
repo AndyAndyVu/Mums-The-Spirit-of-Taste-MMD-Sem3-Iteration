@@ -113,6 +113,7 @@
   <button><img src="../assets/pictures/pilH (2).svg" alt="gaa til hojre i andmeldser"></button>
  </section>
   </main>
+    <FooterDesk/>
 </template>
 
 <style scoped>
@@ -247,4 +248,6 @@
 .forsideReviws img{
   width: 5rem;
 }
+
+
 </style>
