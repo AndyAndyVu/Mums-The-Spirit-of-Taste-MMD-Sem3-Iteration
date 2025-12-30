@@ -1,9 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap%27');
 
-         font-family: "Red Hat Text",
-         sans-serif;
-         font-family: "Cormorant Garamond",
-         serif; */
+  p, h4, li{
+  font-family: "Red Hat Text",
+  sans-serif;}
+
+  h1, h2, h3{
+  font-family: "Cormorant Garamond",
+  serif;} 
+
+main{
+  margin: 0 64px;
+} 
 
 :root {
     --h1-desk: 2.5rem; 

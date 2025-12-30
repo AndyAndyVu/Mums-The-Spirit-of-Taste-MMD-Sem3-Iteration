@@ -1,10 +1,14 @@
-<script setup></script>
+<script setup>
+</script>
 <template>
   <div>
     <NuxtPage />
   </div>
 </template>
 
+<style>
+  
+</style>
 <!-- 
 TEST TEST TEST 2nd Commit
 | Folder         | Nuxt does               |

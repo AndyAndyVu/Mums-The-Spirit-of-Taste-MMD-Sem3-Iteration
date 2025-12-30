@@ -1,0 +1,23 @@
+<svg width="1309" height="21" viewBox="0 0 1309 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="1309" height="21" fill="url(#pattern0_204_2036)"/>
+<defs>
+<pattern id="pattern0_204_2036" patternUnits="userSpaceOnUse" patternTransform="matrix(21.7925 0 0 21.7925 -1.00012 -1.00012)" preserveAspectRatio="none" viewBox="-1.00012 -1.00012 21.7925 21.7925" width="1" height="1">
+<use xlink:href="#pattern0_204_2036_inner" transform="translate(-21.7925 -21.7925)"/>
+<use xlink:href="#pattern0_204_2036_inner" transform="translate(0 -21.7925)"/>
+<use xlink:href="#pattern0_204_2036_inner" transform="translate(-21.7925 0)"/>
+<g id="pattern0_204_2036_inner">
+<rect x="7.92444" y="-0.00012207" width="3.96226" height="3.96226" fill="#572915"/>
+<rect x="11.8867" y="3.96216" width="3.96226" height="3.96226" fill="#572915"/>
+<rect x="7.92444" y="7.92444" width="3.96226" height="3.96226" fill="#572915"/>
+<rect x="15.849" y="7.92444" width="3.96226" height="3.96226" fill="#572915"/>
+<rect x="-0.00012207" y="7.92444" width="3.96226" height="3.96226" fill="#572915"/>
+<rect x="3.96216" y="3.96216" width="3.96226" height="3.96226" fill="#572915"/>
+<rect width="3.96226" height="3.96226" transform="matrix(1 0 0 -1 7.92444 19.8113)" fill="#572915"/>
+<rect width="3.96226" height="3.96226" transform="matrix(1 0 0 -1 11.8867 15.849)" fill="#572915"/>
+<rect width="3.96226" height="3.96226" transform="matrix(1 0 0 -1 7.92444 11.8867)" fill="#572915"/>
+<rect width="3.96226" height="3.96226" transform="matrix(1 0 0 -1 15.849 11.8867)" fill="#572915"/>
+<rect width="3.96226" height="3.96226" transform="matrix(1 0 0 -1 -0.00012207 11.8867)" fill="#572915"/>
+<rect width="3.96226" height="3.96226" transform="matrix(1 0 0 -1 3.96216 15.849)" fill="#572915"/>
+</g>
+</pattern></defs>
+</svg>
