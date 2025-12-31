@@ -21,8 +21,8 @@
           <li>
             <NuxtLink to="/omOs">Om os</NuxtLink>
           </li>
-          <li class="knap">
-            <NuxtLink to="/menu"> Takeaway </NuxtLink>
+          <li>
+            <Btn label="Takeaway" to="/menu" />
           </li>
         </ul>
       </div>
@@ -52,14 +52,5 @@ nav ul {
 nav a {
   color: var(--hvid-skrift);
   text-decoration: none;
-}
-
-.knap {
-  display: inline-block;
-  padding: 0.5rem 0.5rem;
-  border-radius: 6px;
-  background-color: var(--moerke-groen);
-  font-size: var(--btn-desktop);
-  margin-right: var(--spacing-mdDesk);
 }
 </style>
