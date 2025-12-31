@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <div>
+      <div class="navigation">
         <NuxtLink to="/" aria-label="Gå til forsiden">
           <img
             src="../assets/img/Mums-logo.svg"
@@ -21,7 +21,7 @@
           <li>
             <NuxtLink to="/omOs">Om os</NuxtLink>
           </li>
-          <li>
+          <li class="take-away-knap">
             <NuxtLink to="/menu"> Takeaway </NuxtLink>
           </li>
         </ul>
@@ -31,7 +31,35 @@
 </template>
 
 <style scoped>
-nav {
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--moerke-dyb-groend);
+}
+
+.navigation img {
+  margin-left: var(--spacing-mdDesk);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--hvid-skrift);
+  text-decoration: none;
+}
+
+.take-away-knap {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  background-color: var(--moerke-groen);
+  font-size: var(--btn-desktop);
+  margin-right: var(--spacing-mdDesk);
 }
 </style>
