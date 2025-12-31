@@ -1,7 +1,8 @@
 <script setup></script>
 
 <template>
-  <ForsideTest />
+  <!-- <ForsideTest /> -->
+  <NavDesk />
 </template>
 
 <style scoped></style>
