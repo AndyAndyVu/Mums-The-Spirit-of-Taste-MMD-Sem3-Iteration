@@ -21,7 +21,7 @@
           <li>
             <NuxtLink to="/omOs">Om os</NuxtLink>
           </li>
-          <li class="take-away-knap">
+          <li class="knap">
             <NuxtLink to="/menu"> Takeaway </NuxtLink>
           </li>
         </ul>
@@ -54,7 +54,7 @@ nav a {
   text-decoration: none;
 }
 
-.take-away-knap {
+.knap {
   display: inline-block;
   padding: 0.5rem 0.5rem;
   border-radius: 6px;
