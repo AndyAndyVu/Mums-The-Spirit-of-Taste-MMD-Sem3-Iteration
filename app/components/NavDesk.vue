@@ -53,4 +53,8 @@ nav a {
   color: var(--hvid-skrift);
   text-decoration: none;
 }
+
+nav a:hover {
+  text-decoration: underline;
+}
 </style>
