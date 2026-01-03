@@ -47,6 +47,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
+    justify-content: space-around;
 }
 
 .sponsor{

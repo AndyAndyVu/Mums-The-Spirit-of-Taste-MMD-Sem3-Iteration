@@ -5,8 +5,8 @@ import '../assets/css/style.css'
 
 <template>
 <main>
-<section>
-<div class="OmOsHistorie">
+<section class="OmOsHistorie OmOsIntro">
+<div class="OmOsHistorieTekst OmOsTekst">
 <h1>Om os</h1>
 <p>August måned 2007 åbnede vi dørene for første gang til MUMS The Spirit of taste – en livsdrøm var skabt.</p><p>
 MUMS Gourmet butik har mange år på bagen som etableret specialvarebutik i Aalborg, det har altid været vores drøm at udvide med en Deli afdeling med kvalitets take away. Derfor valgte vi i 2015 at flytte i nye lokaler på Gugvej for at give plads til at lave take away.
@@ -18,9 +18,9 @@ Vores ambition er at levere en smagsoplevelse udover det sædvanlige, med respek
 Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne anvende så mange af dens råvarer som muligt i vores hjemmelavede produkter og take away mad.</p></div>
 <img src="../assets/pictures/omOsHistorie.png" alt="billede af mums ejer"/>
 </section>
-<section>
+<section class="OmOsLokalt OmOsIntro">
     <img src="../assets/pictures/omOsShop.png" alt="billede ud foran mums Butik"/>
-    <div class="OmOsLokalt">
+    <div class="OmOsLokaltTekst OmOsTekst">
         <h2>Lokale producenter</h2>
         <p>Vi arbejder med de bedste lokale producenter og sætter en ære i dette samarbejde. Det er for os vigtigt, at kunne tilbyde et sortiment hvor dygtige producenters højkvalitetsprodukter indgår. Det glæder os, at flere finder det interessant at arbejde målrettet med at skabe unikke fødevarer produkter i Nordjylland. Vi har et klima, der byder de optimale betingelser for at skabe gode fødevarer, hvor smagen er i højsæde. Mange af produkterne er efter vores mening uden tvivl nogle af verdens bedste, hvilket vi sætter pris på og hylder i vores retter.</p>
         <p>Vores team af medarbejdere arbejder hver dag på at sikre en høj kvalitet, passion for den gode smag og yde en høj service med udgangspunkt i vores vision.</p>
@@ -28,7 +28,7 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
     </div>
 </section>
 <img src="../assets/pictures/patterenKlover.svg" class="pynt">
-<section>
+<section class="omOsInformation">
          <article class="aabningsTider">
         <h4>Åbningstider</h4>
         <div class="tider">
@@ -60,8 +60,6 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
                 <img src="../assets/pictures/vinder2024.png" alt="Vinder af danmmarks bedste buger 2024">
             </div>
         </div>
-      </article>
-      <article>
         <div class="kontakt">
     <div class="nummer">
     <img src="../assets/pictures/Phoneicon.svg" alt="Telefon nummer">
@@ -74,11 +72,11 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
 </section>
 <section>
     <h3>Adresse</h3>
-    <div>
+    <div class="mumsAdresse">
         <img src="../assets/pictures/location.svg" alt="location"/>
         <p>Gugvej 184, 9210 Aalborg SØ</p>
-        <p>!Kort skal indsættes!</p>
     </div>
+    <p>!Kort skal indsættes!</p>
 </section>
 <section class="omOsSponsor">
     <h3>Vi Støtter det lokale</h3>
@@ -89,5 +87,40 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
 </template>
 
 <style scoped>
+.OmOsIntro{
+    display: flex;
+}
 
+.OmOsIntro img{
+    width: 550px;
+    height: auto;
+}
+
+.OmOsTekst{
+    width: 70ch;
+}
+
+.OmOsLokaltTekst{
+    padding-left: var( --spacing-SmlDesk);
+}
+
+.OmOsLokalt{
+    padding-top: var( --spacing-SmlDesk);
+}
+
+.omOsInformation{
+    display: flex;
+    justify-content: space-between;
+}
+.nummer , .email, .mumsAdresse{
+    display: flex;
+}
+
+.omOsSponsor{
+    background-image: url("../assets/pictures/mumsM.png") ;
+    background-repeat: repeat;
+    background-size: 90px;
+    background-blend-mode: overlay;
+    background-color: var(--blaa);
+}
 </style>
