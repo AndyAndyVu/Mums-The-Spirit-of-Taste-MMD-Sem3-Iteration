@@ -150,11 +150,6 @@
     padding: 1rem;
   }
 
-  .pynt{
-    width: 100%;
-    padding: var(--spacing-SmlDesk) 0 ;
-  }
-
   .maanedensRetForside{
     display: flex;
     justify-content: space-between;

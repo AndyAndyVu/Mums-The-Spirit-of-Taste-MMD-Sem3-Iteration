@@ -64,3 +64,26 @@ main{
     
     
 }
+
+.pynt{
+    width: 100%;
+    padding: var(--spacing-SmlDesk) 0 ;
+  }
+
+  .aabningsTider{
+    background-color: var(--blaa);
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    border-radius: 4px;
+  }
+
+  .tider{
+  display: flex;
+  justify-content: center;
+  }
+
+  .tider ul{
+    list-style: none;
+    padding: 1rem;
+  }
