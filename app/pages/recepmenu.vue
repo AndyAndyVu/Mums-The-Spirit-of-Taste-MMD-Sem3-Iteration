@@ -17,10 +17,7 @@
         </p>
       </div>
       <figure>
-        <img
-          src="../assets/img/julemenu-MUMS.svg"
-          alt="Lækker julemenu 2025 - MUMS"
-        />
+        <img src="../assets/img/recep-mums.png" alt="Receptionsmenu - MUMS" />
       </figure>
     </section>
     <Pattern />

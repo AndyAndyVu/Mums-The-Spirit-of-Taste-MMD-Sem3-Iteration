@@ -17,8 +17,8 @@
       </div>
       <figure>
         <img
-          src="../assets/img/tallerkener- MUMS.svg"
-          alt="Lækker julemenu 2025 - MUMS"
+          src="../assets/img/tallerkener-MUMS.svg"
+          alt="Lækker tallerkner 2025 - MUMS"
         />
       </figure>
     </section>
