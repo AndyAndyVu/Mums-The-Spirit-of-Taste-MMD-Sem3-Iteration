@@ -99,11 +99,10 @@ import "../assets/css/style.css";
           154,- SPAR KR. 25,-
         </p>
         <p><b>KUN kr. 129,-</b></p>
-        <button>
-          <a href="https://takeaway.mumsshop.dk/menu/1428/product/9405"
-            >Bestil Her</a
-          >
-        </button>
+        <Btn
+          label="Bestil her"
+          to="https://takeaway.mumsshop.dk/menu/1428/product/9405"
+        />
       </div>
       <div class="maanedensRetBillede">
         <img
