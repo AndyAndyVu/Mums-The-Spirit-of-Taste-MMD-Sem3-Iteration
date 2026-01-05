@@ -117,7 +117,8 @@
   <button><img src="../assets/pictures/pilH (2).svg" alt="gaa til hojre i andmeldser"></button>
  </section>
   </main>
-    <FooterDesk/>
+    <div class="desk"><FooterDesk/></div>
+    <div class="mobil"><FooterMobile/></div>
 </template>
 
 <style scoped>
@@ -291,6 +292,9 @@
   .menuForsideCard{
     margin-bottom: var(--spacing-mdMobile);
     width:100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px dashed var(--brun-ikon);
   }
 
   .menuForsideCard img, .delikatesseForside img{
