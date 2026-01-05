@@ -1,9 +1,9 @@
 <template>
   <NavDesk />
   <main>
-    <section class="brunch-container">
-      <div class="text-brunch">
-        <h1>Brunch</h1>
+    <h1>Brunch</h1>
+    <section class="catering-container">
+      <div class="catering-brunch">
         <p>
           Hvem kan sige nej til god, nordisk gourmetmad taget med fra
           barndomskøkkenet og mors kyndige hænder? Ikke os! Vores brunch er
@@ -35,11 +35,16 @@
 </template>
 
 <style scoped>
-.brunch-container {
+.catering-container {
   display: flex;
 }
 
-.text-brunch {
+.catering-brunch {
   max-width: 75ch;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
 }
 </style>
