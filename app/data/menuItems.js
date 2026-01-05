@@ -1,3 +1,5 @@
+// Dataset created with AI assistance
+
 export const menuItems = [
   // ===== BURGERE (1–99) =====
   {
@@ -6,9 +8,9 @@ export const menuItems = [
     title: "MUMS Burger",
     description:
       "En bøf af dansk oksekød, hvidløgs mayo, tomat relish, rødløg, tørsaltet bacon, cheddar ost og salat.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 2,
@@ -16,9 +18,9 @@ export const menuItems = [
     title: "Vesterhav Burger",
     description:
       "Dansk oksebøf af 100% dansk oksekød, Thise Vesterhav ost, tynde slices af danske rødløg, hjemmelavet agurkesalat og hjemmerørt hvidløg- og chili mayo.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 3,
@@ -26,9 +28,9 @@ export const menuItems = [
     title: "Jubilæums Burger",
     description:
       "Juicy burger med bøf af dansk oksekød, spicy chili cheese tops, hvidløgs- og chili mayo, hjemmesyltet rødløg, tomat relish, cheddar ost og salat.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 4,
@@ -36,9 +38,9 @@ export const menuItems = [
     title: "Den Nordjyske Bøf Sandwich",
     description:
       "En bøf af dansk oksekød, remoulade, tomat relish, syltede agurker, rødbeder, 3 slags løg (rå, friteret og hjemmesyltet) – leveres med brun sovs.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 5,
@@ -46,9 +48,9 @@ export const menuItems = [
     title: "Kyllinge Burger",
     description:
       "Grov paneret brystfilet lavet af 100% dansk velfærdskylling fra Happy Chicken, tørsaltet bacon, chili mayo, syltede agurker, tomat relish og MUMS hjemmelavet dressing.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 6,
@@ -56,9 +58,9 @@ export const menuItems = [
     title: "Flæskestegs Burger",
     description:
       "Saftig grisekam, hjemmelavet rødkål, agurkesalat, hvidløgsmayo og sprøde svær.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 7,
@@ -66,9 +68,9 @@ export const menuItems = [
     title: "Vegetar Burger",
     description:
       "Vegetar bøf, hvidløgs mayo, tomat relish, rødløg, cheddar ost og salat.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "soja", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 8,
@@ -76,9 +78,9 @@ export const menuItems = [
     title: "Junior Burger",
     description:
       "En bøf af 100% dansk oksekød med hvidløgs mayo, ketchup, bacon, cheddar ost og salat.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
 
   // ===== TAPAS (101–199) =====
@@ -88,9 +90,9 @@ export const menuItems = [
     title: "MUMS Mega Kartoffelchips",
     description:
       "MUMS hjemmelavet kartoffelchips med Mariager sydesalt.",
-    price: null,
+    price: 0,
     allergies: [],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 102,
@@ -98,9 +100,9 @@ export const menuItems = [
     title: "Sprøde Flæskesvær",
     description:
       "Hjemmelavede flæskesvær fra KrastrupSøgaard – sprøde, saltede og dejligt knasende. En snack i verdensklasse.",
-    price: null,
+    price: 0,
     allergies: [],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 103,
@@ -108,9 +110,9 @@ export const menuItems = [
     title: "Oliven Mix med Rosmarin",
     description:
       "Kombination af grønne og sorte oliven i olie. Friske, sunde og skønne – en hygge-snack der er god for hjertet.",
-    price: null,
+    price: 0,
     allergies: [],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 104,
@@ -118,9 +120,9 @@ export const menuItems = [
     title: "MUMS Egen Nøddeblanding",
     description:
       "Dejlig nøddeblanding med Valencia mandler, peanuts og cashewnødder.",
-    price: null,
+    price: 0,
     allergies: ["nødder", "jordnødder"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 105,
@@ -128,9 +130,9 @@ export const menuItems = [
     title: "Røget Laks",
     description:
       "Grand cru laks fra Polar Sea Food i Vodskov. Koldrøget over bøgeflis, hjemmesyltet perleløg og dild mayo.",
-    price: null,
+    price: 0,
     allergies: ["æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 106,
@@ -138,9 +140,9 @@ export const menuItems = [
     title: "Urtehaven",
     description:
       "Urtehaven tærteform med bund af hjemmerørt humus, ristede sesam, peanuts og grønne asparges.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "peanuts"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 107,
@@ -148,9 +150,9 @@ export const menuItems = [
     title: "Kyllingesalat",
     description:
       "Hjemmelavet kyllingesalat, grønne asparges og bacon.",
-    price: null,
+    price: 0,
     allergies: ["æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 108,
@@ -158,9 +160,9 @@ export const menuItems = [
     title: "Rejer på Madpandekage",
     description:
       "Håndpillede rejer fra Grønland på madpandekage, hjemmelavet dild mayo, citron støv og frisk dild.",
-    price: null,
+    price: 0,
     allergies: ["krebsdyr", "gluten", "mælk", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 109,
@@ -168,9 +170,9 @@ export const menuItems = [
     title: "Porre/Løgtærte",
     description:
       "Porre/løgtærte bagt med revet ost, pyntet med mayo og frisk salat.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 110,
@@ -178,9 +180,9 @@ export const menuItems = [
     title: "Pulled Beef",
     description:
       "Hjemmelavet pulled beef af Dansk Gastro Kalv med teriyaki sauce, salsamix og chili mayo, serveret på flatbrød.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "soja", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 111,
@@ -188,9 +190,9 @@ export const menuItems = [
     title: "Danske Velfærdskylling",
     description:
       "Paneret brystfilet af dansk velfærdskylling med rosmarin og citron, street food dressing, purløg og ristet sesam, på nordisk flatbrød.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg", "soja", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 112,
@@ -198,9 +200,9 @@ export const menuItems = [
     title: "Røget Okseinderlår",
     description:
       "Røget okseinderlår, langtidstørret fra KrastrupSøgaard med bruschetta mayo og oliven.",
-    price: null,
+    price: 0,
     allergies: ["mælk", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 113,
@@ -208,9 +210,9 @@ export const menuItems = [
     title: "Røget Hjortekød",
     description:
       "Røget hjorteinderlår fra KrastrupSøgaard med peberrodscreme og ribs – en unik smagsoplevelse.",
-    price: null,
+    price: 0,
     allergies: ["mælk"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 114,
@@ -218,9 +220,9 @@ export const menuItems = [
     title: "Røget Skinke",
     description:
       "Røget Grand Cru skinke fra KrastrupSøgaard med hjemmelavet æggestand, mayo, soltørret tomat og frisk purløg.",
-    price: null,
+    price: 0,
     allergies: ["mælk", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 115,
@@ -228,9 +230,9 @@ export const menuItems = [
     title: "Roastbeef",
     description:
       "Klassisk roastbeef med grov remoulade, bløde løg og agurkesalat.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 116,
@@ -238,9 +240,9 @@ export const menuItems = [
     title: "Kyllingefilet",
     description:
       "Kyllingeinderfilet med mayo og grillede peberfrugter – fin og raffineret i smagen.",
-    price: null,
+    price: 0,
     allergies: ["æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 117,
@@ -248,9 +250,9 @@ export const menuItems = [
     title: "Filet Royal",
     description:
       "Filet Royal af Dansk tender pork med syltet rødløg og trøffel mayo.",
-    price: null,
+    price: 0,
     allergies: ["æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 118,
@@ -258,9 +260,9 @@ export const menuItems = [
     title: "Vitello Tonnato",
     description:
       "Vitello Tonnato lavet på kalveribeye fra Dansk Gastro Kalv, med klassisk tuncreme og kapers.",
-    price: null,
+    price: 0,
     allergies: ["æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 119,
@@ -268,9 +270,9 @@ export const menuItems = [
     title: "Slider Pulled Pork",
     description:
       "Slider med hjemmelavet pulled pork af Dansk Bertels gris med BBQ sauce, sennepsmayo og hjemmesyltet agurk.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "æg", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 120,
@@ -278,9 +280,9 @@ export const menuItems = [
     title: "Slider Kyllingeinderfilet",
     description:
       "Slider med grillet kyllingeinderfilet, spicy mayo, syltet rød peber og street food dressing.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "æg", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 121,
@@ -288,9 +290,9 @@ export const menuItems = [
     title: "Slider med Avocado",
     description:
       "Slider med avocado, vegansk mayo, syltet peber, salsamix og smoky grill dressing.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "sennep"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 122,
@@ -298,9 +300,9 @@ export const menuItems = [
     title: "Nordisk Fladbrød",
     description:
       "Nordisk flatbrød med bagt peberfrugt, hjemmerørt humus og salsamix.",
-    price: null,
+    price: 0,
     allergies: ["gluten"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 123,
@@ -308,9 +310,9 @@ export const menuItems = [
     title: "Vegansk Bøf med BBQ",
     description:
       "Vegansk bøf med BBQ dressing, vegansk mayo, purløg og kornblomster.",
-    price: null,
+    price: 0,
     allergies: ["soja", "gluten", "sennep", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 124,
@@ -318,9 +320,9 @@ export const menuItems = [
     title: "Pork Belly med Chutney",
     description:
       "Pork belly af Tender Pork med ananas-peber chutney og grønt.",
-    price: null,
+    price: 0,
     allergies: ["æg", "selleri"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 125,
@@ -328,9 +330,9 @@ export const menuItems = [
     title: "Osteanretning",
     description:
       "Osteanretning med 3 forskellige danske oste og hjemmelavet sylt.",
-    price: null,
+    price: 0,
     allergies: ["mælk"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 126,
@@ -338,9 +340,9 @@ export const menuItems = [
     title: "Dessertkage",
     description:
       "En overdådig chokoladekage med fløjlsblød mørk- og hvid chokolademousse.",
-    price: null,
+    price: 0,
     allergies: ["mælk", "soja", "æg", "gluten"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 127,
@@ -348,9 +350,9 @@ export const menuItems = [
     title: "Gammeldags Æblekage",
     description:
       "MUMSs gammeldags æblekage med makroner og flødeskum.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "mælk", "æg"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 128,
@@ -358,9 +360,9 @@ export const menuItems = [
     title: "Passions/Mango Mousse Kage",
     description:
       "Vegansk passions- og mango mousse kage med crumble-bund.",
-    price: null,
+    price: 0,
     allergies: ["gluten", "soja"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
   {
     id: 129,
@@ -368,8 +370,8 @@ export const menuItems = [
     title: "Panna Cotta",
     description:
       "Cremet panna cotta med hjemmelavet skovbærsylt.",
-    price: null,
+    price: 0,
     allergies: ["mælk"],
-    image: null,
+    image: "https://placehold.co/600x400?text=Food",
   },
 ]
