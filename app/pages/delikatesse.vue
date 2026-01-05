@@ -1,67 +1,76 @@
 <template>
   <NavDesk />
-  <section class="deli-box">
-    <div class="deli-text">
-      <h1>Delikatesse</h1>
-      <p>
-        Glæd familie, venner, medarebjdere og forretningsforbindelser med en
-        gave der smager af MUMS.
-      </p>
-      <p>
-        Vi har udvalgte vine, oste, chokolade og andre lækkerier. Så kom ned i
-        butikken og gå på opdagelse, lad dig inspirere og få personlig
-        vejledning.
-      </p>
-      <p>
-        Hos os er gavepakker en oplevelse, sammensat med omhu, kvalitet og
-        kærlighed. Vi har samlet de bedste danske og udenlandske producenter og
-        er glade for også at kunne præsentere flere hjemmelavede produkter. Vi
-        har sammensat et udvalg af gaver som alle pakkes eksklusivt og flot ind.
-        Ønsker du selv at samemsætte din gave kan det også lade sig gøres.
-      </p>
-    </div>
-    <figure>
-      <img src="../assets/img/Delikatesse.jpg" alt="salgAfVarer" />
+  <main>
+    <section class="deli-box">
+      <header class="deli-text">
+        <h1>Delikatesse</h1>
+        <p>
+          Glæd familie, venner, medarebjdere og forretningsforbindelser med en
+          gave der smager af MUMS.
+        </p>
+        <p>
+          Vi har udvalgte vine, oste, chokolade og andre lækkerier. Så kom ned i
+          butikken og gå på opdagelse, lad dig inspirere og få personlig
+          vejledning.
+        </p>
+        <p>
+          Hos os er gavepakker en oplevelse, sammensat med omhu, kvalitet og
+          kærlighed. Vi har samlet de bedste danske og udenlandske producenter
+          og er glade for også at kunne præsentere flere hjemmelavede produkter.
+          Vi har sammensat et udvalg af gaver som alle pakkes eksklusivt og flot
+          ind. Ønsker du selv at samemsætte din gave kan det også lade sig
+          gøres.
+        </p>
+      </header>
+      <figure>
+        <img
+          src="../assets/img/Delikatesse.jpg"
+          alt="Salg af varer i MUMS butikken"
+        />
+      </figure>
+    </section>
+    <section class="slide-show">Mangler slideshow..</section>
+    <figure class="pattern">
+      <img src="../assets/img/pattern.jpg" alt="" />
     </figure>
-  </section>
-  <section class="slide-show">Mangler slideshow..</section>
-  <figure class="pattern">
-    <img src="../assets/img/pattern.jpg" alt="" />
-  </figure>
-  <section class="deli-box">
-    <div class="deli-text">
-      <h2>Gave kurve</h2>
-      <p>
-        Forkæl dig selv eller en, du holder af, med en af Mums' smukke
-        gavekurve. De er fyldt med alt det bedste til en perfekt smagsoplevelse
-        små lækkerier, der varmer hjertet og spreder glæde.
-      </p>
-      <p>
-        Vi har samlet de bedste danske og udenlandske producenter og er glade
-        for også at kunne præsentere flere hjemmelavede produkter. Kurven ers
-        ammensat et udvalg af gaver som alle pakkes eksklusivt og flot ind.
-      </p>
-      <Btn class="btn" label="Bestil dem her" to="#" />
-    </div>
-    <figure>
-      <img src="../assets/img/gave-kurv.jpg" alt="salgAfVarer" />
-    </figure>
-  </section>
-  <section class="deli-box tapas">
-    <div class="deli-text tapas tapas-text">
-      <h2>Tapas</h2>
-      <p>
-        Vi ønsker, med vores nordiske tapas koncept, at give vores kunder
-        mulighed for at sammensætte deres helt egen menu. Menuen åbner mulighed
-        for et utal af kombinationer, om der skal serveres til hverdag, fest
-        eller i gode venners lag.
-      </p>
-      <Btn class="btn" label="Tapas Menu" to="menu" />
-    </div>
-    <figure>
-      <img src="../assets/img/tapas.jpg" alt="salgAfVarer" />
-    </figure>
-  </section>
+    <section class="deli-box">
+      <article class="deli-text">
+        <h2>Gave kurve</h2>
+        <p>
+          Forkæl dig selv eller en, du holder af, med en af Mums' smukke
+          gavekurve. De er fyldt med alt det bedste til en perfekt
+          smagsoplevelse små lækkerier, der varmer hjertet og spreder glæde.
+        </p>
+        <p>
+          Vi har samlet de bedste danske og udenlandske producenter og er glade
+          for også at kunne præsentere flere hjemmelavede produkter. Kurven ers
+          ammensat et udvalg af gaver som alle pakkes eksklusivt og flot ind.
+        </p>
+        <Btn class="btn" label="Bestil dem her" to="#" />
+      </article>
+      <figure>
+        <img src="../assets/img/gave-kurv.jpg" alt="gavekurv fra MUMS" />
+      </figure>
+    </section>
+    <section class="deli-box tapas">
+      <article class="deli-text tapas tapas-text">
+        <h2>Tapas</h2>
+        <p>
+          Vi ønsker, med vores nordiske tapas koncept, at give vores kunder
+          mulighed for at sammensætte deres helt egen menu. Menuen åbner
+          mulighed for et utal af kombinationer, om der skal serveres til
+          hverdag, fest eller i gode venners lag.
+        </p>
+        <Btn class="btn" label="Tapas Menu" to="menu" />
+      </article>
+      <figure>
+        <img
+          src="../assets/img/tapas.jpg"
+          alt="Nordisk tapas anretning fra MUMS"
+        />
+      </figure>
+    </section>
+  </main>
 </template>
 
 <style scoped>
