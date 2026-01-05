@@ -20,14 +20,14 @@
         Ønsker du selv at samemsætte din gave kan det også lade sig gøres.
       </p>
     </div>
-    <div>
+    <figure>
       <img src="../assets/img/Delikatesse.jpg" alt="salgAfVarer" />
-    </div>
+    </figure>
   </section>
-  <section class="slide-show">Mangler..</section>
-  <div class="pattern">
+  <section class="slide-show">Mangler slideshow..</section>
+  <figure class="pattern">
     <img src="../assets/img/pattern.jpg" alt="" />
-  </div>
+  </figure>
   <section class="deli-box">
     <div class="deli-text">
       <h2>Gave kurve</h2>
@@ -41,10 +41,26 @@
         for også at kunne præsentere flere hjemmelavede produkter. Kurven ers
         ammensat et udvalg af gaver som alle pakkes eksklusivt og flot ind.
       </p>
+      <Btn class="btn" label="Bestil dem her" to="#" />
     </div>
-    <div>
-      <img src="../assets/img/" alt="salgAfVarer" />
+    <figure>
+      <img src="../assets/img/gave-kurv.jpg" alt="salgAfVarer" />
+    </figure>
+  </section>
+  <section class="deli-box tapas">
+    <div class="deli-text tapas tapas-text">
+      <h2>Tapas</h2>
+      <p>
+        Vi ønsker, med vores nordiske tapas koncept, at give vores kunder
+        mulighed for at sammensætte deres helt egen menu. Menuen åbner mulighed
+        for et utal af kombinationer, om der skal serveres til hverdag, fest
+        eller i gode venners lag.
+      </p>
+      <Btn class="btn" label="Tapas Menu" to="menu" />
     </div>
+    <figure>
+      <img src="../assets/img/tapas.jpg" alt="salgAfVarer" />
+    </figure>
   </section>
 </template>
 
@@ -69,5 +85,29 @@
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.tapas {
+  background-color: var(--lys-blaa);
+  border-radius: 10px;
+}
+
+.tapas-text {
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.tapas img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btn {
+  margin-top: 2rem;
+}
+.deli-box figure {
+  margin: 0;
+}
+.deli-box figure img {
+  width: 100%;
+  height: 100%;
 }
 </style>

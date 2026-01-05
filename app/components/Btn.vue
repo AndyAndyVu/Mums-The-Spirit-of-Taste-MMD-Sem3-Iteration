@@ -18,10 +18,12 @@ to angiver hvilken side knappen linker til. -->
 <style scoped>
 .knap {
   display: inline-block;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 2rem;
   border-radius: 6px;
   background-color: var(--moerke-groen);
-  font-size: var(--btn-desktop);
+  /* font-size: var(--btn-desktop); */
   margin-right: var(--spacing-mdDesk);
+  color: white;
+  text-decoration: none;
 }
 </style>
