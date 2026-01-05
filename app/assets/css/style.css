@@ -62,8 +62,20 @@ main{
     --hvid-700: #252134;
     --hvid-skrift: #ffff;
     --sort-skrift: #0000;
-    
-    
+
     
     
 }
+
+h1 {
+    font-size: var(--h1-desk);
+}
+
+h2 {
+    font-size: var(--h2-desk);
+}
+
+p {
+    font-size: var(--body-desk);
+}
+
