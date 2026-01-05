@@ -4,12 +4,4 @@
   </figure>
 </template>
 
-<style scoped>
-figure {
-  margin: 0;
-}
-figure img {
-  width: 100%;
-  height: 100%;
-}
-</style>
+<style scoped></style>

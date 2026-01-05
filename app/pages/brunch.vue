@@ -9,6 +9,7 @@
       <figure>
         <img src="" alt="" />
       </figure>
+      <Pattern />
     </section>
   </main>
   <FooterDesk />

@@ -84,10 +84,7 @@ const prevSlide = () => {
         </button>
       </div>
     </section>
-
-    <figure class="pattern">
-      <img src="../assets/img/pattern.jpg" alt="" />
-    </figure>
+    <Pattern />
     <section class="deli-box">
       <article class="deli-text">
         <h2>Gave kurve</h2>
@@ -139,11 +136,12 @@ const prevSlide = () => {
   max-width: 85ch;
 }
 
-.pattern {
-  display: flex;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+figure {
+  margin: 0;
+}
+figure img {
+  width: 100%;
+  height: 100%;
 }
 .tapas {
   background-color: var(--lys-blaa);
