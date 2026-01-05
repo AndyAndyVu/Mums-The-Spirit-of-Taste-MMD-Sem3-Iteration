@@ -25,8 +25,27 @@
     </div>
   </section>
   <section class="slide-show">Mangler..</section>
-  <img src="../assets/img/" alt="" />
-  <section class="gave-kurv"></section>
+  <div class="pattern">
+    <img src="../assets/img/pattern.jpg" alt="" />
+  </div>
+  <section class="deli-box">
+    <div class="deli-text">
+      <h2>Gave kurve</h2>
+      <p>
+        Forkæl dig selv eller en, du holder af, med en af Mums' smukke
+        gavekurve. De er fyldt med alt det bedste til en perfekt smagsoplevelse
+        små lækkerier, der varmer hjertet og spreder glæde.
+      </p>
+      <p>
+        Vi har samlet de bedste danske og udenlandske producenter og er glade
+        for også at kunne præsentere flere hjemmelavede produkter. Kurven ers
+        ammensat et udvalg af gaver som alle pakkes eksklusivt og flot ind.
+      </p>
+    </div>
+    <div>
+      <img src="../assets/img/" alt="salgAfVarer" />
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -43,5 +62,12 @@
 
 .deli-text {
   max-width: 85ch;
+}
+
+.pattern {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 </style>
