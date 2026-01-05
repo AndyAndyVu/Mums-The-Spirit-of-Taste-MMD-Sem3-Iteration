@@ -126,6 +126,7 @@ const prevSlide = () => {
       </figure>
     </section>
   </main>
+  <FooterDesk />
 </template>
 
 <style scoped>

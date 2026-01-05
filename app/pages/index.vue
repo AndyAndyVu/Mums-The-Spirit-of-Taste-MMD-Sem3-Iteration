@@ -2,6 +2,7 @@
 import "../assets/css/style.css";
 </script>
 <template>
+  <NavDesk />
   <ForsideTest />
   <main>
     <iframe

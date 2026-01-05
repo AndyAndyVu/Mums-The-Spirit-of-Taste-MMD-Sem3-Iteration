@@ -1,1 +1,4 @@
-<template>s</template>
+<template>
+  <NavDesk />
+  <FooterDesk />
+</template>
