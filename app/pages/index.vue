@@ -267,7 +267,7 @@
     display: none;
   }
 
-  .forsideIntro,  .maanedensRetForside {
+  .forsideIntro,  .maanedensRetForside, .delikatesseForside, .omOsForside, .info {
     flex-direction: column;
     
   }
@@ -293,11 +293,15 @@
     width:100%;
   }
 
-  .menuForsideCard img{
+  .menuForsideCard img, .delikatesseForside img{
     width: 100%;
   }
 
-
+  .delikatesseForside img, .omOsForside img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 
 
 }
