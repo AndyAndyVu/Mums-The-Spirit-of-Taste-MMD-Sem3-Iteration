@@ -115,6 +115,12 @@ const prevSlide = () => {
         </p>
         <Btn class="btn" label="Tapas Menu" to="menu" />
       </article>
+      <figure>
+        <img
+          src="../assets/img/tapas.jpg"
+          alt="Nordisk tapas anretning fra MUMS"
+        />
+      </figure>
     </section>
   </main>
   <FooterDesk />
