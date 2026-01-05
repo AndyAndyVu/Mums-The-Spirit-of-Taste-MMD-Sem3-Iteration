@@ -21,6 +21,112 @@
       </figure>
     </section>
     <Pattern />
+    <section class="price-grid">
+      <article class="price-card">
+        <h3>3 Retter</h3>
+        <p>kr. 89,-</p>
+      </article>
+
+      <article class="price-card">
+        <h3>4 Retter</h3>
+        <p>kr. 115,-</p>
+      </article>
+
+      <article class="price-card">
+        <h3>5 Retter</h3>
+        <p>kr. 140,-</p>
+      </article>
+    </section>
+
+    <section class="menu-grid">
+      <article class="menu-card">
+        <h3>Håndpillede rejer fra Grønland</h3>
+        <p>
+          Håndpillede rejer fra Grønland med dild mayo, citron støv og frisk
+          dild i tærteform.
+        </p>
+        <p class="allergen">
+          Indeholder følgende allergener: KREBSDYR, ÆG, SENNEP
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Koldrøget laks</h3>
+        <p>
+          Lokalt koldrøget laks, råsyltet perleløg og dild mayo serveret i
+          butterdejsform. Grand cru laks fra Polar Sea Food i Vodskov. Koldrøget
+          over bøgeflis, hjemmesyltet perleløg og dild mayo.
+        </p>
+        <p class="allergen">
+          Indeholder følgende allergener: GLUTEN, FISK, ÆG, SENNEP
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Skinkeinderlår</h3>
+        <p>
+          Skinkeinderlår fra Krastrupsgård med hjemmelavet æggestand, mayo og
+          frisk purløg, serveret på brød.
+        </p>
+        <p class="allergen">
+          Indeholder følgende allergener: GLUTEN, MÆLK, ÆG, SENNEP
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Rørt oksetatar af røget okseinderlår</h3>
+        <p>
+          Rørt oksetatar af røget okseinderlår fra Krastrupsgård og kapers, med
+          bruschetta creme serveret i smørbagt tærteform.
+        </p>
+        <p class="allergen">
+          Indeholder følgende allergener: GLUTEN, MÆLK, ÆG, SENNEP
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Slider med Pulled Pork</h3>
+        <p>
+          Slider med hjemmelavet Pulled Pork BBQ sauce, sennepsmayo og
+          hjemmesyltet agurk.
+        </p>
+        <p class="allergen">
+          Indeholder følgende allergener: GLUTEN, ÆG, SENNEP
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Slider med kyllingeinderfilet</h3>
+        <p>
+          Slider med grillet kyllingeinderfilet, syltet rød peber, spicy mayo og
+          street food dressing.
+        </p>
+        <p class="allergen">
+          Indeholder følgende allergener: GLUTEN, ÆG, SENNEP, SELLERI
+        </p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Slider med Avocado</h3>
+        <p>
+          Slider med avocado, syltet peber, spicy mayo, salsa og smoky grill
+          dressing.
+        </p>
+        <p class="allergen">Indeholder følgende allergener: GLUTEN, SENNEP</p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Ost på brød</h3>
+        <p>Ost på brød med hjemmelavet æble-/fennikelmarmelade.</p>
+        <p class="allergen">Indeholder følgende allergener: GLUTEN, MÆLK, ÆG</p>
+      </article>
+
+      <article class="menu-card">
+        <h3>Brownie med hindbærcreme</h3>
+        <p>Brownie med fløde hindbærcreme og et drys af frysetørret hindbær.</p>
+        <p class="allergen">Indeholder følgende allergener: MÆLK, GLUTEN, ÆG</p>
+      </article>
+    </section>
   </main>
   <FooterDesk />
 </template>
@@ -37,5 +143,33 @@
 figure img {
   width: 100%;
   height: auto;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.price-card {
+  background-color: var(--hvid-100);
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.menu-card {
+  background-color: var(--dyb-groend);
+  color: var(--hvid-skrift);
+  padding: 1.5rem;
+}
+.allergen {
+  margin-top: 3rem;
 }
 </style>
