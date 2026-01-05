@@ -1,3 +1,38 @@
+<script setup>
+import { ref, computed } from "vue";
+
+// ref,  Vi skriver ref fordi værdi af billeder kan ændre sig "live" derfor skal vue reagere på det.
+// Vi bruger computed for at undgå gentagelser i koden og fordi den automatisk genberegner værdien, når currentIndex ændrer sig.
+
+// Array af billeder
+const images = [
+  new URL("../assets/img/Drinks-MUMS.png", import.meta.url).href,
+  new URL("../assets/img/valentinesMUMS.svg", import.meta.url).href,
+  new URL("../assets/img/Placeholder.jpg", import.meta.url).href,
+  new URL("../assets/img/Placeholder.jpg", import.meta.url).href,
+];
+
+// Index af slideshow
+const currentIndex = ref(0);
+
+// Viser 2 billeder ad gangen
+const visBilleder = computed(() => {
+  return images.slice(currentIndex.value, currentIndex.value + 2);
+});
+
+// slideshow frem
+const nextSlide = () => {
+  currentIndex.value =
+    currentIndex.value + 2 >= images.length ? 0 : currentIndex.value + 2;
+};
+
+// slideshow tilbage
+const prevSlide = () => {
+  currentIndex.value =
+    currentIndex.value - 2 < 0 ? images.length - 2 : currentIndex.value - 2;
+};
+</script>
+
 <template>
   <NavDesk />
   <main>
@@ -29,7 +64,27 @@
         />
       </figure>
     </section>
-    <section class="slide-show">Mangler slideshow..</section>
+    <section>
+      <div class="slider">
+        <button class="arrow left" @click="prevSlide">
+          <img src="../assets/img/pilV.svg" alt="Forrige billeder" />
+        </button>
+
+        <div class="slides">
+          <img
+            v-for="(image, index) in visBilleder"
+            :key="index"
+            :src="image"
+            alt="Delikatesse produkt"
+          />
+        </div>
+
+        <button class="arrow right" @click="nextSlide">
+          <img src="../assets/img/pilH.svg" alt="Næste billeder" />
+        </button>
+      </div>
+    </section>
+
     <figure class="pattern">
       <img src="../assets/img/pattern.jpg" alt="" />
     </figure>
@@ -118,5 +173,34 @@
 .deli-box figure img {
   width: 100%;
   height: 100%;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.slides {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow img {
+  width: 4rem;
 }
 </style>
