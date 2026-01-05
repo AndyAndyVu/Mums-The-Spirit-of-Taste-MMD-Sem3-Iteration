@@ -183,7 +183,7 @@
     <section class="bestil-container">
       <div>
         <h2>Bestil Selskabsmenu - Buffet</h2>
-        <p>Klar til lækker mad og hyggligt sleskab</p>
+        <p>Klar til lækker mad og hyggligt selvskab</p>
         <Btn label="Bestil her" to="#" />
       </div>
     </section>
