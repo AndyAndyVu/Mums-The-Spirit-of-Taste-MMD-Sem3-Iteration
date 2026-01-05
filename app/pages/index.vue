@@ -35,6 +35,10 @@
     </section>
       <img src="../assets/pictures/patterenFirkant.svg" alt="ny section" class="pynt">
     <section class="maanedensRetForside">
+      <div class="maanedensRetBillede mobil">
+    <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy">
+    <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy">
+  </div>
       <div class="maanedensRetText">
       <h2 class="grontext">Månedensret</h2>
       <h2>Limited Edition! - JULE FLÆSKESTEGSBURGER</h2>
@@ -47,7 +51,7 @@
       <p><b>KUN kr. 129,-</b></p>
       <button><a href="https://takeaway.mumsshop.dk/menu/1428/product/9405">Bestil Her</a></button>
       </div>
-      <div class="maanedensRetBillede">
+      <div class="maanedensRetBillede desk">
     <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy">
     <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy">
   </div>
@@ -117,6 +121,10 @@
 </template>
 
 <style scoped>
+.mobil{
+  display: none;
+}
+
   iframe {
     width: 100%;
     height: 450px;
@@ -247,6 +255,51 @@
 
 .forsideReviws img{
   width: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+
+  .mobil{
+    display: block;
+  }
+
+  .desk{
+    display: none;
+  }
+
+  .forsideIntro,  .maanedensRetForside {
+    flex-direction: column;
+    
+  }
+
+  .maanedensRetForside{
+    padding: 0;
+  }
+
+  .maanedensRetBillede img:nth-child(2) {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .menuForside{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: var(--spacing-mdMobile);
+  }
+
+  .menuForsideCard{
+    margin-bottom: var(--spacing-mdMobile);
+    width:100%;
+  }
+
+  .menuForsideCard img{
+    width: 100%;
+  }
+
+
+
+
 }
 
 
