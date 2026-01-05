@@ -135,7 +135,7 @@ const prevSlide = () => {
 
 .deli-box img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .deli-text {
