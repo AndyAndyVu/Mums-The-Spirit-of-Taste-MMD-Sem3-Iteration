@@ -12,10 +12,10 @@ const images = [
   new URL("../assets/img/Placeholder.jpg", import.meta.url).href,
 ];
 
-// Index af slideshow
+// Aktuel index af slideshow
 const currentIndex = ref(0);
 
-// Viser 2 billeder ad gangen
+// Viser 2 billeder ad gangen basseret på currentIndex
 const visBilleder = computed(() => {
   return images.slice(currentIndex.value, currentIndex.value + 2);
 });
@@ -165,7 +165,7 @@ const prevSlide = () => {
   border-bottom-right-radius: 10px;
 }
 .btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .deli-box figure {
   margin: 0;
@@ -201,6 +201,6 @@ const prevSlide = () => {
 }
 
 .arrow img {
-  width: 4rem;
+  width: 5rem;
 }
 </style>
