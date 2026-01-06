@@ -319,6 +319,12 @@ iframe {
   background-color: var(--hvid-100);
   padding: var(--spacing-xlSmlDesk);
 }
+.maanedensRetForside {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--hvid-100);
+  padding: var(--spacing-xlSmlDesk);
+}
 
 .maanedensRetText {
   max-width: 75ch;
