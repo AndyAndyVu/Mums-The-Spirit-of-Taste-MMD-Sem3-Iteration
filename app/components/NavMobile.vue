@@ -81,7 +81,7 @@ const closeMenu = () => {
   }
 
   .burger-btn span {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .overlay {
@@ -97,14 +97,18 @@ const closeMenu = () => {
     width: 90%;
     height: 100vh;
     background: var(--moerke-dyb-groend);
-    transform: translateX(100%);
+    transform: translateX(
+      100%
+    ); /* Her flytter vi burgerbaren helt til højre så den er skjult */
     transition: transform 0.3s ease;
     z-index: 999;
     padding: 2rem 1.5rem;
   }
 
   .mobile-drawer.open {
-    transform: translateX(0);
+    transform: translateX(
+      0
+    ); /* Flytter menuen ind på sin normale position, når den er åben */
   }
 
   .mobile-drawer ul {
@@ -119,7 +123,7 @@ const closeMenu = () => {
 
   .mobile-drawer a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--hvid-skrift);
   }
 }
