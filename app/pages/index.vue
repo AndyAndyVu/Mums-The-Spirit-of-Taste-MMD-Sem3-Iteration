@@ -2,7 +2,8 @@
 import "../assets/css/style.css";
 </script>
 <template>
-  <ForsideTest />
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <main>
     <iframe
       width="100%"
