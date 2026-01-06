@@ -1,10 +1,11 @@
 <script setup>
+
 </script>
 
 <template>
   <NavDesk />
   <main>
-    <menuCard />
+    <MenuCards/>
   </main>
   <FooterDesk />
 </template>
