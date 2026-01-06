@@ -4,6 +4,8 @@ import "../assets/css/style.css";
 </script>
 
 <template>
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <main>
     <section class="OmOsHistorie OmOsIntro">
       <div class="OmOsHistorieTekst OmOsTekst">
@@ -196,7 +198,34 @@ import "../assets/css/style.css";
   background-blend-mode: overlay;
   background-color: var(--blaa);
 }
+.pynt {
+  width: 100%;
+  padding: var(--spacing-SmlDesk) 0;
+}
 
+.aabningsTider {
+  background-color: var(--blaa);
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.tider {
+  display: flex;
+  justify-content: center;
+}
+
+.tider ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 900px) {
   .mobil {
     display: block;

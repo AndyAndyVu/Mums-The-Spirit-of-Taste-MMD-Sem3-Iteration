@@ -1,4 +1,6 @@
 <template>
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <main>
     <section class="cateringIntro">
       <div class="cateringIntroText">
@@ -8,9 +10,8 @@
           gode råvarer.Til både hverdag og fest og lige nu også lækker
           julecatering.
         </p>
-        <button>
-          <a href="https://takeaway.mumsshop.dk/">Bestil Catering her</a>
-        </button>
+
+        <Btn label="Bestil Catering her" to="https://takeaway.mumsshop.dk/" />
       </div>
       <img
         src="../assets/pictures/cateringIntro.png"

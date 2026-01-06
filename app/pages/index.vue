@@ -113,11 +113,11 @@ import "../assets/css/style.css";
           154,- SPAR KR. 25,-
         </p>
         <p><b>KUN kr. 129,-</b></p>
-        <button>
-          <a href="https://takeaway.mumsshop.dk/menu/1428/product/9405"
-            >Bestil Her</a
-          >
-        </button>
+
+        <Btn
+          label="Bestil her"
+          to="https://takeaway.mumsshop.dk/menu/1428/product/9405"
+        />
       </div>
       <div class="maanedensRetBillede desk">
         <img
@@ -156,7 +156,7 @@ import "../assets/css/style.css";
           som vi i tilberedningen giver vores helt eget lille twist, for at
           ramme den gode MUMS smag.
         </p>
-        <button><a href="#">Se take-away menu</a></button>
+        <Btn label="Se take-away menu" to="https://takeaway.mumsshop.dk/" />
       </article>
       <article class="menuForsideCard">
         <img
@@ -174,7 +174,7 @@ import "../assets/css/style.css";
           bekymre dig om maden, når du kan stole på os til at levere en
           mindeværdig madoplevelse, som vil imponere alle dine gæster.
         </p>
-        <button><a href="#">Se catering menu</a></button>
+        <Btn label="Se catering menu" to="catering" />
       </article>
     </section>
     <section>
@@ -199,7 +199,7 @@ import "../assets/css/style.css";
             samt et bredt udvalg fra de bedste danske og udenlandske
             specialvarer producenter.
           </p>
-          <button><a href="#">Læs om vores deliktatesse</a></button>
+          <Btn label="Læs om vores delikatesse" to="#" />
         </div>
       </article>
       <article class="omOsForside">
@@ -213,7 +213,7 @@ import "../assets/css/style.css";
             leverpostej, eller en af de mange internationale smagsoplevelser,
             leverer MUMS hver gang.
           </p>
-          <button><a href="#">Læs mere om os</a></button>
+          <Btn label="Læs mere om os" to="omOs" />
         </div>
         <img
           src="../assets/pictures/omOsForside.png"
@@ -238,12 +238,10 @@ import "../assets/css/style.css";
         <div class="lokation">
           <img src="../assets/pictures/Homeicon.svg" alt="Lokation" />
           <h4>Mums v/Charlotte Blak Frost Gugvej 1849210 Aalborg SØ</h4>
-          <button>
-            <a
-              href="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-              >Se på Google Maps</a
-            >
-          </button>
+          <Btn
+            label="Se på google Maps"
+            to="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+          />
         </div>
       </div>
     </section>
