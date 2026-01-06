@@ -79,3 +79,22 @@ p {
     font-size: var(--body-desk);
 }
 
+/* Desktop block nav */
+.nav-desktop {
+  display: block;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+/* Mobile block Nav */
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+}
