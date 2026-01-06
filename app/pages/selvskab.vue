@@ -231,7 +231,6 @@ figure img {
     "tapas      kartofler";
 }
 
-/* Grid areas */
 .kod {
   grid-area: kod;
 }

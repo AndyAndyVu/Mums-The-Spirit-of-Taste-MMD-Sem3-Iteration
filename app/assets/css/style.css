@@ -96,7 +96,7 @@ p {
   display: none;
 }
 
-/* Mobile block Nav */
+/* Hide Nav */
 @media (max-width: 900px) {
   .nav-desktop {
     display: none;
