@@ -76,7 +76,7 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
         <img src="../assets/pictures/location.svg" alt="location"/>
         <p>Gugvej 184, 9210 Aalborg SØ</p>
     </div>
-    <p>!Kort skal indsættes!</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2172.5053067209665!2d9.926153099999997!3d57.0086551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4649333e5d3c7c9f%3A0x3ac03837fa0616d5!2sMUMS!5e0!3m2!1sda!2sdk!4v1767691328933!5m2!1sda!2sdk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--Kort hentede fra google maps-->
 </section>
 <section class="omOsSponsor">
     <h3>Vi Støtter det lokale</h3>
@@ -84,7 +84,6 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
 </section>
 </main>
 <div class="desk"><FooterDesk/></div>
-<div class="mobil"><FooterMobile/></div>
 </template>
 
 <style scoped>
@@ -134,7 +133,7 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
 }
 
 @media screen and (max-width: 900px){
-     .mobil{
+    .mobil{
     display: block;
   }
 
