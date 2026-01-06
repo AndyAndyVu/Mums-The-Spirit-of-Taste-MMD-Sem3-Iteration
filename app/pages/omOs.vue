@@ -83,10 +83,15 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
     <sponsor/>
 </section>
 </main>
-<FooterDesk/>
+<div class="desk"><FooterDesk/></div>
+<div class="mobil"><FooterMobile/></div>
 </template>
 
 <style scoped>
+.mobil{
+  display: none;
+}
+
 .OmOsIntro{
     display: flex;
 }
@@ -129,6 +134,14 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
 }
 
 @media screen and (max-width: 900px){
+     .mobil{
+    display: block;
+  }
+
+  .desk{
+    display: none;
+  }
+
     .OmOsIntro{
     flex-direction: column;
 }
@@ -143,5 +156,11 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
 .OmOsTekst{
     width: 80%;
 }
+}
+
+@media screen and (max-width: 730px){
+    .omOsInformation{
+        flex-direction: column;
+    }
 }
 </style>

@@ -56,4 +56,11 @@
 .sponsor img{
     padding-right: 0.5rem;
 }
+
+@media screen and (max-width: 730px){
+
+    .alleSponsor{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;}
+}
 </style>
