@@ -276,5 +276,18 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+
+  .card {
+    grid-area: auto;
+  }
+
+  footer {
+    display: none;
+  }
 }
 </style>

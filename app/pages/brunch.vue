@@ -32,6 +32,39 @@
       </figure>
     </section>
     <Pattern />
+    <section class="menu-wrapper">
+      <article class="menu-box">
+        <h1>Brunch Menu</h1>
+
+        <ul>
+          <li>Yoghurt med hjemmelavet sylt og müsli</li>
+          <li>Røget skinke med pesto</li>
+          <li>Tørsaltet bacon</li>
+          <li>Scrambled æg</li>
+          <li>Brunch pølser</li>
+          <li>Mini croissant med hjemmelavet kyllingesalat</li>
+          <li>2 slags ost med hjemmelavet sylt</li>
+          <li>Brunch pandekage med sirup</li>
+          <li>Dertil friskbagt brød og Unika smør</li>
+        </ul>
+
+        <h2>Pris pr. stk.</h2>
+        <p>FRA kr. 139,-</p>
+
+        <p>
+          Indeholder følgende allergener:<br />
+          GLUTEN, MÆLK, NØDDER, ÆG, SENNEP
+        </p>
+      </article>
+    </section>
+    <Pattern />
+    <section class="bestil-container">
+      <div>
+        <h2>Bestil Selskabsmenu - Buffet</h2>
+        <p>Klar til lækker mad og hyggligt selvskab</p>
+        <Btn label="Bestil her" to="#" />
+      </div>
+    </section>
   </main>
   <FooterDesk />
 </template>
@@ -50,9 +83,31 @@ figure img {
   height: auto;
 }
 
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-box {
+  background-color: var(--hvid-100);
+  padding: 3rem 2rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+.bestil-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .catering-container {
     flex-direction: column;
+  }
+
+  footer {
+    display: none;
   }
 }
 </style>

@@ -192,5 +192,15 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
+  footer {
+    display: none;
+  }
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

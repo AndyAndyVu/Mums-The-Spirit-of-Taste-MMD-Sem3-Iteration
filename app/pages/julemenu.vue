@@ -212,5 +212,18 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
+
+  .tapas-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tapas-card {
+    width: 100%;
+  }
+
+  footer {
+    display: none;
+  }
 }
 </style>

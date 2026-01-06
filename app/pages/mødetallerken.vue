@@ -121,5 +121,9 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
+
+  footer {
+    display: none;
+  }
 }
 </style>

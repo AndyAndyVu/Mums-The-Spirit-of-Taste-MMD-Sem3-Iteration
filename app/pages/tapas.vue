@@ -188,7 +188,7 @@
     <Pattern />
     <section class="bestil-container">
       <div>
-        <h2>Bestil Receptions-Menu</h2>
+        <h2>Bestil Tapas Menu</h2>
         <p>Klar til lækker mad og hyggligt selvskab</p>
         <Btn label="Bestil her" to="#" />
       </div>
@@ -267,6 +267,10 @@ figure img {
 
   .menu-card {
     padding: 2rem 1.5rem;
+  }
+
+  footer {
+    display: none;
   }
 }
 </style>
