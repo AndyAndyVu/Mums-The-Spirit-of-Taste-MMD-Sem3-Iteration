@@ -87,3 +87,9 @@ main{
     list-style: none;
     padding: 1rem;
   }
+
+  @media screen and (max-width: 900px){
+    main{
+      margin: 0;
+    }
+  }

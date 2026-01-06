@@ -104,6 +104,10 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
     padding-left: var( --spacing-SmlDesk);
 }
 
+.OmOsHistorieTekst{
+    padding-right: var( --spacing-SmlDesk) ;
+}
+
 .OmOsLokalt{
     padding-top: var( --spacing-SmlDesk);
 }
@@ -122,5 +126,22 @@ Vi henter vores inspiration i den storslåede natur omkring Aalborg og vil gerne
     background-size: 90px;
     background-blend-mode: overlay;
     background-color: var(--blaa);
+}
+
+@media screen and (max-width: 900px){
+    .OmOsIntro{
+    flex-direction: column;
+}
+
+.OmOsIntro img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding: 0;
+}
+
+.OmOsTekst{
+    width: 80%;
+}
 }
 </style>
