@@ -29,8 +29,6 @@ img {
 .takeAwayContainer {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 auto;
-
 }
 
 .takeAwayCard {
