@@ -34,7 +34,8 @@ const prevSlide = () => {
 </script>
 
 <template>
-  <NavDesk />
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <main>
     <section class="deli-box">
       <header class="deli-text">

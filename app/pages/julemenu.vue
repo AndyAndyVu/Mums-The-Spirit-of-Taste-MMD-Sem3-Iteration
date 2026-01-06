@@ -1,5 +1,6 @@
 <template>
-  <NavDesk />
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <main>
     <h1>Julemenu 2025</h1>
     <section class="catering-container">
@@ -205,5 +206,11 @@ figure img {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .catering-container {
+    flex-direction: column;
+  }
 }
 </style>

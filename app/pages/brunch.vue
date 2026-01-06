@@ -49,4 +49,10 @@ figure img {
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 900px) {
+  .catering-container {
+    flex-direction: column;
+  }
+}
 </style>
