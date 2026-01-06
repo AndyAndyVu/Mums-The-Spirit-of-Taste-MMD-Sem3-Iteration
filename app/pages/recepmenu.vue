@@ -127,6 +127,14 @@
         <p class="allergen">Indeholder følgende allergener: MÆLK, GLUTEN, ÆG</p>
       </article>
     </section>
+    <Pattern />
+    <section class="bestil-container">
+      <div>
+        <h2>Bestil Receptions-Menu</h2>
+        <p>Klar til lækker mad og hyggligt selvskab</p>
+        <Btn label="Bestil her" to="#" />
+      </div>
+    </section>
   </main>
   <FooterDesk />
 </template>
@@ -171,5 +179,11 @@ figure img {
 }
 .allergen {
   margin-top: 3rem;
+}
+
+.bestil-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 </style>
