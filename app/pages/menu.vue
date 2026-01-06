@@ -1,4 +1,4 @@
 <template>
-  <NavDesk />
+  <NavMobile />
   <FooterDesk />
 </template>
