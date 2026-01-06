@@ -114,7 +114,7 @@ const prevSlide = () => {
           mulighed for et utal af kombinationer, om der skal serveres til
           hverdag, fest eller i gode venners lag.
         </p>
-        <Btn class="btn" label="Tapas Menu" to="menu" />
+        <Btn class="btn" label="Tapas Menu" to="tapas" />
       </article>
       <figure>
         <img

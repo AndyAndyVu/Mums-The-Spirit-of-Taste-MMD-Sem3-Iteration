@@ -164,7 +164,7 @@
       <div>
         <h2>Bestil Julemenu 2025</h2>
         <p>Klar til lækker mad og hyggligt selvskab</p>
-        <Btn label="Bestil her" to="#" />
+        <Btn label="Bestil her" to="https://takeaway.mumsshop.dk/" />
       </div>
     </section>
   </main>
