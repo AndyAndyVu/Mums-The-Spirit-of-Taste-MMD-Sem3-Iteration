@@ -36,7 +36,6 @@ img {
 .takeAwayCard {
     display: flex;
     flex-direction: column;
-    flex: 1 1 300px;
     margin: 1rem;
     width: 45ch;
     border: 1px solid black;
