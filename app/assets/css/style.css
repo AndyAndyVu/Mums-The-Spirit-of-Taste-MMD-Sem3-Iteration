@@ -96,6 +96,10 @@ p {
   display: none;
 }
 
+.mobil {
+  display: none;
+}
+
 /* Hide Nav */
 @media (max-width: 900px) {
   .nav-desktop {
@@ -106,6 +110,13 @@ p {
     display: block;
   }
 
+  .mobil {
+    display: block;
+  }
+    
+  .desk {
+    display: none;
+  }
   h1 {
     font-size: var(--h1-mobile);
     }
