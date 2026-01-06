@@ -1,5 +1,6 @@
 <template>
   <NavDesk />
+  <NavMobile />
   <main>
     <h1>Brunch</h1>
     <section class="catering-container">
