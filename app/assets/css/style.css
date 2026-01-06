@@ -1,81 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap%27');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap%27");
 
-  p, h4, li{
-  font-family: "Red Hat Text",
-  sans-serif;}
+p,
+h4,
+li {
+  font-family: "Red Hat Text", sans-serif;
+}
 
-  h1, h2, h3{
-  font-family: "Cormorant Garamond",
-  serif;} 
-body{
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   margin: 0;
   background-color: var(--baggrunds-farve);
 }
-main{
+
+main {
   margin: 0 64px;
-} 
+}
 
 :root {
-    --h1-desk: 2.5rem; 
-    --h2-desk: 2rem;
-    --h3-desk: 1.75rem;
-    --h4-desk: 1.25rem;
-    --navbar-desk: 1.125rem;
-    --body-desk: 1.125rem;
-    --breadcrumb-desk: 0.0875rem;
-    --links-desk: 1.125rem;
-    --btn-desktop: 1.25rem;
+  --h1-desk: 2.5rem;
+  --h2-desk: 2rem;
+  --h3-desk: 1.75rem;
+  --h4-desk: 1.25rem;
+  --navbar-desk: 1.125rem;
+  --body-desk: 1.125rem;
+  --breadcrumb-desk: 0.0875rem;
+  --links-desk: 1.125rem;
+  --btn-desktop: 1.25rem;
 
-    --h1-mobile: 1.5rem;
-    --h2-mobile: 1.375rem;
-    --h3-mobile: 1.25rem;
-    --h4-mobile: 1.125rem;
-    --navbar-mobile: 1rem;
-    --body-mobile: 1rem;
-    --breadcrumb-mobile: 0.75rem;
-    --link-mobile: 1rem;
-    --btn-mobile: 1rem;
+  --h1-mobile: 1.5rem;
+  --h2-mobile: 1.375rem;
+  --h3-mobile: 1.25rem;
+  --h4-mobile: 1.125rem;
+  --navbar-mobile: 1rem;
+  --body-mobile: 1rem;
+  --breadcrumb-mobile: 0.75rem;
+  --link-mobile: 1rem;
+  --btn-mobile: 1rem;
 
-    --spacing-xlSmlDesk: 0.5rem;
-    --spacing-SmlDesk: 1rem;
-    --spacing-mdDesk: 2rem;
-    --spacing-lgDesk: 3rem;
-    --spacing-xlDesk: 4rem;
+  --spacing-xlSmlDesk: 0.5rem;
+  --spacing-SmlDesk: 1rem;
+  --spacing-mdDesk: 2rem;
+  --spacing-lgDesk: 3rem;
+  --spacing-xlDesk: 4rem;
 
-    --spacing-smlMobile: 0.5rem;
-    --spacing-mdMobile: 1rem;
-    --spacing-lgMobile: 2rem;
-    
+  --spacing-smlMobile: 0.5rem;
+  --spacing-mdMobile: 1rem;
+  --spacing-lgMobile: 2rem;
 
-    --lys-blaa: #c3dcec;
-    --blaa: #a4d5f4;
-    --moerke-blaa: #72b2db;
-    --lys-dyb-groend: #38913a;
-    --dyb-groend: #0e7111;
-    --moerke-dyb-groend: #09510b;
-    --lys-groen: #8de48f;
-    --groen: #43be46;
-    --moerke-groen: #19931c;
-    --baggrunds-farve: #fbfbfc;
-    --brun-ikon: #572915;
-    --hvid-100: #ecf2f5;
-    --hvid-700: #252134;
-    --hvid-skrift: #ffff;
-    --sort-skrift: #0000;
-
-    
-    
+  --lys-blaa: #c3dcec;
+  --blaa: #a4d5f4;
+  --moerke-blaa: #72b2db;
+  --lys-dyb-groend: #38913a;
+  --dyb-groend: #0e7111;
+  --moerke-dyb-groend: #09510b;
+  --lys-groen: #8de48f;
+  --groen: #43be46;
+  --moerke-groen: #19931c;
+  --baggrunds-farve: #fbfbfc;
+  --brun-ikon: #572915;
+  --hvid-100: #ecf2f5;
+  --hvid-700: #252134;
+  --hvid-skrift: #ffff;
+  --sort-skrift: #0000;
 }
 
 h1 {
-    font-size: var(--h1-desk);
+  font-size: var(--h1-desk);
 }
 
 h2 {
-    font-size: var(--h2-desk);
+  font-size: var(--h2-desk);
 }
 
 p {
-    font-size: var(--body-desk);
+  font-size: var(--body-desk);
 }
-
