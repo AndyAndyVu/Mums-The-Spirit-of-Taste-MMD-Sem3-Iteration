@@ -30,9 +30,16 @@ img {
     
 }
 .takeAwayCard {
-    margin: 1rem;
-    padding: 1rem;
-    width: 40ch;
-    border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  width: 40ch;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
 }
+.takeAwayCard > div:last-child {
+  margin-top: auto;
+}
+
 </style>
