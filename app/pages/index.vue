@@ -264,8 +264,8 @@ import "../assets/css/style.css";
       </button>
     </section>
   </main>
-  <div class="desk"><FooterDesk /></div>
-  <div class="mobil"><FooterMobile /></div>
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>

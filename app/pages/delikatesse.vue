@@ -124,7 +124,8 @@ const prevSlide = () => {
       </figure>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>

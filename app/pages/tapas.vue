@@ -194,7 +194,8 @@
       </div>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -269,7 +270,11 @@ figure img {
     padding: 2rem 1.5rem;
   }
 
-  footer {
+  .mobil {
+    display: block;
+  }
+
+  .desk {
     display: none;
   }
 }

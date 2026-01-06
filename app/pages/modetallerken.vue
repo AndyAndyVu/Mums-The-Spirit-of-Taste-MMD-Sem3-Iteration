@@ -66,7 +66,8 @@
       </div>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -122,7 +123,11 @@ figure img {
     flex-direction: column;
   }
 
-  footer {
+  .mobil {
+    display: block;
+  }
+
+  .desk {
     display: none;
   }
 }

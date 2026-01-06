@@ -168,7 +168,8 @@
       </div>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -212,7 +213,13 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
+  .mobil {
+    display: block;
+  }
 
+  .desk {
+    display: none;
+  }
   .tapas-wrapper {
     flex-direction: column;
     gap: 2rem;

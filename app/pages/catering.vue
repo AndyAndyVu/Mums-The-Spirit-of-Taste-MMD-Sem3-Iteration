@@ -20,7 +20,8 @@
     </section>
     <CateringCards />
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -46,6 +47,13 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
+  }
+  .mobil {
+    display: block;
+  }
+
+  .desk {
+    display: none;
   }
 }
 </style>

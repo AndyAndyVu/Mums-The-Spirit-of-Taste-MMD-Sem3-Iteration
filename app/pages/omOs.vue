@@ -148,7 +148,8 @@ import "../assets/css/style.css";
       <sponsor />
     </section>
   </main>
-  <div class="desk"><FooterDesk /></div>
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>

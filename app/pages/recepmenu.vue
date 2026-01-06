@@ -137,7 +137,8 @@
       </div>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -192,7 +193,11 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
-  footer {
+  .mobil {
+    display: block;
+  }
+
+  .desk {
     display: none;
   }
   .price-grid {

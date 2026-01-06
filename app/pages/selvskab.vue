@@ -189,7 +189,8 @@
       </div>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -285,7 +286,11 @@ figure img {
     grid-area: auto;
   }
 
-  footer {
+  .mobil {
+    display: block;
+  }
+
+  .desk {
     display: none;
   }
 }

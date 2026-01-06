@@ -106,5 +106,12 @@ figure img {
   .catering-container {
     flex-direction: column;
   }
+  .mobil {
+    display: block;
+  }
+
+  .desk {
+    display: none;
+  }
 }
 </style>

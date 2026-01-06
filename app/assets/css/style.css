@@ -110,13 +110,6 @@ p {
     display: block;
   }
 
-  .mobil {
-    display: block;
-  }
-    
-  .desk {
-    display: none;
-  }
   h1 {
     font-size: var(--h1-mobile);
     }
