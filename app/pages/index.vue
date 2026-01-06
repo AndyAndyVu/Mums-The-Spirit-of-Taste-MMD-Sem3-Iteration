@@ -1,11 +1,12 @@
 <script setup>
-  import '../assets/css/style.css'
+import '../assets/css/style.css'
 </script>
 <template>
   <ForsideTest />
   <main>
+    
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/kSO3dGm5nEM?si=TUQwZ6H5tXqhrsHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <section class="forsideIntro">
+    <section class="forsideIntro"> <PilOp />
       <article class="forsideIntroText">
       <h1>MUMS - The spirit of taste</h1>
       <p>Velkommen til MUMS i Aalborg, et sted, hvor vi har æren af at præsentere takeaway i Aalborg med en unik smagsoplevelse og et glimt af gourmet mad i Aalborg.</p>
