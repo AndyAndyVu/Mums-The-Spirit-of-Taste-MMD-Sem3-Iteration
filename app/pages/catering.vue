@@ -29,4 +29,16 @@
 .cateringIntro img{
     width: 550px;
 }
+
+@media screen and (max-width: 900px) {
+    .cateringIntro{
+        flex-direction: column;
+    }
+
+    .cateringIntro img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+}
 </style>

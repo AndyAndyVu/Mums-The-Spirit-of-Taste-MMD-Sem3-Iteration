@@ -75,4 +75,12 @@
     max-width: 30ch;
 }
 
+@media screen and (max-width: 900px){
+
+    .caCards{
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+}
+
 </style>
