@@ -87,6 +87,14 @@ p {
     font-size: var(--body-desk);
 }
 
+main>section {
+  margin-bottom: var(--spacing-xlDesk);
+}
+
+nav {
+  margin-bottom: var(--spacing-xlDesk);
+}
+
 /* Desktop block nav */
 .nav-desktop {
   display: block;
@@ -126,6 +134,12 @@ p {
   }
   p, li {
     font-size: var(--body-mobile);
+  }
+    main > section {
+    margin-bottom: var(--spacing-lgMobile); 
+  }
+    nav {
+    margin-bottom: var(--spacing-lgMobile); 
   }
 }
     
