@@ -69,10 +69,16 @@ const closeMenu = () => {
         </li>
 
         <li>
-          <NuxtLink to="/https://takeaway.mumsshop.dk/" @click="closeMenu">
+          <a
+            href="https://takeaway.mumsshop.dk/"
+            target="_blank"
+            rel="noopener"
+            @click="closeMenu"
+            class="mobile-link"
+          >
             <span class="icon">🚗</span>
             <span>Takeaway</span>
-          </NuxtLink>
+          </a>
         </li>
       </ul>
     </aside>
