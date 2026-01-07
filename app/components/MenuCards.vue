@@ -1,10 +1,40 @@
 <script setup>
 import { takeawayMenu } from '../data/menuItems.js';
+
+// Tillader interaktion med parent page
+const emit = defineEmits(["sectionVisible"]);
+let observeMenuSection
+
+onMounted(() => { 
+    const sections = document.querySelectorAll(".observeSection");
+
+    // Observer
+    observeMenuSection = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                // Ved synlighed af sektion emittes til parent page
+                if (entry.isIntersecting) {
+                    emit("sectionVisible", entry.target.id);
+                }
+            });
+        },
+        {
+            // Position af hvor sektionen betragtes som synlig
+            rootMargin: "-50% 0px -50% 0px",
+        }
+    );
+
+    // Observer alle sektioner
+    sections.forEach((section) => observeMenuSection.observe(section));
+
+    // Disconnect observed ved unmount
+    onBeforeUnmount(() => observeMenuSection?.disconnect());
+});
 </script>
 
 <template>
     <div class="menuSections">
-        <section v-for="category in takeawayMenu" :key="category.id" class="categorySection" :id="category.id">
+        <section v-for="category in takeawayMenu" :key="category.id" :id="category.id" class="observeSection">
             <template v-if="category.items && category.items.length">
                 <div class="categoryHeader">
                     <h2>{{ category.title }}</h2>
@@ -39,12 +69,14 @@ img {
     width: 100%;
     height: auto;
 }
-.categoryHeader{
+
+.categoryHeader {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin: 2rem 0 1rem 0;
 }
+
 .takeAwayContainer {
     width: 100%;
     display: grid;
