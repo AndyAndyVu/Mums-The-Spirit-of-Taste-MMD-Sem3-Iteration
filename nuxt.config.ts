@@ -14,8 +14,9 @@ export default defineNuxtConfig({
     nitro: {
     preset: 'static'
   },
-  routeRules: {
-    '/**': { static: true }
-  }
+  
+  app: {
+    baseURL: '/class/MMD-CSD-S24/10643805/public'
+  },
 })
 
