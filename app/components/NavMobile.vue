@@ -55,13 +55,6 @@ const closeMenu = () => {
         </li>
 
         <li>
-          <NuxtLink to="/takeaway" @click="closeMenu">
-            <span class="icon">🚗</span>
-            <span>Takeaway</span>
-          </NuxtLink>
-        </li>
-
-        <li>
           <NuxtLink to="/catering" @click="closeMenu">
             <span class="icon">🎉</span>
             <span>Catering</span>
@@ -69,9 +62,16 @@ const closeMenu = () => {
         </li>
 
         <li>
-          <NuxtLink to="/kontakt" @click="closeMenu">
-            <span class="icon">📞</span>
-            <span>Kontakt</span>
+          <NuxtLink to="/delikatesse" @click="closeMenu">
+            <span class="icon">🧺</span>
+            <span>Delikatesse</span>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/takeaway" @click="closeMenu">
+            <span class="icon">🚗</span>
+            <span>Takeaway</span>
           </NuxtLink>
         </li>
       </ul>

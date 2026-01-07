@@ -20,13 +20,13 @@ const visBilleder = computed(() => {
   return images.slice(currentIndex.value, currentIndex.value + 2);
 });
 
-// slideshow frem
+// slideshow frem +2 ad gangen
 const nextSlide = () => {
   currentIndex.value =
     currentIndex.value + 2 >= images.length ? 0 : currentIndex.value + 2;
 };
 
-// slideshow tilbage
+// slideshow tilbage +2 tilbage
 const prevSlide = () => {
   currentIndex.value =
     currentIndex.value - 2 < 0 ? images.length - 2 : currentIndex.value - 2;
@@ -66,6 +66,7 @@ const prevSlide = () => {
       </figure>
     </section>
     <section>
+      <!-- Eventlistener der lytter til når der bliver clicked skal den gå tilbage funktionen vi lavede tidligere samme med frem. -->
       <div class="slider">
         <button class="arrow left" @click="prevSlide">
           <img src="../assets/img/pilV.svg" alt="Forrige billeder" />
@@ -196,5 +197,28 @@ figure img {
 
 .arrow img {
   width: 5rem;
+}
+
+@media (max-width: 900px) {
+  .mobil {
+    display: block;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .deli-box {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .slides {
+    grid-template-columns: 1fr;
+  }
+
+  .tapas {
+    border-radius: none;
+  }
 }
 </style>
