@@ -1,9 +1,21 @@
-// GENERERET MED AI ASSISTANCE
+import BurgerIcon from "../assets/icons/takeawayIcons/BurgerIcon.svg";
+import TapasIcon from "../assets/icons/takeawayIcons/TapasIcon.svg";
+import SandwhichIcon from "../assets/icons/takeawayIcons/SandwhichIcon.svg";
+import BrunchIcon from "../assets/icons/takeawayIcons/BrunchIcon.svg";
+import NemAftensmadIcon from "../assets/icons/takeawayIcons/NemAftensmadIcon.svg";
+import BowlsIcon from "../assets/icons/takeawayIcons/BowlsIcon.svg";
+import BaoBunsSidesIcon from "../assets/icons/takeawayIcons/BaoBunsSidesIcon.svg";
+import BoerneMenuIcon from "../assets/icons/takeawayIcons/BørneMenuIcon.svg";
+import VeganskIcon from "../assets/icons/takeawayIcons/VeganskIcon.svg";
+import MoedeTallerkenIcon from "../assets/icons/takeawayIcons/MødeTallerkenIcon.svg";
+import DessertIcon from "../assets/icons/takeawayIcons/DessertIcon.svg";
 
+// GENERERET MED AI ASSISTANCE
 export const takeawayMenu = [
   {
     id: "burger",
     title: "Burger",
+    icon: BurgerIcon,
     description:
       "Hos Mums i Aalborg laver vi saftige burgere med fokus på kvalitet og gode råvarer. Vælg mellem dansk oksekød, gris, kylling eller vegetariske bøffer – altid med lækkert fyld og hjemmerørt mayo. Perfekt til en god burgeroplevelse derhjemme.",
     items: [
@@ -85,6 +97,7 @@ export const takeawayMenu = [
   {
     id: "tapas",
     title: "Tapas",
+    icon: TapasIcon,
     description:
       "Nordisk tapas med fokus på lokale råvarer og gode smagsoplevelser. Sammensæt din egen menu og nyd en moderne fortolkning af klassiske retter, der passer perfekt til både hverdag, fest og hyggelige stunder med venner og familie.",
     items: [
@@ -352,12 +365,84 @@ export const takeawayMenu = [
     ],
   },
 
-  // Placeholder category based on your text (no items provided in snippet)
   {
     id: "sandwhich",
     title: "Sandwhich",
+    icon: SandwhichIcon,
     description:
       "Sandwiches med fokus på gode råvarer, masser af smag og solid mæthed. Uanset om du er til kød, kylling eller vegetar, finder du en sandwich med saftigt fyld, lækkert brød og velafbalancerede smagskombinationer – perfekt til både hverdag og take-away.",
+    items: [],
+  },
+
+ {
+    id: "brunch",
+    title: "Brunch",
+    icon: BrunchIcon,
+    description:
+      "Lækker brunch med klassiske og moderne favoritter.",
+    items: [],
+  },
+
+  {
+    id: "nem-aftensmad",
+    title: "Nem Aftensmad",
+    icon: NemAftensmadIcon,
+    description:
+      "Velsmagende retter der gør aftensmaden nem og hurtig.",
+    items: [],
+  },
+
+  {
+    id: "bowls",
+    title: "Bowls",
+    icon: BowlsIcon,
+    description:
+      "Friske og mættende bowls med velafbalancerede smage.",
+    items: [],
+  },
+
+  {
+    id: "bao-buns-sides",
+    title: "Bao Buns & Sides",
+    icon: BaoBunsSidesIcon,
+    description:
+      "Bløde bao buns og lækre sides – perfekte til deling.",
+    items: [],
+  },
+
+  {
+    id: "boerne-menu",
+    title: "Børne Menu",
+    icon: BoerneMenuIcon,
+    description:
+      "Børnevenlige retter med fokus på smag og kvalitet.",
+    items: [],
+  },
+
+  {
+    id: "vegansk",
+    title: "Vegansk",
+    icon: VeganskIcon,
+    description:
+      "Smagfulde veganske retter lavet med omtanke.",
+    items: [],
+  },
+
+  {
+    id: "moede-tallerken",
+    title: "Møde Tallerken",
+    icon: MoedeTallerkenIcon,
+    description:
+      "Indbydende mødetallerkener til møder og arrangementer.",
+    items: [],
+  },
+
+  {
+    id: "dessert",
+    title: "Dessert",
+    icon: DessertIcon,
+    description:
+      "Søde afslutninger på måltidet – klassiske og moderne desserter.",
     items: [],
   },
 ]
