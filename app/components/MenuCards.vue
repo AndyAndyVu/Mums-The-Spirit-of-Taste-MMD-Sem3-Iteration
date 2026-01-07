@@ -27,17 +27,16 @@ img {
 }
 
 .takeAwayContainer {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
 }
 
 .takeAwayCard {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    width: 45ch;
     border: 1px solid black;
-
 }
 
 .takeAwayCardInfo {
