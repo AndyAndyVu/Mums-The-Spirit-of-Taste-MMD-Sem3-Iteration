@@ -33,7 +33,7 @@ function toggleControls(name) {
     <div class="menuContainer">
       <aside>
         <a v-for="category in takeawayMenu" :key="category.id" :href="`#${category.id}`" class="categoryLink"
-          :class="{ active: activeCategory === category.id }" @click="setActive(category.id)">
+          :class="{ active: activeCategory === category.id }">
           <img :src="category.icon" alt="" />{{ category.title }}
         </a>
       </aside>
