@@ -40,11 +40,40 @@ const closeMenu = () => {
 
     <aside class="mobile-drawer" :class="{ open: isOpen }">
       <ul>
-        <li><NuxtLink to="/" @click="closeMenu">Forside</NuxtLink></li>
-        <li><NuxtLink to="/menu" @click="closeMenu">Menu</NuxtLink></li>
-        <li><NuxtLink to="/takeaway" @click="closeMenu">Takeaway</NuxtLink></li>
-        <li><NuxtLink to="/catering" @click="closeMenu">Catering</NuxtLink></li>
-        <li><NuxtLink to="/kontakt" @click="closeMenu">Kontakt</NuxtLink></li>
+        <li>
+          <NuxtLink to="/" @click="closeMenu">
+            <span class="icon">🏠</span>
+            <span>Forside</span>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/menu" @click="closeMenu">
+            <span class="icon">🍽️</span>
+            <span>Menu</span>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/takeaway" @click="closeMenu">
+            <span class="icon">🚗</span>
+            <span>Takeaway</span>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/catering" @click="closeMenu">
+            <span class="icon">🎉</span>
+            <span>Catering</span>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/kontakt" @click="closeMenu">
+            <span class="icon">📞</span>
+            <span>Kontakt</span>
+          </NuxtLink>
+        </li>
       </ul>
     </aside>
   </nav>
@@ -125,6 +154,9 @@ const closeMenu = () => {
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--hvid-skrift);
+  }
+  .icon {
+    margin-right: 0.75rem;
   }
 }
 </style>
