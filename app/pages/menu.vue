@@ -20,29 +20,26 @@
     </section>
     <div class="menuContainer">
       <aside>
-        <a href="">Burger</a>
-        <a href="">Tapas</a>
-        <a href="">Sandwhich</a>
-        <a href="">Brunch</a>
-        <a href="">Nem Aftensmad</a>
-        <a href="">Bowls</a>
-        <a href="">Bao Buns & Sides</a>
-        <a href="">Børne Menu</a>
-        <a href="">Vegansk</a>
-        <a href="">Møde Tallerken</a>
-        <a href="">Dessert</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/BurgerIcon.svg" alt="">Burger</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/TapasIcon.svg" alt="">Tapas</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/SandwhichIcon.svg" alt="">Sandwhich</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/BrunchIcon.svg" alt="">Brunch</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/NemAftensmadIcon.svg" alt="">Nem Aftensmad</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/BowlsIcon.svg" alt="">Bowls</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/BaoBunsSidesIcon.svg" alt="">Bao Buns & Sides</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/BørneMenuIcon.svg" alt="">Børne Menu</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/VeganskIcon.svg" alt="">Vegansk</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/MødeTallerkenIcon.svg" alt="">Møde Tallerken</a>
+        <a href=""><img src="../assets/icons/takeawayIcons/DessertIcon.svg" alt="">Dessert</a>
       </aside>
       <section class="menuCardsSection">
         <div class="controlButtons">
           <div class="filterButtons">
-            <button>
-              Mad Type 
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </button>
-            <button>Allegener</button>
-            <button>Diæt</button>
+            <button><p>Mad Type</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+            <button><p>Allegener</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+            <button><p>Diæt</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
           </div>
-          <button class="sortingButton">Sortering</button>
+          <button class="sortingButton"><p>Sortering</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
         </div>
         <MenuCards />
       </section>
@@ -77,9 +74,13 @@ aside {
 
   padding: 1rem 2rem;
   background-color: var(--blaa);
+  border-radius: 6px;
 }
 
 aside a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -104,7 +105,8 @@ aside a {
 }
 
 button {
-  padding: 1rem 1.5rem;
+  display: flex;
+  padding: 1rem;
   background-color: var(--lys-blaa);
   border-radius: 6px;
   cursor: pointer;
