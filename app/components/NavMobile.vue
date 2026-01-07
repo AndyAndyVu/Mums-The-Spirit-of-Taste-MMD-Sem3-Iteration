@@ -69,7 +69,7 @@ const closeMenu = () => {
         </li>
 
         <li>
-          <NuxtLink to="/takeaway" @click="closeMenu">
+          <NuxtLink to="/https://takeaway.mumsshop.dk/" @click="closeMenu">
             <span class="icon">🚗</span>
             <span>Takeaway</span>
           </NuxtLink>
