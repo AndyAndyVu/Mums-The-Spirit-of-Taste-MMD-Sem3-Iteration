@@ -35,7 +35,10 @@
       <section class="menuCardsSection">
         <div class="controlButtons">
           <div class="filterButtons">
-            <button>Mad Type</button>
+            <button>
+              Mad Type 
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </button>
             <button>Allegener</button>
             <button>Diæt</button>
           </div>
@@ -71,28 +74,40 @@ aside {
 
   width: max-content;
   height: fit-content;
-  
+
   padding: 1rem 2rem;
   background-color: var(--blaa);
 }
+
 aside a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   white-space: nowrap;
 }
+
 .menuCardsSection {
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  margin-left: 1rem;
 }
+
 .controlButtons {
   display: flex;
   justify-content: space-between;
 }
+
 .filterButtons {
   display: flex;
   gap: 1rem;
-  margin: 0 1rem;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  background-color: var(--lys-blaa);
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
 }
 </style>
