@@ -1,5 +1,5 @@
 <script setup>
-
+import { takeawayMenu } from '../data/menuItems.js';
 </script>
 
 <template>
@@ -20,26 +20,38 @@
     </section>
     <div class="menuContainer">
       <aside>
-        <a href=""><img src="../assets/icons/takeawayIcons/BurgerIcon.svg" alt="">Burger</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/TapasIcon.svg" alt="">Tapas</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/SandwhichIcon.svg" alt="">Sandwhich</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/BrunchIcon.svg" alt="">Brunch</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/NemAftensmadIcon.svg" alt="">Nem Aftensmad</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/BowlsIcon.svg" alt="">Bowls</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/BaoBunsSidesIcon.svg" alt="">Bao Buns & Sides</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/BørneMenuIcon.svg" alt="">Børne Menu</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/VeganskIcon.svg" alt="">Vegansk</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/MødeTallerkenIcon.svg" alt="">Møde Tallerken</a>
-        <a href=""><img src="../assets/icons/takeawayIcons/DessertIcon.svg" alt="">Dessert</a>
+        <a v-for="category in takeawayMenu" :key="category.id" :href="`#${category.id}`"
+          :class="{ active: activeCategory === category.id }">
+          <img :src="category.icon" alt="" />{{ category.title }}
+        </a>
+        <!-- <a href="#burger"><img src="../assets/icons/takeawayIcons/BurgerIcon.svg" alt="">Burger</a>
+        <a href="#tapas"><img src="../assets/icons/takeawayIcons/TapasIcon.svg" alt="">Tapas</a>
+        <a href="#sandwhich"><img src="../assets/icons/takeawayIcons/SandwhichIcon.svg" alt="">Sandwhich</a>
+        <a href="#brunch"><img src="../assets/icons/takeawayIcons/BrunchIcon.svg" alt="">Brunch</a>
+        <a href="#nem-aftensmad"><img src="../assets/icons/takeawayIcons/NemAftensmadIcon.svg" alt="">Nem Aftensmad</a>
+        <a href="#bowls"><img src="../assets/icons/takeawayIcons/BowlsIcon.svg" alt="">Bowls</a>
+        <a href="#bao-buns-sides"><img src="../assets/icons/takeawayIcons/BaoBunsSidesIcon.svg" alt="">Bao Buns & Sides</a>
+        <a href="#børne-menu"><img src="../assets/icons/takeawayIcons/BørneMenuIcon.svg" alt="">Børne Menu</a>
+        <a href="#vegansk"><img src="../assets/icons/takeawayIcons/VeganskIcon.svg" alt="">Vegansk</a>
+        <a href="#møde-tallerken"><img src="../assets/icons/takeawayIcons/MødeTallerkenIcon.svg" alt="">Møde Tallerken</a>
+        <a href="#dessert"><img src="../assets/icons/takeawayIcons/DessertIcon.svg" alt="">Dessert</a> -->
       </aside>
       <section class="menuCardsSection">
         <div class="controlButtons">
           <div class="filterButtons">
-            <button><p>Mad Type</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-            <button><p>Allegener</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
-            <button><p>Diæt</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+            <button>
+              <p>Mad Type</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </button>
+            <button>
+              <p>Allegener</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </button>
+            <button>
+              <p>Diæt</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </button>
           </div>
-          <button class="sortingButton"><p>Sortering</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+          <button class="sortingButton">
+            <p>Sortering</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </button>
         </div>
         <MenuCards />
       </section>
@@ -86,6 +98,7 @@ aside a {
   font-weight: bold;
   white-space: nowrap;
 }
+
 
 .menuCardsSection {
   display: flex;
