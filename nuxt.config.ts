@@ -10,5 +10,12 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/scripts'
-  ]
+  ],
+    nitro: {
+    preset: 'static'
+  },
+  routeRules: {
+    '/**': { static: true }
+  }
 })
+
