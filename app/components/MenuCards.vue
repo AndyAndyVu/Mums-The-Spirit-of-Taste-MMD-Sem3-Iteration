@@ -1,22 +1,32 @@
 <script setup>
-import { menuItems } from '../data/menuItems.js';
+import { takeawayMenu } from '../data/menuItems.js';
 </script>
 
 <template>
-    <div class="takeAwayContainer">
-        <div class="takeAwayCard" v-for="menuItem in menuItems" :key="menuItem.id">
-            <img :src="menuItem.image" :alt="menuItem.title">
-            <div class="takeAwayCardInfo">
-                <div>
-                    <h4>{{ menuItem.title }}</h4>
-                    <p>{{ menuItem.description }}</p>
-                    <h4>{{ menuItem.price }}</h4>
-                </div>
-                <div>
-                    <p>{{ menuItem.allergies }}</p>
+    <div class="menuSections">
+        <section v-for="category in takeawayMenu" :key="category.id" v-if="category.items.length"
+            class="categorySection" :id="category.id">
+            <header class="categoryHeader">
+                <h2>{{ category.title }}</h2>
+                <p>{{ category.description }}</p>
+            </header>
+
+            <div class="takeAwayContainer">
+                <div class="takeAwayCard" v-for="item in category.items" :key="item.id">
+                    <img :src="item.image" :alt="item.title" />
+                    <div class="takeAwayCardInfo">
+                        <div>
+                            <h4>{{ item.title }}</h4>
+                            <p>{{ item.description }}</p>
+                            <h4>{{ item.price }}</h4>
+                        </div>
+                        <div>
+                            <p>{{ item.allergies.join(', ') }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </template>
 
@@ -37,6 +47,7 @@ img {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+
 }
 
 .takeAwayCardInfo {
