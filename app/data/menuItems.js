@@ -1,6 +1,6 @@
 import BurgerIcon from "../assets/icons/takeawayIcons/BurgerIcon.svg";
 import TapasIcon from "../assets/icons/takeawayIcons/TapasIcon.svg";
-import SandwhichIcon from "../assets/icons/takeawayIcons/SandwhichIcon.svg";
+import SandwichIcon from "../assets/icons/takeawayIcons/SandwichIcon.svg";
 import BrunchIcon from "../assets/icons/takeawayIcons/BrunchIcon.svg";
 import NemAftensmadIcon from "../assets/icons/takeawayIcons/NemAftensmadIcon.svg";
 import BowlsIcon from "../assets/icons/takeawayIcons/BowlsIcon.svg";
@@ -366,9 +366,9 @@ export const takeawayMenu = [
   },
   
   {
-  id: "sandwhich",
-  title: "Sandwhich",
-  icon: SandwhichIcon,
+  id: "sandwich",
+  title: "Sandwich",
+  icon: SandwichIcon,
   description:
     "Sandwiches med fokus på gode råvarer, masser af smag og solid mæthed. Uanset om du er til kød, kylling eller vegetar, finder du en sandwich med saftigt fyld, lækkert brød og velafbalancerede smagskombinationer – perfekt til både hverdag og take-away.",
   items: [
