@@ -1,5 +1,9 @@
 <script setup>
 import { takeawayMenu } from '../data/menuItems.js';
+import { allTakeAwayItems } from "../composable/takeAwayFlatMap.js";
+
+const baseItems = ref(allTakeAwayItems);
+
 
 // Variabel til aktiv kategori i menuen & funktion til at sætte aktiv kategori
 const activeCategory = ref(null);
@@ -12,6 +16,87 @@ const openControls = ref(null);
 function toggleControls(name) {
     openControls.value = openControls.value === name ? null : name;
 }
+
+// filter & sorting - Initialize as empty arrays
+const activeFoodTypes = ref([]);
+const excludedAllergies = ref([]);
+const activeDietTags = ref([]);
+const sortedItems = ref([]);
+
+const visibleItems = computed(() => {
+    let items = baseItems.value;
+
+    // 1) Food type filter
+    if (activeFoodTypes.value.length > 0) {
+        items = items.filter((i) => activeFoodTypes.value.includes(i.categoryId));
+    }
+
+    // 2) Exclude allergens
+    if (excludedAllergies.value.length > 0) {
+        items = items.filter((i) => {
+            const allergies = i.allergies ?? [];
+            return excludedAllergies.value.every((a) => !allergies.includes(a));
+        });
+    }
+
+    if (activeDietTags.value.length > 0) {
+        items = items.filter((i) => {
+            const dietTags = i.dietTags ?? [];
+            return activeDietTags.value.every((tag) => dietTags.includes(tag));
+        });
+    }
+    return items;
+});
+
+const visibleCategories = computed(() => {
+    const grouped = {};
+
+    visibleItems.value.forEach(item => {
+        if (!grouped[item.categoryId]) {
+            grouped[item.categoryId] = [];
+        }
+        grouped[item.categoryId].push(item);
+    });
+
+    return takeawayMenu
+        .map(category => ({
+            ...category,
+            items: grouped[category.id] ?? []
+        }))
+        .filter(category => category.items.length > 0);
+});
+
+// Genbrugbar filter & sort funktionalitet
+function toggleArray(arrayRef, value) {
+    console.log("DEBUG - arrayRef:", arrayRef);
+    console.log("DEBUG - arrayRef.value:", arrayRef.value);
+    console.log("DEBUG - value:", value);
+
+    const currentArray = arrayRef.value || [];
+
+    if (currentArray.includes(value)) {
+        arrayRef.value = currentArray.filter((v) => v !== value);
+    } else {
+        arrayRef.value = [...currentArray, value];
+    }
+
+    console.log("Active Food Types:", activeFoodTypes.value);
+    console.log("clicked:", value);
+    console.log("unique ids:", [...new Set(baseItems.value.map(i => i.categoryId))]);
+}
+
+function toggleFoodType(id) {
+    toggleArray(activeFoodTypes, id);
+}
+
+function toggleAllergy(a) {
+    toggleArray(excludedAllergies, a);
+}
+
+function toggleDiet(tag) {
+    toggleArray(activeDietTags, tag);
+}
+
 </script>
 
 <template>
@@ -35,55 +120,54 @@ function toggleControls(name) {
         </section>
         <div class="menuContainer">
             <aside>
-                <a v-for="category in takeawayMenu" :key="category.id" :href="`#${category.id}`" class="categoryLink"
-                    :class="{ active: activeCategory === category.id }">
+                <a v-for="category in visibleCategories" :key="category.id" :href="`#${category.id}`"
+                    class="categoryLink" :class="{ active: activeCategory === category.id }">
                     <img :src="category.icon" alt="" />{{ category.title }}
                 </a>
             </aside>
             <section class="menuCardsSection">
                 <div class="controlButtons">
                     <div class="filterButtons">
-
                         <div class="madTypeButton">
                             <button @click="toggleControls('madType')">
                                 <p>Mad Type</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
                             </button>
                             <div v-if="openControls === 'madType'" class="filterPanel">
-                                <ul>
-                                    <a href="">
-                                        <li>Burger</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Tapas</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Sandwich</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Brunch</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Nem Aftensmad</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Bowls</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Bao Buns & Sides</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Børne Menu</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Vegansk</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Møde Tallerken</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Dessert</li>
-                                    </a>
-                                </ul>
+                                <div class="foodTypeContainer">
+                                    <button @click="toggleFoodType('burger')">
+                                        Burger
+                                    </button>
+                                    <button @click="toggleFoodType('tapas')">
+                                        Tapas
+                                    </button>
+                                    <button @click="toggleFoodType('sandwich')">
+                                        Sandwich
+                                    </button>
+                                    <button @click="toggleFoodType('brunch')">
+                                        Brunch
+                                    </button>
+                                    <button @click="toggleFoodType('nem-aftensmad')">
+                                        Nem Aftensmad
+                                    </button>
+                                    <button @click="toggleFoodType('bowls')">
+                                        Bowls
+                                    </button>
+                                    <button @click="toggleFoodType('bao-buns-sides')">
+                                        Bao Buns & Sides
+                                    </button>
+                                    <button @click="toggleFoodType('boerne-menu')">
+                                        Børne Menu
+                                    </button>
+                                    <button @click="toggleFoodType('vegansk')">
+                                        Vegansk
+                                    </button>
+                                    <button @click="toggleFoodType('moede-tallerken')">
+                                        Møde Tallerken
+                                    </button>
+                                    <button @click="toggleFoodType('dessert')">
+                                        Dessert
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -92,32 +176,33 @@ function toggleControls(name) {
                                 <p>Allegener</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
                             </button>
                             <div v-if="openControls === 'allergener'" class="filterPanel">
-                                <ul>
-                                    <a href="">
-                                        <li>Gluten</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Laktose</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Æg</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Sennep</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Selleri</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Nødder</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Krebsdyr</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Soja</li>
-                                    </a>
-                                </ul>
+                                <div class="allergyContainer">
+                                    <button @click="toggleAllergy('gluten')">
+                                        Gluten
+                                    </button>
+                                    <button @click="toggleAllergy('mælk')">
+                                        Laktose
+                                    </button>
+                                    <button @click="toggleAllergy('æg')">
+                                        Æg
+                                    </button>
+                                    <button @click="toggleAllergy('sennep')">
+                                        Sennep
+                                    </button>
+                                    <button @click="toggleAllergy('selleri')">
+                                        Selleri
+                                    </button>
+                                    <button @click="toggleAllergy('nødder')">
+                                        Nødder
+                                    </button>
+                                    <button @click="toggleAllergy('krebsdyr')">
+                                        Krebsdyr
+                                    </button>
+                                    <button @click="toggleAllergy('soja')">
+                                        Soja
+                                    </button>
+                                </div>
+
                             </div>
                         </div>
 
@@ -126,17 +211,17 @@ function toggleControls(name) {
                                 <p>Diæt</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
                             </button>
                             <div v-if="openControls === 'diet'" class="filterPanel">
-                                <ul>
-                                    <a href="">
-                                        <li>Vegansk</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Fisk</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Kød</li>
-                                    </a>
-                                </ul>
+                                <div class="dietContainer">
+                                    <button @click="toggleDiet('vegansk')">
+                                        Vegansk
+                                    </button>
+                                    <button @click="toggleDiet('fisk')">
+                                        Fisk
+                                    </button>
+                                    <button @click="toggleDiet('kød')">
+                                        Kød
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,24 +231,24 @@ function toggleControls(name) {
                             <p>Sortering</p><span class="material-symbols-outlined">keyboard_arrow_down</span>
                         </button>
                         <div v-if="openControls === 'sorting'" class="filterPanel">
-                            <ul>
-                                <a href="">
-                                    <li>Pris: Lav til Høj</li>
-                                </a>
-                                <a href="">
-                                    <li>Pris: Høj til Lav</li>
-                                </a>
-                                <a href="">
-                                    <li>A-Z</li>
-                                </a>
-                                <a href="">
-                                    <li>Z-A</li>
-                                </a>
-                            </ul>
+                            <div class="sortingContainer">
+                                <button>
+                                    Pris: Lav til Høj
+                                </button>
+                                <button>
+                                    Pris: Høj til Lav
+                                </button>
+                                <button>
+                                    A-Z
+                                </button>
+                                <button>
+                                    Z-A
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <MenuCards @sectionVisible="setActive" />
+                <MenuCards :categories="visibleCategories" @sectionVisible="setActive" />
             </section>
         </div>
     </main>
@@ -244,22 +329,19 @@ aside a {
     white-space: nowrap;
     border: 1px solid black;
     margin-top: 0.5rem;
-
-    ul {
-        display: grid;
-        gap: 1rem;
-        list-style-type: none;
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    }
 }
+.foodTypeContainer,
+.allergyContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+}
+.dietContainer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+
 
 .menuCardsSection {
     display: flex;
@@ -276,11 +358,6 @@ aside a {
 .filterButtons {
     display: flex;
     gap: 1rem;
-}
-
-.filterButtons ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 button {
