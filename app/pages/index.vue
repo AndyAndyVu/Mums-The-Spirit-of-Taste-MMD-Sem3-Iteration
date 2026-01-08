@@ -1,5 +1,13 @@
 <script setup>
 import "../assets/css/style.css";
+  onMounted(() => {
+  if (!document.querySelector('script[src="https://embed.getwally.net/embed.js"]')) {
+    const script = document.createElement('script')
+    script.src = 'https://embed.getwally.net/embed.js'
+    script.defer = true
+    document.body.appendChild(script)
+  }
+})
 </script>
 <template>
   <NavDesk />
