@@ -1,13 +1,17 @@
 <script setup>
-import { takeawayMenu } from '../data/menuItems.js';
+const props = defineProps({
+    categories: {
+        type: Array,
+        required: true
+    }
+});
 
 // Tillader interaktion med parent page
 const emit = defineEmits(["sectionVisible"]);
 let observeMenuSection
 
-onMounted(() => { 
+onMounted(() => {
     const sections = document.querySelectorAll(".observeSection");
-
     // Observer
     observeMenuSection = new IntersectionObserver(
         (entries) => {
@@ -23,19 +27,19 @@ onMounted(() => {
             rootMargin: "-50% 0px -50% 0px",
         }
     );
-
     // Observer alle sektioner
     sections.forEach((section) => observeMenuSection.observe(section));
-
     // Disconnect observed ved unmount
     onBeforeUnmount(() => observeMenuSection?.disconnect());
+
 });
+
+
 </script>
 
 <template>
     <div class="menuSections">
-        <section v-for="category in takeawayMenu" :key="category.id" :id="category.id" class="observeSection">
-            <template v-if="category.items && category.items.length">
+        <section v-for="category in categories" :key="category.id" :id="category.id" class="observeSection">
                 <div class="categoryHeader">
                     <h2>{{ category.title }}</h2>
                     <p>{{ category.description }}</p>
@@ -57,8 +61,7 @@ onMounted(() => {
                             </p>
                         </div>
                     </div>
-                </div>
-            </template>
+            </div>
         </section>
     </div>
 </template>
