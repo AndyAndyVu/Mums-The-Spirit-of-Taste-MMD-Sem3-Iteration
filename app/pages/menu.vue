@@ -39,6 +39,7 @@ const visibleItems = computed(() => {
         });
     }
 
+    // 3) Diet tags filter
     if (activeDietTags.value.length > 0) {
         items = items.filter((i) => {
             const dietTags = i.dietTags ?? [];
@@ -68,10 +69,6 @@ const visibleCategories = computed(() => {
 
 // Genbrugbar filter & sort funktionalitet
 function toggleArray(arrayRef, value) {
-    console.log("DEBUG - arrayRef:", arrayRef);
-    console.log("DEBUG - arrayRef.value:", arrayRef.value);
-    console.log("DEBUG - value:", value);
-
     const currentArray = arrayRef.value || [];
 
     if (currentArray.includes(value)) {
