@@ -3,10 +3,11 @@ import "../assets/css/style.css";
 </script>
 <template>
   <NavDesk />
-  <ForsideTest />
-  <video class="bgvid" autoplay muted loop playsinline>
-    <source src="../assets/video/MumsVideoCompressed.mp4" type="video/mp4" />
-  </video>
+  <div class="videoWrap">
+    <video class="bgvid" autoplay muted loop playsinline>
+      <source src="../assets/video/MumsVideoCompressed.mp4" type="video/mp4" />
+    </video>
+  </div>
   <main>
     <!-- <iframe
   src="https://www.youtube.com/embed/kSO3dGm5nEM?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=kSO3dGm5nEM"
@@ -57,20 +58,14 @@ import "../assets/css/style.css";
         </div>
       </article>
     </section>
-    <img
-      src="../assets/pictures/patterenFirkant.svg"
-      alt="ny section"
-      class="pynt"
-    />
+    <img src="../assets/pictures/patterenFirkant.svg" alt="ny section" class="pynt" />
     <section class="maanedensRetForside">
       <div class="maanedensRetText">
         <h2 class="grontext">Månedensret</h2>
         <h2>Limited Edition! - JULE FLÆSKESTEGSBURGER</h2>
         <p>
-          <b
-            >Vi tyvstarter allerede J-dag den 3. november med den store
-            J-Burger-dag kl. 10:00 hos MUMS!</b
-          >
+          <b>Vi tyvstarter allerede J-dag den 3. november med den store
+            J-Burger-dag kl. 10:00 hos MUMS!</b>
         </p>
         <p>
           Oplev vores jule Flæskestegsburger, lavet med saftig flæskesteg af
@@ -91,37 +86,18 @@ import "../assets/css/style.css";
           154,- SPAR KR. 25,-
         </p>
         <p><b>KUN kr. 129,-</b></p>
-        <Btn
-          label="Bestil her"
-          to="https://takeaway.mumsshop.dk/menu/1428/product/9405"
-        />
+        <Btn label="Bestil her" to="https://takeaway.mumsshop.dk/menu/1428/product/9405" />
       </div>
       <div class="maanedensRetBillede">
-        <img
-          src="../assets/pictures/nyhed.svg"
-          alt="Nyhed"
-          class="nyhed"
-          loading="lazy"
-        />
-        <img
-          src="../assets/pictures/Julebuger.png"
-          alt="Billede af mums flæskestegsburger"
-          loading="lazy"
-        />
+        <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy" />
+        <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy" />
       </div>
     </section>
     <img src="../assets/pictures/patterenFirkant.svg" class="pynt" />
-    <img
-      src="../assets/pictures/patterenDiamant.svg"
-      class="pynt"
-      alt="ny section"
-    />
+    <img src="../assets/pictures/patterenDiamant.svg" class="pynt" alt="ny section" />
     <section class="menuForside">
       <article class="menuForsideCard">
-        <img
-          src="../assets/pictures/TakeawayForside.png"
-          alt="Take-away menu bugers"
-        />
+        <img src="../assets/pictures/TakeawayForside.png" alt="Take-away menu bugers" />
         <h3>Take-away Menu</h3>
         <p>
           Vores nye menukort er skabt med respekt for den gastronomiske
@@ -136,10 +112,7 @@ import "../assets/css/style.css";
         <button><a href="#">Se take-away menu</a></button>
       </article>
       <article class="menuForsideCard">
-        <img
-          src="../assets/pictures/CateringForside.png"
-          alt="Take-away menu bugers"
-        />
+        <img src="../assets/pictures/CateringForside.png" alt="Take-away menu bugers" />
         <h3>Catering Menu</h3>
         <p>
           Lad os tage os af madlavningen, mens du fokuserer på at have det sjovt
@@ -156,11 +129,7 @@ import "../assets/css/style.css";
     </section>
     <section>
       <article class="delikatesseForside">
-        <img
-          src="../assets/pictures/delikatesseForside.png"
-          alt="billedea af mums delikatesse butik"
-          loading="lazy"
-        />
+        <img src="../assets/pictures/delikatesseForside.png" alt="billedea af mums delikatesse butik" loading="lazy" />
         <div class="forsideText">
           <h3>Deliktatesse</h3>
           <p>
@@ -192,11 +161,7 @@ import "../assets/css/style.css";
           </p>
           <button><a href="#">Læs mere om os</a></button>
         </div>
-        <img
-          src="../assets/pictures/omOsForside.png"
-          alt="billedea af mums delikatesse butik"
-          loading="lazy"
-        />
+        <img src="../assets/pictures/omOsForside.png" alt="billedea af mums delikatesse butik" loading="lazy" />
       </article>
     </section>
     <section class="infoForside">
@@ -245,9 +210,24 @@ import "../assets/css/style.css";
   display: none;
 }
 
-iframe, video {
+.videoWrap {
+  position: relative;
   width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
 }
+
+.bgvid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(1.25); 
+}
+
+
 
 .forsideIntro {
   display: flex;
@@ -352,6 +332,7 @@ iframe, video {
   background-color: var(--moerke-dyb-groend);
   color: var(--hvid-skrift);
 }
+
 .nummer,
 .email,
 .lokation {
@@ -372,6 +353,7 @@ iframe, video {
   justify-content: space-between;
   padding-top: var(--spacing-SmlDesk);
 }
+
 .forsideReviws button {
   background-color: rgba(0, 0, 128, 0);
   border: none;
