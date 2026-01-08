@@ -20,6 +20,90 @@ import JuniorBurgerImage from "../assets/img/takeAwayMenu/burger/JuniorBurger.we
 import MumsBurgerImage from "../assets/img/takeAwayMenu/burger/MumsBurger.webp";
 import VesterhavsBurgerImage from "../assets/img/takeAwayMenu/burger/VesterhavsBurger.webp";
 
+// Tapas IMAGES
+import Kartoffelchips from "../assets/img/takeAwayMenu/tapas/chips.jpg";
+import SprødeFlæskesvær from "../assets/img/takeAwayMenu/tapas/flæskesvær.jpg";
+import OlivenMix from "../assets/img/takeAwayMenu/tapas/oliven.jpg";
+import Nøddeblanding from "../assets/img/takeAwayMenu/tapas/nøddeMix.jpg";
+import RøgetLaks from "../assets/img/takeAwayMenu/tapas/røgetLaks.jpg";
+import Urtehaven from "../assets/img/takeAwayMenu/tapas/urtehaven.jpg";
+import Kyllingesalat from "../assets/img/takeAwayMenu/tapas/kyllingesalat.jpg";
+import RejerPåMadpandekage from "../assets/img/takeAwayMenu/tapas/rejerPandekage.jpg";
+import PorreLøgtærte from "../assets/img/takeAwayMenu/tapas/porretærte.jpg";
+import PulledBeef from "../assets/img/takeAwayMenu/tapas/pulledbeef.jpg";
+import DanskeVelfærdskylling from "../assets/img/takeAwayMenu/tapas/velfærdskylling.jpg";
+import RøgetOkseinderlår from "../assets/img/takeAwayMenu/tapas/røgetOkseinderlår.jpg";
+import RøgetHjortekød from "../assets/img/takeAwayMenu/tapas/røgetHjortkød.jpg";
+import RøgetSkinke from "../assets/img/takeAwayMenu/tapas/røgetSkinke.jpg";
+import Roastbeef from "../assets/img/takeAwayMenu/tapas/roastBeef.jpg";
+import Kyllingefilet from "../assets/img/takeAwayMenu/tapas/kyllingefilet.jpg";
+import FiletRoyal from "../assets/img/takeAwayMenu/tapas/filetRoyal.jpg";
+import VitelloTonnato from "../assets/img/takeAwayMenu/tapas/vitelloTonnato.jpg";
+import SliderPulledPork from "../assets/img/takeAwayMenu/tapas/sliderPulledPork.jpg";
+import SliderKyllingeinderfilet from "../assets/img/takeAwayMenu/tapas/SliderKylling.jpg";
+import SliderMedAvocado from "../assets/img/takeAwayMenu/tapas/sliderAdvocado.jpg";
+import NordiskFladbrød from "../assets/img/takeAwayMenu/tapas/nordiskFlatbræd.jpg";
+import VeganskBøfMedBBQ from "../assets/img/takeAwayMenu/tapas/veganskbøf.jpg";
+import PorkBellyMedChutney from "../assets/img/takeAwayMenu/tapas/porkBellyChutney.jpg";
+import Osteanretning from "../assets/img/takeAwayMenu/tapas/osteanretning.jpg";
+import Dessertkage from "../assets/img/takeAwayMenu/tapas/dessertKage.jpg";
+import GammeldagsÆblekage from "../assets/img/takeAwayMenu/tapas/æblekage.jpg";
+import PassionsMangoMousseKage from "../assets/img/takeAwayMenu/tapas/passion.jpg";
+import PannaCotta from "../assets/img/takeAwayMenu/tapas/pannaCotta.jpg";
+
+// Sandwich IMAGES
+import GrandCruLaks from "../assets/img/takeAwayMenu/sandwich/grandCruLaks.jpg";
+import KoreanFriedChicken from "../assets/img/takeAwayMenu/sandwich/koreanFriedChicken.jpg";
+import OkseBrisket from "../assets/img/takeAwayMenu/sandwich/okseBrisket.jpg";
+import StegtFlæsk from "../assets/img/takeAwayMenu/sandwich/stegtFlæsk.jpg";
+import PorkBelly from "../assets/img/takeAwayMenu/sandwich/porkBelly.jpg";
+import MUMSKlassiskKylling from "../assets/img/takeAwayMenu/sandwich/klassiskKylling.jpg";
+import BraiseretØffeSandwich from "../assets/img/takeAwayMenu/sandwich/braiseretØffeSandwich.jpg";
+import FlæskestegsSandwich from "../assets/img/takeAwayMenu/sandwich/flæskestegsSandwich.jpg";
+import KyllingOgBaconDenMedPesto from "../assets/img/takeAwayMenu/sandwich/kyllingOgBacon.jpg";
+import RøgetOkseinderlårSandwich from "../assets/img/takeAwayMenu/sandwich/røgetOkseinderlår.jpg";
+import VegetarSandwich from "../assets/img/takeAwayMenu/sandwich/vegetarSandwich.jpg";
+import SkinkeSandwich from "../assets/img/takeAwayMenu/sandwich/skinkeSandwich.jpg";
+import FishNChips from "../assets/img/takeAwayMenu/sandwich/fishNChips.jpg";
+import OXSandwich from "../assets/img/takeAwayMenu/sandwich/oxSandwich.jpg";
+
+// Brunch IMAGES
+import musli from "../assets/img/takeAwayMenu/brunch/musli.jpg";
+import pandekage from "../assets/img/takeAwayMenu/brunch/pandekage.jpg";
+import kage from "../assets/img/takeAwayMenu/brunch/kage.jpg";
+
+// Nem Aftensmad IMAGES
+import panangKarry from "../assets/img/takeAwayMenu/nemAften/panangKarry.jpg";
+import mørbrad from "../assets/img/takeAwayMenu/nemAften/MørbradGryde.jpg";
+import lasagne from "../assets/img/takeAwayMenu/nemAften/lasagne.jpg";
+import bollerIKarry from "../assets/img/takeAwayMenu/nemAften/bollerIKarry.jpg";
+
+// bowls IMAGES
+import bowlKaraageKyllinglår from "../assets/img/takeAwayMenu/bowls/bowlKaraageKyllinglår.jpg";
+import bowlBeef from "../assets/img/takeAwayMenu/bowls/bowlBeef.jpg";
+import bowlPulledPork from "../assets/img/takeAwayMenu/bowls/bowlPulledPork.jpg";
+import pokeBowl from "../assets/img/takeAwayMenu/bowls/pokeBowl.jpg";
+import bowlGreen from "../assets/img/takeAwayMenu/bowls/bowlGreen.jpg";
+import dressing from "../assets/img/takeAwayMenu/bowls/dressing.jpg";
+
+// bao buns & sides IMAGES
+import BaoBuns from "../assets/img/takeAwayMenu/baoBuns/baoBuns.jpg";
+import Sides from "../assets/img/takeAwayMenu/baoBuns/side.jpg";
+
+// Børnemenu IMAGES
+import børnemenu from "../assets/img/takeAwayMenu/børnemenu.jpg";
+
+// møde tallerken IMAGES
+import mødetallerken from "../assets/img/takeAwayMenu/mødetallerken.jpg";
+
+// dessert IMAGES
+import brownies from "../assets/img/takeAwayMenu/dessert/BrowniesMørk.png";
+import karamelDrøm from "../assets/img/takeAwayMenu/dessert/KaramelDrøm.png";
+import hindbærsnitte from "../assets/img/takeAwayMenu/dessert/Hindbærsnitte.png";
+import makronKage from "../assets/img/takeAwayMenu/dessert/MakronKage.png";
+import trøffelDrøm from "../assets/img/takeAwayMenu/dessert/TrøffelDrøm.png";
+import kokosToppe from "../assets/img/takeAwayMenu/dessert/KokosToppeLuksus.png";
+
 // GENERERET MED AI ASSISTANCE
 export const takeawayMenu = [
   {
@@ -117,7 +201,7 @@ export const takeawayMenu = [
         description: "MUMS hjemmelavet kartoffelchips med Mariager sydesalt.",
         price: 35,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Kartoffelchips,
       },
       {
         id: 102,
@@ -126,7 +210,7 @@ export const takeawayMenu = [
           "Hjemmelavede flæskesvær fra KrastrupSøgaard – sprøde, saltede og dejligt knasende. En snack i verdensklasse.",
         price: 35,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: SprødeFlæskesvær,
       },
       {
         id: 103,
@@ -135,7 +219,7 @@ export const takeawayMenu = [
           "Kombination af grønne og sorte oliven i olie. Friske, sunde og skønne – en hygge-snack der er god for hjertet.",
         price: 35,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: OlivenMix,
       },
       {
         id: 104,
@@ -144,7 +228,7 @@ export const takeawayMenu = [
           "Dejlig nøddeblanding med Valencia mandler, peanuts og cashewnødder.",
         price: 35,
         allergies: ["nødder", "jordnødder"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Nøddeblanding,
       },
       {
         id: 105,
@@ -153,7 +237,7 @@ export const takeawayMenu = [
           "Grand cru laks fra Polar Sea Food i Vodskov. Koldrøget over bøgeflis, hjemmesyltet perleløg og dild mayo.",
         price: 35,
         allergies: ["æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RøgetLaks,
       },
       {
         id: 106,
@@ -162,7 +246,7 @@ export const takeawayMenu = [
           "Urtehaven tærteform med bund af hjemmerørt humus, ristede sesam, peanuts og grønne asparges.",
         price: 35,
         allergies: ["gluten", "peanuts"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Urtehaven,
       },
       {
         id: 107,
@@ -170,7 +254,7 @@ export const takeawayMenu = [
         description: "Hjemmelavet kyllingesalat, grønne asparges og bacon.",
         price: 35,
         allergies: ["æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Kyllingesalat,
       },
       {
         id: 108,
@@ -179,7 +263,7 @@ export const takeawayMenu = [
           "Håndpillede rejer fra Grønland på madpandekage, hjemmelavet dild mayo, citron støv og frisk dild.",
         price: 35,
         allergies: ["krebsdyr", "gluten", "mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RejerPåMadpandekage,
       },
       {
         id: 109,
@@ -188,7 +272,7 @@ export const takeawayMenu = [
           "Porre/løgtærte bagt med revet ost, pyntet med mayo og frisk salat.",
         price: 35,
         allergies: ["gluten", "mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: PorreLøgtærte,
       },
       {
         id: 110,
@@ -197,7 +281,7 @@ export const takeawayMenu = [
           "Hjemmelavet pulled beef af Dansk Gastro Kalv med teriyaki sauce, salsamix og chili mayo, serveret på flatbrød.",
         price: 35,
         allergies: ["gluten", "mælk", "soja", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: PulledBeef,
       },
       {
         id: 111,
@@ -206,7 +290,7 @@ export const takeawayMenu = [
           "Paneret brystfilet af dansk velfærdskylling med rosmarin og citron, street food dressing, purløg og ristet sesam, på nordisk flatbrød.",
         price: 35,
         allergies: ["gluten", "mælk", "æg", "soja", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: DanskeVelfærdskylling,
       },
       {
         id: 112,
@@ -215,7 +299,7 @@ export const takeawayMenu = [
           "Røget okseinderlår, langtidstørret fra KrastrupSøgaard med bruschetta mayo og oliven.",
         price: 35,
         allergies: ["mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RøgetOkseinderlår,
       },
       {
         id: 113,
@@ -224,7 +308,7 @@ export const takeawayMenu = [
           "Røget hjorteinderlår fra KrastrupSøgaard med peberrodscreme og ribs – en unik smagsoplevelse.",
         price: 35,
         allergies: ["mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RøgetHjortekød,
       },
       {
         id: 114,
@@ -233,7 +317,7 @@ export const takeawayMenu = [
           "Røget Grand Cru skinke fra KrastrupSøgaard med hjemmelavet æggestand, mayo, soltørret tomat og frisk purløg.",
         price: 35,
         allergies: ["mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RøgetSkinke,
       },
       {
         id: 115,
@@ -242,7 +326,7 @@ export const takeawayMenu = [
           "Klassisk roastbeef med grov remoulade, bløde løg og agurkesalat.",
         price: 35,
         allergies: ["gluten", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Roastbeef,
       },
       {
         id: 116,
@@ -251,7 +335,7 @@ export const takeawayMenu = [
           "Kyllingeinderfilet med mayo og grillede peberfrugter – fin og raffineret i smagen.",
         price: 35,
         allergies: ["æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Kyllingefilet,
       },
       {
         id: 117,
@@ -260,7 +344,7 @@ export const takeawayMenu = [
           "Filet Royal af Dansk tender pork med syltet rødløg og trøffel mayo.",
         price: 35,
         allergies: ["æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: FiletRoyal,
       },
       {
         id: 118,
@@ -269,7 +353,7 @@ export const takeawayMenu = [
           "Vitello Tonnato lavet på kalveribeye fra Dansk Gastro Kalv, med klassisk tuncreme og kapers.",
         price: 35,
         allergies: ["æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: VitelloTonnato,
       },
       {
         id: 119,
@@ -278,7 +362,7 @@ export const takeawayMenu = [
           "Slider med hjemmelavet pulled pork af Dansk Bertels gris med BBQ sauce, sennepsmayo og hjemmesyltet agurk.",
         price: 35,
         allergies: ["gluten", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: SliderPulledPork,
       },
       {
         id: 120,
@@ -287,7 +371,7 @@ export const takeawayMenu = [
           "Slider med grillet kyllingeinderfilet, spicy mayo, syltet rød peber og street food dressing.",
         price: 35,
         allergies: ["gluten", "æg", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: SliderKyllingeinderfilet,
       },
       {
         id: 121,
@@ -296,7 +380,7 @@ export const takeawayMenu = [
           "Slider med avocado, vegansk mayo, syltet peber, salsamix og smoky grill dressing.",
         price: 35,
         allergies: ["gluten", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: SliderMedAvocado,
       },
       {
         id: 122,
@@ -305,7 +389,7 @@ export const takeawayMenu = [
           "Nordisk flatbrød med bagt peberfrugt, hjemmerørt humus og salsamix.",
         price: 35,
         allergies: ["gluten"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: NordiskFladbrød,
       },
       {
         id: 123,
@@ -314,7 +398,7 @@ export const takeawayMenu = [
           "Vegansk bøf med BBQ dressing, vegansk mayo, purløg og kornblomster.",
         price: 35,
         allergies: ["soja", "gluten", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: VeganskBøfMedBBQ,
       },
       {
         id: 124,
@@ -323,7 +407,7 @@ export const takeawayMenu = [
           "Pork belly af Tender Pork med ananas-peber chutney og grønt.",
         price: 35,
         allergies: ["æg", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: PorkBellyMedChutney,
       },
       {
         id: 125,
@@ -332,7 +416,7 @@ export const takeawayMenu = [
           "Osteanretning med 3 forskellige danske oste og hjemmelavet sylt.",
         price: 35,
         allergies: ["mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Osteanretning,
       },
       {
         id: 126,
@@ -341,7 +425,7 @@ export const takeawayMenu = [
           "En overdådig chokoladekage med fløjlsblød mørk- og hvid chokolademousse.",
         price: 35,
         allergies: ["mælk", "soja", "æg", "gluten"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Dessertkage,
       },
       {
         id: 127,
@@ -349,7 +433,7 @@ export const takeawayMenu = [
         description: "MUMSs gammeldags æblekage med makroner og flødeskum.",
         price: 35,
         allergies: ["gluten", "mælk", "æg"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: GammeldagsÆblekage,
       },
       {
         id: 128,
@@ -357,7 +441,7 @@ export const takeawayMenu = [
         description: "Vegansk passions- og mango mousse kage med crumble-bund.",
         price: 35,
         allergies: ["gluten", "soja"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: PassionsMangoMousseKage,
       },
       {
         id: 129,
@@ -365,7 +449,7 @@ export const takeawayMenu = [
         description: "Cremet panna cotta med hjemmelavet skovbærsylt.",
         price: 35,
         allergies: ["mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: PannaCotta,
       },
     ],
   },
@@ -384,7 +468,7 @@ export const takeawayMenu = [
           "Grand Cru røget laks fra Polar Sea Food i Vodskov, med mayo, syltede rødløg, ristede græskarkerner og salat.",
         price: 89,
         allergies: ["gluten"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: GrandCruLaks,
       },
       {
         id: 202,
@@ -393,7 +477,7 @@ export const takeawayMenu = [
           "Sprød paneret kyllingefilet med Kimchi slaw, sød soya, rødløg, hvidløgs mayo og salat.",
         price: 79,
         allergies: ["gluten", "selleri", "sennep", "æg"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: KoreanFriedChicken,
       },
       {
         id: 203,
@@ -402,7 +486,7 @@ export const takeawayMenu = [
           "Okse brisket tilberedt ved lav temperatur over lang tid, krydret og let røget med egen rub, hjemmelavet coleslaw, BBQ sauce, mayo og salat.",
         price: 79,
         allergies: ["gluten", "selleri", "sennep", "æg"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: OkseBrisket,
       },
       {
         id: 204,
@@ -411,7 +495,7 @@ export const takeawayMenu = [
           "Stegt flæsk, flødekartoffelcreme med persille og hjemmesyltede mini rødbeder, sennepsmayo og salat.",
         price: 79,
         allergies: ["gluten", "mælk", "æg"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: StegtFlæsk,
       },
       {
         id: 205,
@@ -419,8 +503,8 @@ export const takeawayMenu = [
         description:
           "Pork belly langtidsbraiseret af Dansk Tender Pork marineret med egen BBQ-rub, flødekartoffelcreme med chili, sød sennep, mayo og salat.",
         price: 79,
-        allergies: ["gluten","selleri", "mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        allergies: ["gluten", "selleri", "mælk", "æg", "sennep"],
+        image: PorkBelly,
       },
       {
         id: 206,
@@ -428,7 +512,7 @@ export const takeawayMenu = [
         description: "Kyllingefilet, salat, bacon og MUMS dressing a la karry.",
         price: 69,
         allergies: ["gluten", "æg", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: MUMSKlassiskKylling,
       },
       {
         id: 207,
@@ -437,7 +521,7 @@ export const takeawayMenu = [
           "Hjemmelavet pulled pork, salat, mild sennepsmayo, hjemmesyltet agurk og BBQ.",
         price: 69,
         allergies: ["gluten", "æg", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BraiseretØffeSandwich,
       },
       {
         id: 208,
@@ -446,7 +530,7 @@ export const takeawayMenu = [
           "Flæskesteg, salat, sprøde svær, syltede agurker, hjemmelavet rødkål og MUMS æblesalat.",
         price: 69,
         allergies: ["gluten", "mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: FlæskestegsSandwich,
       },
       {
         id: 209,
@@ -455,7 +539,7 @@ export const takeawayMenu = [
           "Kyllingefilet, hjemmelavet basilikum pesto, salat, sprødt kyllingeskind og bacon mayo.",
         price: 69,
         allergies: ["gluten", "æg", "sennep", "jordnødder"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: KyllingOgBaconDenMedPesto,
       },
       {
         id: 210,
@@ -464,7 +548,7 @@ export const takeawayMenu = [
           "Røget okseinderlår fra KrastrupSøgaard, MEGA kartoffelchips, mayo, salat, syltede rødløg og peberrodscreme.",
         price: 69,
         allergies: ["gluten", "mælk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RøgetOkseinderlårSandwich,
       },
       {
         id: 211,
@@ -473,7 +557,7 @@ export const takeawayMenu = [
           "Hjemmerørt humus, syltet rød peber, syltede rødløg, hvidløgsmayo og salat.",
         price: 69,
         allergies: ["gluten", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: VegetarSandwich,
       },
       {
         id: 212,
@@ -482,7 +566,7 @@ export const takeawayMenu = [
           "Røget Grand Cru skinke fra KrastrupSøgaard, salat, ost, hjemmelavet basilikum pesto og sennepsmayo.",
         price: 69,
         allergies: ["gluten", "mælk", "æg", "sennep", "jordnødder"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: SkinkeSandwich,
       },
       {
         id: 213,
@@ -491,7 +575,7 @@ export const takeawayMenu = [
           "Paneret rødspættefilet, syltede agurker, hjemmerørt remoulade, paprika mayo og MUMS mega chips.",
         price: 69,
         allergies: ["gluten", "fisk", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: FishNChips,
       },
       {
         id: 214,
@@ -500,7 +584,7 @@ export const takeawayMenu = [
           "Stegt oksesteg, salat, grov remoulade, syltede agurker og sprøde løg.",
         price: 69,
         allergies: ["gluten", "æg", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: OXSandwich,
       },
     ],
   },
@@ -518,7 +602,7 @@ export const takeawayMenu = [
           "Yoghurt med hjemmelavet sylt og müsli, røget Grand Cru skinke med pesto, bacon, brunchpølser og scrambled æg, mini croissant med kyllingesalat, 2 slags ost med sylt, brunchpandekage med sirup, friskbagt brød og Unika smør.",
         price: 139,
         allergies: ["gluten", "mælk", "nødder", "æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: musli,
       },
       {
         id: 302,
@@ -527,7 +611,7 @@ export const takeawayMenu = [
           "Lokalt koldrøget laks, råsyltet perleløg og dild mayo. Grand Cru laks fra Polar Sea Food i Vodskov, koldrøget over bøgeflis.",
         price: 35,
         allergies: ["æg", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: RøgetLaks,
       },
       {
         id: 303,
@@ -535,7 +619,7 @@ export const takeawayMenu = [
         description: "Brunch pandekage med sirup.",
         price: 20,
         allergies: ["gluten", "mælk", "æg"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: pandekage,
       },
       {
         id: 304,
@@ -543,7 +627,7 @@ export const takeawayMenu = [
         description: "Makronkage, mørk brownie eller karamel drøm.",
         price: 20,
         allergies: ["gluten", "mælk", "æg", "jordnødder"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: kage,
       },
     ],
   },
@@ -561,7 +645,7 @@ export const takeawayMenu = [
           "Traditionel hjemmelavet Panang karry med kyllingestrimler og grøntsager. Serveres med ris.",
         price: 89,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: panangKarry,
       },
       {
         id: 402,
@@ -570,7 +654,7 @@ export const takeawayMenu = [
           "Svinemørbrad, bacon, cocktailpølser, svampesauce og kartoffelmos.",
         price: 89,
         allergies: ["gluten", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: mørbrad,
       },
       {
         id: 403,
@@ -578,7 +662,7 @@ export const takeawayMenu = [
         description: "Med revet Unika Havgus.",
         price: 89,
         allergies: ["gluten", "mælk", "æg", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: lasagne,
       },
       {
         id: 404,
@@ -587,7 +671,7 @@ export const takeawayMenu = [
           "Boller i karry med Fru MUMS hjemmelavet karrysovs og løse ris.",
         price: 79,
         allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: bollerIKarry,
       },
     ],
   },
@@ -614,7 +698,7 @@ export const takeawayMenu = [
           "Marinerede ris, revet gulerødder, kimchi coleslaw, soltørret tomater, friske rødløg, peberfrugt, peanuts, dressing.",
         price: 79,
         allergies: ["gluten", "soja", "jordnødder"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: bowlKaraageKyllinglår,
       },
       {
         id: 503,
@@ -623,7 +707,7 @@ export const takeawayMenu = [
           "Marinerede ris, syltede gulerødder, peberfrugt, frisk rødkål, broccoli strimler, salsa mix, dressing.",
         price: 79,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: bowlBeef,
       },
       {
         id: 504,
@@ -632,7 +716,7 @@ export const takeawayMenu = [
           "Marinerede ris, revet gulerødder, friske ærter, syltede rødløg, kimchi coleslaw, peanuts, dressing.",
         price: 79,
         allergies: ["soja", "jordnødder"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: bowlPulledPork,
       },
       {
         id: 505,
@@ -641,7 +725,7 @@ export const takeawayMenu = [
           "Marinerede ris, revet gulerødder, syltede rødløg, friske ærter, radiser, frisk rødkål, græskarkerner, dressing.",
         price: 79,
         allergies: ["mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: pokeBowl,
       },
       {
         id: 506,
@@ -650,7 +734,7 @@ export const takeawayMenu = [
           "Marinerede ris, syltede gulerødder, peberfrugt, frisk rødkål, friske ærter, soltørret tomater, grillede champignon, syltede perleløg, peanuts.",
         price: 79,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: bowlGreen,
       },
       {
         id: 507,
@@ -659,7 +743,7 @@ export const takeawayMenu = [
           "Cremefraiche dressing, chili dressing, teriyaki dressing, sesam/hvidløgs dressing, sød chili sauce, thousand island dressing, chili mayo, hvidløgsmayo, ketchup.",
         price: 79,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: dressing,
       },
     ],
   },
@@ -677,7 +761,7 @@ export const takeawayMenu = [
           "Pork belly med Korean peber/soyasauce, chili mayo, kimchi coleslaw og purløg.",
         price: 45,
         allergies: ["gluten", "soja"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BaoBuns,
       },
       {
         id: 602,
@@ -686,7 +770,7 @@ export const takeawayMenu = [
           "3 stk. Bao Pork Belly med Korean peber/soyasauce, chili mayo, kimchi coleslaw og purløg.",
         price: 120,
         allergies: ["gluten", "soja"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BaoBuns,
       },
       {
         id: 603,
@@ -695,7 +779,7 @@ export const takeawayMenu = [
           "Paneret brystfilet af dansk velfærdskylling med rosmarin og citron, street food dressing, syltet gulerødder, ærteskud og peanuts.",
         price: 45,
         allergies: ["gluten"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BaoBuns,
       },
       {
         id: 604,
@@ -704,7 +788,7 @@ export const takeawayMenu = [
           "3 stk. Bao Chicken med paneret brystfilet, street food dressing, syltet gulerødder, ærteskud og peanuts.",
         price: 120,
         allergies: ["gluten"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BaoBuns,
       },
       {
         id: 605,
@@ -713,7 +797,7 @@ export const takeawayMenu = [
           "Hjemmelavet okse brisket fra egen smoker, chutney med ananas og rød peber, syltede agurker og syltet peberfrugt.",
         price: 45,
         allergies: ["gluten", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BaoBuns,
       },
       {
         id: 606,
@@ -722,7 +806,7 @@ export const takeawayMenu = [
           "3 stk. Bao Brisket med brisket fra egen smoker, chutney, syltede agurker og syltet peberfrugt.",
         price: 120,
         allergies: ["gluten", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: BaoBuns,
       },
       {
         id: 607,
@@ -730,7 +814,7 @@ export const takeawayMenu = [
         description: "8 stk. med Thai Sweet Chili sauce.",
         price: 75,
         allergies: ["gluten", "soja"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Sides,
       },
       {
         id: 608,
@@ -738,7 +822,7 @@ export const takeawayMenu = [
         description: "6 stk. med sesam/hvidløgs dressing & kimchi coleslaw.",
         price: 75,
         allergies: ["gluten", "æg", "soja", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Sides,
       },
       {
         id: 609,
@@ -747,7 +831,7 @@ export const takeawayMenu = [
           "1 stk. sprød southern fried kyllingefilet med coleslaw og barbecue dressing.",
         price: 75,
         allergies: ["gluten", "æg", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Sides,
       },
     ],
   },
@@ -765,7 +849,7 @@ export const takeawayMenu = [
           "Hjemmelavet lasagne, børne pizza med pepperoni/skinke/ost, slider med grillet kyllingeinderfilet (syltet rød peber, spicy mayo, street food dressing), mørk brownie med hvid Callebaut chokolade, råkostsalat.",
         price: 99,
         allergies: ["gluten", "mælk", "æg", "soja", "selleri", "lupin"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: børnemenu,
       },
     ],
   },
@@ -783,7 +867,7 @@ export const takeawayMenu = [
           "MUMS mega kartoffelchips med Læsøsalt. Slow cooked for ekstra sprødhed.",
         price: 35,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Kartoffelchips,
       },
       {
         id: 802,
@@ -792,7 +876,7 @@ export const takeawayMenu = [
           "Kombination af grønne og sorte oliven i olie – en lækker hygge-snack.",
         price: 35,
         allergies: [],
-        image: "https://placehold.co/600x400?text=Food",
+        image: OlivenMix,
       },
       {
         id: 803,
@@ -801,7 +885,7 @@ export const takeawayMenu = [
           "Urtehaven tærteform med bund af hjemmerørt humus, ristede mandler og grønne asparges.",
         price: 35,
         allergies: ["gluten", "peanuts"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: Urtehaven,
       },
       {
         id: 804,
@@ -810,7 +894,7 @@ export const takeawayMenu = [
           "Avocado, vegansk mayo, syltet peber, salsamix og smoky grill dressing.",
         price: 35,
         allergies: ["gluten", "sennep"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: SliderMedAvocado,
       },
       {
         id: 805,
@@ -819,7 +903,7 @@ export const takeawayMenu = [
           "Vegansk bøf med BBQ dressing, vegansk mayo, purløg og kornblomster.",
         price: 35,
         allergies: ["soja", "gluten", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: VeganskBøfMedBBQ,
       },
       {
         id: 806,
@@ -828,7 +912,7 @@ export const takeawayMenu = [
           "Nordisk rødbede flatbrød med hjemmelavet humus og salsa mix.",
         price: 35,
         allergies: ["gluten"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: NordiskFladbrød,
       },
       {
         id: 807,
@@ -836,7 +920,7 @@ export const takeawayMenu = [
         description: "Vegansk passion mango mousse kage.",
         price: 35,
         allergies: ["gluten", "soja"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: PassionsMangoMousseKage,
       },
     ],
   },
@@ -854,7 +938,7 @@ export const takeawayMenu = [
           "Porre/løgtærte, røget okseinderlår med bruschetta mayo og oliven, slider med kyllingeinderfilet, ålerøget skinke med kartoffelsalat og hjemmesyltet gulerødder, filet royal med svampecreme og syltet løg, dessertkage, brød og Unika smør.",
         price: 199,
         allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: mødetallerken,
       },
     ],
   },
@@ -869,50 +953,50 @@ export const takeawayMenu = [
       {
         id: 1001,
         title: "Brownies (mørk, hjemmebagt)",
-        description: "",
+        description: "hjemmebagt mørk brownie med hvid Callebaut chokolade.",
         price: 20,
         allergies: ["gluten", "æg", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: brownies,
       },
       {
         id: 1002,
         title: "Karamel Drøm (hjemmebagt)",
-        description: "",
+        description: "hjemmebagt karamel drøm med blød karamel og sprød bund.",
         price: 20,
         allergies: ["gluten", "æg", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: karamelDrøm,
       },
       {
         id: 1003,
         title: "Hindbærsnitte med Marcipan (hjemmebagt)",
-        description: "",
+        description: "hjemmebagt hindbærsnitte med marcipan.",
         price: 20,
         allergies: ["gluten", "æg", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: hindbærsnitte,
       },
       {
         id: 1004,
         title: "Makronkage (hjemmebagt)",
-        description: "",
+        description: "hjemmebagt makronkage.",
         price: 20,
         allergies: ["gluten", "æg", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: makronKage,
       },
       {
         id: 1005,
         title: "Trøffel Drøm (hjemmebagt)",
-        description: "",
+        description: "hjemmebagt trøffel drøm.",
         price: 20,
         allergies: ["gluten", "æg", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: trøffelDrøm,
       },
       {
         id: 1006,
         title: "Kokostoppe (luksus)",
-        description: "",
+        description: "luksuriøse kokostoppe med sprød kokos og chokolade.",
         price: 20,
         allergies: ["gluten", "æg", "mælk"],
-        image: "https://placehold.co/600x400?text=Food",
+        image: kokosToppe,
       },
     ],
   },
