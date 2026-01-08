@@ -364,85 +364,551 @@ export const takeawayMenu = [
       },
     ],
   },
-
+  
   {
-    id: "sandwhich",
-    title: "Sandwhich",
-    icon: SandwhichIcon,
-    description:
-      "Sandwiches med fokus på gode råvarer, masser af smag og solid mæthed. Uanset om du er til kød, kylling eller vegetar, finder du en sandwich med saftigt fyld, lækkert brød og velafbalancerede smagskombinationer – perfekt til både hverdag og take-away.",
-    items: [],
-  },
+  id: "sandwhich",
+  title: "Sandwhich",
+  icon: SandwhichIcon,
+  description:
+    "Sandwiches med fokus på gode råvarer, masser af smag og solid mæthed. Uanset om du er til kød, kylling eller vegetar, finder du en sandwich med saftigt fyld, lækkert brød og velafbalancerede smagskombinationer – perfekt til både hverdag og take-away.",
+  items: [
+    {
+      id: 201,
+      title: "Grand Cru Laks",
+      description:
+        "Grand Cru røget laks fra Polar Sea Food i Vodskov, med mayo, syltede rødløg, ristede græskarkerner og salat.",
+      price: 0,
+      allergies: [], // not provided
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 202,
+      title: "Korean Fried Chicken",
+      description:
+        "Sprød paneret kyllingefilet med Kimchi slaw, sød soya, rødløg, hvidløgs mayo og salat.",
+      price: 0,
+      allergies: [], // not provided
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 203,
+      title: "Okse Brisket",
+      description:
+        "Okse brisket tilberedt ved lav temperatur over lang tid, krydret og let røget med egen rub, hjemmelavet coleslaw, BBQ sauce, mayo og salat.",
+      price: 0,
+      allergies: [], // not provided
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 204,
+      title: "Stegt Flæsk",
+      description:
+        "Stegt flæsk, flødekartoffelcreme med persille og hjemmesyltede mini rødbeder, sennepsmayo og salat.",
+      price: 0,
+      allergies: [], // not provided
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 205,
+      title: "Pork Belly",
+      description:
+        "Pork belly langtidsbraiseret af Dansk Tender Pork marineret med egen BBQ-rub, flødekartoffelcreme med chili, sød sennep, mayo og salat.",
+      price: 0,
+      allergies: [], // not provided
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 206,
+      title: "MUMS Klassisk Kylling",
+      description:
+        "Kyllingefilet, salat, bacon og MUMS dressing a la karry.",
+      price: 0,
+      allergies: ["gluten", "æg", "sennep", "selleri"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 207,
+      title: "Braiseret Øffe Sandwich",
+      description:
+        "Hjemmelavet pulled pork, salat, mild sennepsmayo, hjemmesyltet agurk og BBQ.",
+      price: 0,
+      allergies: ["gluten", "æg", "sennep", "selleri"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 208,
+      title: "Flæskestegs Sandwich",
+      description:
+        "Flæskesteg, salat, sprøde svær, syltede agurker, hjemmelavet rødkål og MUMS æblesalat.",
+      price: 0,
+      allergies: ["gluten", "mælk", "æg", "sennep"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 209,
+      title: "Kylling og Bacon – Den med Pesto",
+      description:
+        "Kyllingefilet, hjemmelavet basilikum pesto, salat, sprødt kyllingeskind og bacon mayo.",
+      price: 0,
+      allergies: ["gluten", "æg", "sennep", "jordnødder"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 210,
+      title: "Røget Okseinderlår Sandwich",
+      description:
+        "Røget okseinderlår fra KrastrupSøgaard, MEGA kartoffelchips, mayo, salat, syltede rødløg og peberrodscreme.",
+      price: 0,
+      allergies: ["gluten", "mælk", "æg", "sennep"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 211,
+      title: "Vegetar Sandwich",
+      description:
+        "Hjemmerørt humus, syltet rød peber, syltede rødløg, hvidløgsmayo og salat.",
+      price: 0,
+      allergies: ["gluten", "æg", "sennep"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 212,
+      title: "Skinke Sandwich",
+      description:
+        "Røget Grand Cru skinke fra KrastrupSøgaard, salat, ost, hjemmelavet basilikum pesto og sennepsmayo.",
+      price: 0,
+      allergies: ["gluten", "mælk", "æg", "sennep", "jordnødder"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 213,
+      title: "Fish n Chips",
+      description:
+        "Paneret rødspættefilet, syltede agurker, hjemmerørt remoulade, paprika mayo og MUMS mega chips.",
+      price: 0,
+      allergies: ["gluten", "fisk", "æg", "sennep"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 214,
+      title: "OX Sandwich",
+      description:
+        "Stegt oksesteg, salat, grov remoulade, syltede agurker og sprøde løg.",
+      price: 0,
+      allergies: ["gluten", "æg", "sennep", "selleri"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
  {
-    id: "brunch",
-    title: "Brunch",
-    icon: BrunchIcon,
-    description:
-      "Lækker brunch med klassiske og moderne favoritter.",
-    items: [],
-  },
+  id: "brunch",
+  title: "Brunch",
+  icon: BrunchIcon,
+  description: "Lækker brunch med klassiske og moderne favoritter.",
+  items: [
+    {
+      id: 301,
+      title: "Brunch Menu",
+      description:
+        "Yoghurt med hjemmelavet sylt og müsli, røget Grand Cru skinke med pesto, bacon, brunchpølser og scrambled æg, mini croissant med kyllingesalat, 2 slags ost med sylt, brunchpandekage med sirup, friskbagt brød og Unika smør.",
+      price: 139,
+      allergies: ["gluten", "mælk", "nødder", "æg", "sennep"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 302,
+      title: "Brunch – Lokalt Koldrøget Laks",
+      description:
+        "Lokalt koldrøget laks, råsyltet perleløg og dild mayo. Grand Cru laks fra Polar Sea Food i Vodskov, koldrøget over bøgeflis.",
+      price: 35,
+      allergies: ["æg", "sennep"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 303,
+      title: "Brunchpandekage med Sirup",
+      description: "Brunch pandekage med sirup.",
+      price: 20,
+      allergies: ["gluten", "mælk", "æg"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 304,
+      title: "Brunch Kage – Frit valg",
+      description: "Makronkage, mørk brownie eller karamel drøm.",
+      price: 20,
+      allergies: ["gluten", "mælk", "æg", "jordnødder"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
   {
-    id: "nem-aftensmad",
-    title: "Nem Aftensmad",
-    icon: NemAftensmadIcon,
-    description:
-      "Velsmagende retter der gør aftensmaden nem og hurtig.",
-    items: [],
-  },
+  id: "nem-aftensmad",
+  title: "Nem Aftensmad",
+  icon: NemAftensmadIcon,
+  description: "Velsmagende retter der gør aftensmaden nem og hurtig.",
+  items: [
+    {
+      id: 401,
+      title: "Panang Karry Ret med Ris",
+      description:
+        "Traditionel hjemmelavet Panang karry med kyllingestrimler og grøntsager. Serveres med ris.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 402,
+      title: "Mørbradgryde á la Creme",
+      description:
+        "Svinemørbrad, bacon, cocktailpølser, svampesauce og kartoffelmos.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 403,
+      title: "MUMS Hjemmelavet Lasagne",
+      description: "Med revet Unika Havgus.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 404,
+      title: "Boller i Karry",
+      description:
+        "Boller i karry med Fru MUMS hjemmelavet karrysovs og løse ris.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
   {
-    id: "bowls",
-    title: "Bowls",
-    icon: BowlsIcon,
-    description:
-      "Friske og mættende bowls med velafbalancerede smage.",
-    items: [],
-  },
+  id: "bowls",
+  title: "Bowls",
+  icon: BowlsIcon,
+  description: "Friske og mættende bowls med velafbalancerede smage.",
+  items: [
+    {
+      id: 501,
+      title: "SALAD Bowl – Pork Belly",
+      description:
+        "Marinerede ris, revet gulerødder, syltede rødløg, grillede champignon, kimchi coleslaw, radiser, peanuts, dressing.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 502,
+      title: "SALAD Bowl – Karaage Kyllingelår",
+      description:
+        "Marinerede ris, revet gulerødder, kimchi coleslaw, soltørret tomater, friske rødløg, peberfrugt, peanuts, dressing.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 503,
+      title: "SALAD Bowl – Pulled Beef",
+      description:
+        "Marinerede ris, syltede gulerødder, peberfrugt, frisk rødkål, broccoli strimler, salsa mix, dressing.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 504,
+      title: "SALAD Bowl – Pulled Pork",
+      description:
+        "Marinerede ris, revet gulerødder, friske ærter, syltede rødløg, kimchi coleslaw, peanuts, dressing.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 505,
+      title: "SALAD Poke Bowl – Røget Grand Cru Laks",
+      description:
+        "Marinerede ris, revet gulerødder, syltede rødløg, friske ærter, radiser, frisk rødkål, græskarkerner, dressing.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 506,
+      title: "SALAD Bowl – Green Salad",
+      description:
+        "Marinerede ris, syltede gulerødder, peberfrugt, frisk rødkål, friske ærter, soltørret tomater, grillede champignon, syltede perleløg, peanuts.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 507,
+      title: "Dressing – Frit valg (1 stk.)",
+      description:
+        "Cremefraiche dressing, chili dressing, teriyaki dressing, sesam/hvidløgs dressing, sød chili sauce, thousand island dressing, chili mayo, hvidløgsmayo, ketchup.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
   {
-    id: "bao-buns-sides",
-    title: "Bao Buns & Sides",
-    icon: BaoBunsSidesIcon,
-    description:
-      "Bløde bao buns og lækre sides – perfekte til deling.",
-    items: [],
-  },
+  id: "bao-buns-sides",
+  title: "Bao Buns & Sides",
+  icon: BaoBunsSidesIcon,
+  description: "Bløde bao buns og lækre sides – perfekte til deling.",
+  items: [
+    {
+      id: 601,
+      title: "Bao Pork Belly (1 stk.)",
+      description:
+        "Pork belly med Korean peber/soyasauce, chili mayo, kimchi coleslaw og purløg.",
+      price: 45,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 602,
+      title: "Bao Pork Belly (3 stk.)",
+      description:
+        "3 stk. Bao Pork Belly med Korean peber/soyasauce, chili mayo, kimchi coleslaw og purløg.",
+      price: 120,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 603,
+      title: "Bao Chicken (1 stk.)",
+      description:
+        "Paneret brystfilet af dansk velfærdskylling med rosmarin og citron, street food dressing, syltet gulerødder, ærteskud og peanuts.",
+      price: 45,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 604,
+      title: "Bao Chicken (3 stk.)",
+      description:
+        "3 stk. Bao Chicken med paneret brystfilet, street food dressing, syltet gulerødder, ærteskud og peanuts.",
+      price: 120,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 605,
+      title: "Bao Brisket (1 stk.)",
+      description:
+        "Hjemmelavet okse brisket fra egen smoker, chutney med ananas og rød peber, syltede agurker og syltet peberfrugt.",
+      price: 45,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 606,
+      title: "Bao Brisket (3 stk.)",
+      description:
+        "3 stk. Bao Brisket med brisket fra egen smoker, chutney, syltede agurker og syltet peberfrugt.",
+      price: 120,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 607,
+      title: "Gyoza med Kylling/Grøntsager (8 stk.)",
+      description: "8 stk. med Thai Sweet Chili sauce.",
+      price: 75,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 608,
+      title: "Karaage Kyllingelår (6 stk.)",
+      description: "6 stk. med sesam/hvidløgs dressing & kimchi coleslaw.",
+      price: 75,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 609,
+      title: "Southern Fried Kyllingefilet",
+      description:
+        "1 stk. sprød southern fried kyllingefilet med coleslaw og barbecue dressing.",
+      price: 75,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
   {
-    id: "boerne-menu",
-    title: "Børne Menu",
-    icon: BoerneMenuIcon,
-    description:
-      "Børnevenlige retter med fokus på smag og kvalitet.",
-    items: [],
-  },
+  id: "boerne-menu",
+  title: "Børne Menu",
+  icon: BoerneMenuIcon,
+  description: "Børnevenlige retter med fokus på smag og kvalitet.",
+  items: [
+    {
+      id: 701,
+      title: "Børnemenu",
+      description:
+        "Hjemmelavet lasagne, børne pizza med pepperoni/skinke/ost, slider med grillet kyllingeinderfilet (syltet rød peber, spicy mayo, street food dressing), mørk brownie med hvid Callebaut chokolade, råkostsalat.",
+      price: 99,
+      allergies: ["gluten", "mælk", "æg", "soja", "selleri", "lupin"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
   {
-    id: "vegansk",
-    title: "Vegansk",
-    icon: VeganskIcon,
-    description:
-      "Smagfulde veganske retter lavet med omtanke.",
-    items: [],
-  },
+  id: "vegansk",
+  title: "Vegansk",
+  icon: VeganskIcon,
+  description: "Smagfulde veganske retter lavet med omtanke.",
+  items: [
+    {
+      id: 801,
+      title: "MUMS Mega Kartoffelchips",
+      description:
+        "MUMS mega kartoffelchips med Læsøsalt. Slow cooked for ekstra sprødhed.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 802,
+      title: "Oliven Mix med Rosmarin",
+      description:
+        "Kombination af grønne og sorte oliven i olie – en lækker hygge-snack.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 803,
+      title: "Urtehaven",
+      description:
+        "Urtehaven tærteform med bund af hjemmerørt humus, ristede mandler og grønne asparges.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 804,
+      title: "Slider med Avocado",
+      description:
+        "Avocado, vegansk mayo, syltet peber, salsamix og smoky grill dressing.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 805,
+      title: "Nordisk Flatbrød – Vegansk bøf",
+      description:
+        "Vegansk bøf med BBQ dressing, vegansk mayo, purløg og kornblomster.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 806,
+      title: "Nordisk Rødbede Flatbrød",
+      description: "Nordisk rødbede flatbrød med hjemmelavet humus og salsa mix.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 807,
+      title: "Passion Mango Mousse Kage (Vegansk)",
+      description: "Vegansk passion mango mousse kage.",
+      price: 0,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
   {
-    id: "moede-tallerken",
-    title: "Møde Tallerken",
-    icon: MoedeTallerkenIcon,
-    description:
-      "Indbydende mødetallerkener til møder og arrangementer.",
-    items: [],
-  },
+  id: "moede-tallerken",
+  title: "Møde Tallerken",
+  icon: MoedeTallerkenIcon,
+  description: "Indbydende mødetallerkener til møder og arrangementer.",
+  items: [
+    {
+      id: 901,
+      title: "Mødetallerken",
+      description:
+        "Porre/løgtærte, røget okseinderlår med bruschetta mayo og oliven, slider med kyllingeinderfilet, ålerøget skinke med kartoffelsalat og hjemmesyltet gulerødder, filet royal med svampecreme og syltet løg, dessertkage, brød og Unika smør.",
+      price: 199,
+      allergies: ["gluten", "mælk", "æg", "sennep", "selleri"],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 
-  {
-    id: "dessert",
-    title: "Dessert",
-    icon: DessertIcon,
-    description:
-      "Søde afslutninger på måltidet – klassiske og moderne desserter.",
-    items: [],
-  },
+ {
+  id: "dessert",
+  title: "Dessert",
+  icon: DessertIcon,
+  description:
+    "Søde afslutninger på måltidet – klassiske og moderne desserter.",
+  items: [
+    {
+      id: 1001,
+      title: "Brownies (mørk, hjemmebagt)",
+      description: "",
+      price: 20,
+      allergies: [], // not provided
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 1002,
+      title: "Karamel Drøm (hjemmebagt)",
+      description: "",
+      price: 20,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 1003,
+      title: "Hindbærsnitte med Marcipan (hjemmebagt)",
+      description: "",
+      price: 20,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 1004,
+      title: "Makronkage (hjemmebagt)",
+      description: "",
+      price: 20,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 1005,
+      title: "Trøffel Drøm (hjemmebagt)",
+      description: "",
+      price: 20,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+    {
+      id: 1006,
+      title: "Kokostoppe (luksus)",
+      description: "",
+      price: 20,
+      allergies: [],
+      image: "https://placehold.co/600x400?text=Food",
+    },
+  ],
+},
 ]
