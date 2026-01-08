@@ -4,26 +4,18 @@ import "../assets/css/style.css";
 <template>
   <NavDesk />
   <ForsideTest />
+  <video class="bgvid" autoplay muted loop playsinline>
+    <source src="../assets/video/MumsVideoCompressed.mp4" type="video/mp4" />
+  </video>
   <main>
-    <iframe
-      width="100%"
-      height="315"
-      src="https://www.youtube.com/embed/kSO3dGm5nEM?si=TUQwZ6H5tXqhrsHM"
-      title="YouTube video player"
-      frameborder="0"
-      allow="
-        accelerometer;
-        autoplay;
-        clipboard-write;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture;
-        web-share;
-      "
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+    <!-- <iframe
+  src="https://www.youtube.com/embed/kSO3dGm5nEM?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=kSO3dGm5nEM"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+></iframe> -->
+    <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/kSO3dGm5nEM?si=TUQwZ6H5tXqhrsHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
     <section class="forsideIntro">
+      <PilOp />
       <article class="forsideIntroText">
         <h1>MUMS - The spirit of taste</h1>
         <p>
@@ -221,43 +213,40 @@ import "../assets/css/style.css";
           </div>
         </div>
         <div class="lokation">
-          <img src="../assets/pictures/Homeicon.svg" alt="Lokation" />
+          <img src="../assets/pictures/Homeicon.svg" alt="Lokation">
           <h4>Mums v/Charlotte Blak Frost Gugvej 1849210 Aalborg SØ</h4>
-          <button>
-            <a
-              href="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-              >Se på Google Maps</a
-            >
-          </button>
+          <button><a
+              href="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D">Se
+              på Google Maps</a></button>
         </div>
       </div>
     </section>
-    <img src="../assets/pictures/patterenKlover.svg" class="pynt" />
+    <img src="../assets/pictures/patterenKlover.svg" class="pynt">
     <section class="forsideReviws">
-      <button>
-        <img
-          src="../assets/pictures/pilV.svg"
-          alt="gaa til venstre i andmeldser"
-        />
-      </button>
-      <review />
-      <review />
-      <review />
-      <button>
-        <img
-          src="../assets/pictures/pilH (2).svg"
-          alt="gaa til hojre i andmeldser"
-        />
-      </button>
+      <!-- Wally widget reviews -->
+      <div data-wally-widget="695f0db9d8841c001407cb2a" style="width: 100%; height: 100%;"></div>
+      <!-- <button><img src="../assets/pictures/pilV.svg" alt="gaa til venstre i andmeldser"></button>
+  <review/>
+  <review/>
+  <review/>
+  <button><img src="../assets/pictures/pilH (2).svg" alt="gaa til hojre i andmeldser"></button> -->
     </section>
   </main>
-  <FooterDesk />
+  <div class="desk">
+    <FooterDesk />
+  </div>
+  <div class="mobil">
+    <FooterMobile />
+  </div>
 </template>
 
 <style scoped>
-iframe {
+.mobil {
+  display: none;
+}
+
+iframe, video {
   width: 100%;
-  height: 450px;
 }
 
 .forsideIntro {
