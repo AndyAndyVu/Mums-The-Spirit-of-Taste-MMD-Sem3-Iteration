@@ -90,8 +90,8 @@ img {
 .takeAwayCard {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .takeAwayCardInfo {
@@ -100,6 +100,8 @@ img {
     gap: 1rem;
     flex: 1 1 auto;
     padding: 1rem;
+    background-color: var(--dyb-groend);
+    color: var(--hvid-skrift);
 }
 
 .takeAwayCardInfo>div:nth-of-type(1) {
