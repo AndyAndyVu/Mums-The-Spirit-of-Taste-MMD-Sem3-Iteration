@@ -20,13 +20,13 @@ const visBilleder = computed(() => {
   return images.slice(currentIndex.value, currentIndex.value + 2);
 });
 
-// slideshow frem
+// slideshow frem +2 ad gangen
 const nextSlide = () => {
   currentIndex.value =
     currentIndex.value + 2 >= images.length ? 0 : currentIndex.value + 2;
 };
 
-// slideshow tilbage
+// slideshow tilbage +2 tilbage
 const prevSlide = () => {
   currentIndex.value =
     currentIndex.value - 2 < 0 ? images.length - 2 : currentIndex.value - 2;
@@ -34,7 +34,8 @@ const prevSlide = () => {
 </script>
 
 <template>
-  <NavDesk />
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <main>
     <section class="deli-box">
       <header class="deli-text">
@@ -65,6 +66,7 @@ const prevSlide = () => {
       </figure>
     </section>
     <section>
+      <!-- Eventlistener der lytter til når der bliver clicked skal den gå tilbage funktionen vi lavede tidligere samme med frem. -->
       <div class="slider">
         <button class="arrow left" @click="prevSlide">
           <img src="../assets/img/pilV.svg" alt="Forrige billeder" />
@@ -113,7 +115,7 @@ const prevSlide = () => {
           mulighed for et utal af kombinationer, om der skal serveres til
           hverdag, fest eller i gode venners lag.
         </p>
-        <Btn class="btn" label="Tapas Menu" to="menu" />
+        <Btn class="btn" label="Tapas Menu" to="tapas" />
       </article>
       <figure>
         <img
@@ -123,7 +125,8 @@ const prevSlide = () => {
       </figure>
     </section>
   </main>
-  <FooterDesk />
+  <FooterDesk class="desk" />
+  <FooterMobile class="mobil" />
 </template>
 
 <style scoped>
@@ -194,5 +197,28 @@ figure img {
 
 .arrow img {
   width: 5rem;
+}
+
+@media (max-width: 900px) {
+  .mobil {
+    display: block;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .deli-box {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .slides {
+    grid-template-columns: 1fr;
+  }
+
+  .tapas {
+    border-radius: none;
+  }
 }
 </style>

@@ -1,4 +1,0 @@
-<template>
-  <NavDesk />
-  <FooterDesk />
-</template>

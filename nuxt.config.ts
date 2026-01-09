@@ -10,5 +10,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/scripts'
-  ]
+  ],
+    nitro: {
+    preset: 'static'
+  },
+  
+  app: {
+    baseURL: '/class/MMD-CSD-S24/10643805/public'
+  },
 })
+
