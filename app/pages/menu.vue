@@ -113,7 +113,7 @@ function toggleDiet(tag) {
                 </p>
                 <Btn class="menuButton" label="Bestil her" to="https://takeaway.mumsshop.dk" />
             </div>
-            <img src="https://placehold.co/600x500?text=Food" alt="Hero billede af takeaway mad" />
+            <img src="../assets/img/takeaway-burger.svg" alt="Hero billede af takeaway mad" />
         </section>
         <div class="menuContainer">
             <aside>
@@ -131,37 +131,48 @@ function toggleDiet(tag) {
                             </button>
                             <div v-if="openControls === 'madType'" class="filterPanel">
                                 <div class="foodTypeContainer">
-                                    <button @click="toggleFoodType('burger')">
+                                    <button @click="toggleFoodType('burger')"
+                                        :class="{ isActive: activeFoodTypes.includes('burger') }">
                                         Burger
                                     </button>
-                                    <button @click="toggleFoodType('tapas')">
+                                    <button @click="toggleFoodType('tapas')"
+                                        :class="{ isActive: activeFoodTypes.includes('tapas') }">
                                         Tapas
                                     </button>
-                                    <button @click="toggleFoodType('sandwich')">
+                                    <button @click="toggleFoodType('sandwich')"
+                                        :class="{ isActive: activeFoodTypes.includes('sandwich') }">
                                         Sandwich
                                     </button>
-                                    <button @click="toggleFoodType('brunch')">
+                                    <button @click="toggleFoodType('brunch')"
+                                        :class="{ isActive: activeFoodTypes.includes('brunch') }">
                                         Brunch
                                     </button>
-                                    <button @click="toggleFoodType('nem-aftensmad')">
+                                    <button @click="toggleFoodType('nem-aftensmad')"
+                                        :class="{ isActive: activeFoodTypes.includes('nem-aftensmad') }">
                                         Nem Aftensmad
                                     </button>
-                                    <button @click="toggleFoodType('bowls')">
+                                    <button @click="toggleFoodType('bowls')"
+                                        :class="{ isActive: activeFoodTypes.includes('bowls') }">
                                         Bowls
                                     </button>
-                                    <button @click="toggleFoodType('bao-buns-sides')">
+                                    <button @click="toggleFoodType('bao-buns-sides')"
+                                        :class="{ isActive: activeFoodTypes.includes('bao-buns-sides') }">
                                         Bao Buns & Sides
                                     </button>
-                                    <button @click="toggleFoodType('boerne-menu')">
+                                    <button @click="toggleFoodType('boerne-menu')"
+                                        :class="{ isActive: activeFoodTypes.includes('boerne-menu') }">
                                         Børne Menu
                                     </button>
-                                    <button @click="toggleFoodType('vegansk')">
+                                    <button @click="toggleFoodType('vegansk')"
+                                        :class="{ isActive: activeFoodTypes.includes('vegansk') }">
                                         Vegansk
                                     </button>
-                                    <button @click="toggleFoodType('moede-tallerken')">
+                                    <button @click="toggleFoodType('moede-tallerken')"
+                                        :class="{ isActive: activeFoodTypes.includes('moede-tallerken') }">
                                         Møde Tallerken
                                     </button>
-                                    <button @click="toggleFoodType('dessert')">
+                                    <button @click="toggleFoodType('dessert')"
+                                        :class="{ isActive: activeFoodTypes.includes('dessert') }">
                                         Dessert
                                     </button>
                                 </div>
@@ -174,28 +185,36 @@ function toggleDiet(tag) {
                             </button>
                             <div v-if="openControls === 'allergener'" class="filterPanel">
                                 <div class="allergyContainer">
-                                    <button @click="toggleAllergy('gluten')">
+                                    <button @click="toggleAllergy('gluten')"
+                                    :class="{isExcluded: excludedAllergies.includes('gluten')}">
                                         Gluten
                                     </button>
-                                    <button @click="toggleAllergy('mælk')">
+                                    <button @click="toggleAllergy('mælk')"
+                                    :class="{isExcluded: excludedAllergies.includes('mælk')}">
                                         Laktose
                                     </button>
-                                    <button @click="toggleAllergy('æg')">
+                                    <button @click="toggleAllergy('æg')"
+                                    :class="{isExcluded: excludedAllergies.includes('æg')}">
                                         Æg
                                     </button>
-                                    <button @click="toggleAllergy('sennep')">
+                                    <button @click="toggleAllergy('sennep')"
+                                    :class="{isExcluded: excludedAllergies.includes('sennep')}">
                                         Sennep
                                     </button>
-                                    <button @click="toggleAllergy('selleri')">
+                                    <button @click="toggleAllergy('selleri')"
+                                    :class="{isExcluded: excludedAllergies.includes('selleri')}">
                                         Selleri
                                     </button>
-                                    <button @click="toggleAllergy('nødder')">
+                                    <button @click="toggleAllergy('nødder')"
+                                    :class="{isExcluded: excludedAllergies.includes('nødder')}">
                                         Nødder
                                     </button>
-                                    <button @click="toggleAllergy('krebsdyr')">
+                                    <button @click="toggleAllergy('krebsdyr')"
+                                    :class="{isExcluded: excludedAllergies.includes('krebsdyr')}">
                                         Krebsdyr
                                     </button>
-                                    <button @click="toggleAllergy('soja')">
+                                    <button @click="toggleAllergy('soja')"
+                                    :class="{isExcluded: excludedAllergies.includes('soja')}">
                                         Soja
                                     </button>
                                 </div>
@@ -209,13 +228,16 @@ function toggleDiet(tag) {
                             </button>
                             <div v-if="openControls === 'diet'" class="filterPanel">
                                 <div class="dietContainer">
-                                    <button @click="toggleDiet('vegansk')">
+                                    <button @click="toggleDiet('vegansk')"
+                                        :class="{ isActive: activeDietTags.includes('vegansk') }">
                                         Vegansk
                                     </button>
-                                    <button @click="toggleDiet('fisk')">
+                                    <button @click="toggleDiet('fisk')"
+                                        :class="{ isActive: activeDietTags.includes('fisk') }">
                                         Fisk
                                     </button>
-                                    <button @click="toggleDiet('kød')">
+                                    <button @click="toggleDiet('kød')"
+                                        :class="{ isActive: activeDietTags.includes('kød') }">
                                         Kød
                                     </button>
                                 </div>
@@ -286,8 +308,9 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    ;
 
-    width: max-content;
+    min-width: 220px;
     height: fit-content;
 
     padding: 1rem 2rem;
@@ -327,13 +350,15 @@ aside a {
     border: 1px solid black;
     margin-top: 0.5rem;
 }
+
 .foodTypeContainer,
-.allergyContainer{
+.allergyContainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 1rem;
 }
-.dietContainer{
+
+.dietContainer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
@@ -384,5 +409,15 @@ button {
 
 .categoryLink.active::after {
     transform: scaleX(1);
+}
+
+.isActive {
+    background-color: var(--dyb-groend);
+    color: var(--hvid-skrift);
+}
+
+.isExcluded {
+    background-color: red;
+    color: var(--hvid-skrift);
 }
 </style>
