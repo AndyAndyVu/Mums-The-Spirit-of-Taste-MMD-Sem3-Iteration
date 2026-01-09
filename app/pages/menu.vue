@@ -97,7 +97,8 @@ function toggleDiet(tag) {
 </script>
 
 <template>
-    <NavDesk />
+    <NavDesk class="nav-desktop" />
+    <NavMobile class="nav-mobile" />
     <main>
         <section>
             <div class="menuIntro">
@@ -186,35 +187,35 @@ function toggleDiet(tag) {
                             <div v-if="openControls === 'allergener'" class="filterPanel">
                                 <div class="allergyContainer">
                                     <button @click="toggleAllergy('gluten')"
-                                    :class="{isExcluded: excludedAllergies.includes('gluten')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('gluten') }">
                                         Gluten
                                     </button>
                                     <button @click="toggleAllergy('mælk')"
-                                    :class="{isExcluded: excludedAllergies.includes('mælk')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('mælk') }">
                                         Laktose
                                     </button>
                                     <button @click="toggleAllergy('æg')"
-                                    :class="{isExcluded: excludedAllergies.includes('æg')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('æg') }">
                                         Æg
                                     </button>
                                     <button @click="toggleAllergy('sennep')"
-                                    :class="{isExcluded: excludedAllergies.includes('sennep')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('sennep') }">
                                         Sennep
                                     </button>
                                     <button @click="toggleAllergy('selleri')"
-                                    :class="{isExcluded: excludedAllergies.includes('selleri')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('selleri') }">
                                         Selleri
                                     </button>
                                     <button @click="toggleAllergy('nødder')"
-                                    :class="{isExcluded: excludedAllergies.includes('nødder')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('nødder') }">
                                         Nødder
                                     </button>
                                     <button @click="toggleAllergy('krebsdyr')"
-                                    :class="{isExcluded: excludedAllergies.includes('krebsdyr')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('krebsdyr') }">
                                         Krebsdyr
                                     </button>
                                     <button @click="toggleAllergy('soja')"
-                                    :class="{isExcluded: excludedAllergies.includes('soja')}">
+                                        :class="{ isExcluded: excludedAllergies.includes('soja') }">
                                         Soja
                                     </button>
                                 </div>
@@ -271,7 +272,12 @@ function toggleDiet(tag) {
             </section>
         </div>
     </main>
-    <FooterDesk />
+    <div class="desk">
+        <FooterDesk />
+    </div>
+    <div class="mobil">
+        <FooterMobile />
+    </div>
 </template>
 
 <style scoped>

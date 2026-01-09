@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
   
   app: {
-    baseURL: '/class/MMD-CSD-S24/10643805/public'
+    baseURL: '/class/MMD-CSD-S24/10643808/public'
   },
 })
 

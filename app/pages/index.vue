@@ -1,6 +1,6 @@
 <script setup>
 import "../assets/css/style.css";
-  onMounted(() => {
+onMounted(() => {
   if (!document.querySelector('script[src="https://embed.getwally.net/embed.js"]')) {
     const script = document.createElement('script')
     script.src = 'https://embed.getwally.net/embed.js'
@@ -10,7 +10,8 @@ import "../assets/css/style.css";
 })
 </script>
 <template>
-  <NavDesk />
+  <NavDesk class="nav-desktop" />
+  <NavMobile class="nav-mobile" />
   <div class="videoWrap">
     <video class="bgvid" autoplay muted loop playsinline>
       <source src="../assets/video/MumsVideoCompressed.mp4" type="video/mp4" />
@@ -69,17 +70,8 @@ import "../assets/css/style.css";
     <img src="../assets/pictures/patterenFirkant.svg" alt="ny section" class="pynt" />
     <section class="maanedensRetForside">
       <div class="maanedensRetBillede mobil">
-        <img
-          src="../assets/pictures/nyhed.svg"
-          alt="Nyhed"
-          class="nyhed"
-          loading="lazy"
-        />
-        <img
-          src="../assets/pictures/Julebuger.png"
-          alt="Billede af mums flæskestegsburger"
-          loading="lazy"
-        />
+        <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy" />
+        <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy" />
       </div>
       <div class="maanedensRetText">
         <h2 class="grontext">Månedensret</h2>
@@ -108,23 +100,11 @@ import "../assets/css/style.css";
         </p>
         <p><b>KUN kr. 129,-</b></p>
 
-        <Btn
-          label="Bestil her"
-          to="https://takeaway.mumsshop.dk/menu/1428/product/9405"
-        />
+        <Btn label="Bestil her" to="https://takeaway.mumsshop.dk/menu/1428/product/9405" />
       </div>
       <div class="maanedensRetBillede desk">
-        <img
-          src="../assets/pictures/nyhed.svg"
-          alt="Nyhed"
-          class="nyhed"
-          loading="lazy"
-        />
-        <img
-          src="../assets/pictures/Julebuger.png"
-          alt="Billede af mums flæskestegsburger"
-          loading="lazy"
-        />
+        <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy" />
+        <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy" />
       </div>
     </section>
     <img src="../assets/pictures/patterenFirkant.svg" class="pynt" />
@@ -214,10 +194,8 @@ import "../assets/css/style.css";
         <div class="lokation">
           <img src="../assets/pictures/Homeicon.svg" alt="Lokation">
           <h4>Mums v/Charlotte Blak Frost Gugvej 1849210 Aalborg SØ</h4>
-          <Btn
-            label="Se på google Maps"
-            to="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-          />
+          <Btn label="Se på google Maps"
+            to="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" />
         </div>
       </div>
     </section>
@@ -241,6 +219,7 @@ import "../assets/css/style.css";
 </template>
 
 <style scoped>
+
 .mobil {
   display: none;
 }
@@ -259,7 +238,7 @@ import "../assets/css/style.css";
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translate(-50%, -50%) scale(1.25); 
+  transform: translate(-50%, -50%) scale(1.25);
 }
 
 
@@ -303,6 +282,7 @@ import "../assets/css/style.css";
   background-color: var(--hvid-100);
   padding: var(--spacing-xlSmlDesk);
 }
+
 .maanedensRetForside {
   display: flex;
   justify-content: space-between;
