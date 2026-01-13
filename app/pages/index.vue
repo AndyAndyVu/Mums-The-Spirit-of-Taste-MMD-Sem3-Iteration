@@ -1,13 +1,27 @@
 <script setup>
 import "../assets/css/style.css";
 onMounted(() => {
-  if (!document.querySelector('script[src="https://embed.getwally.net/embed.js"]')) {
-    const script = document.createElement('script')
-    script.src = 'https://embed.getwally.net/embed.js'
-    script.defer = true
-    document.body.appendChild(script)
+  if (
+    !document.querySelector('script[src="https://embed.getwally.net/embed.js"]')
+  ) {
+    const script = document.createElement("script");
+    script.src = "https://embed.getwally.net/embed.js";
+    script.defer = true;
+    document.body.appendChild(script);
   }
-})
+});
+
+// SEO !
+useHead({
+  title: "MUMS - Takeaway & Catering i Aalborg",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Bestil takeaway og catering fra MUMS i Aalborg. Gourmet mad lavet med lokale råvarer.",
+    },
+  ],
+});
 </script>
 <template>
   <NavDesk class="nav-desktop" />
@@ -67,18 +81,37 @@ onMounted(() => {
         </div>
       </article>
     </section>
-    <img src="../assets/pictures/patterenFirkant.svg" alt="ny section" class="pynt" />
+    <img
+      src="../assets/pictures/patterenFirkant.svg"
+      alt="ny section"
+      class="pynt"
+    />
     <section class="maanedensRetForside">
       <div class="maanedensRetBillede mobil">
-        <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy" />
-        <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy" />
+        <img
+          src="../assets/pictures/nyhed.svg"
+          alt="Nyhed"
+          class="nyhed"
+          loading="lazy"
+          width="600"
+          height="400"
+        />
+        <img
+          src="../assets/pictures/Julebuger.png"
+          alt="Billede af mums flæskestegsburger"
+          loading="lazy"
+          width="600"
+          height="400"
+        />
       </div>
       <div class="maanedensRetText">
         <h2 class="grontext">Månedensret</h2>
         <h2>Limited Edition! - JULE FLÆSKESTEGSBURGER</h2>
         <p>
-          <b>Vi tyvstarter allerede J-dag den 3. november med den store
-            J-Burger-dag kl. 10:00 hos MUMS!</b>
+          <b
+            >Vi tyvstarter allerede J-dag den 3. november med den store
+            J-Burger-dag kl. 10:00 hos MUMS!</b
+          >
         </p>
         <p>
           Oplev vores jule Flæskestegsburger, lavet med saftig flæskesteg af
@@ -100,18 +133,37 @@ onMounted(() => {
         </p>
         <p><b>KUN kr. 129,-</b></p>
 
-        <Btn label="Bestil her" to="https://takeaway.mumsshop.dk/menu/1428/product/9405" />
+        <Btn
+          label="Bestil her"
+          to="https://takeaway.mumsshop.dk/menu/1428/product/9405"
+        />
       </div>
       <div class="maanedensRetBillede desk">
-        <img src="../assets/pictures/nyhed.svg" alt="Nyhed" class="nyhed" loading="lazy" />
-        <img src="../assets/pictures/Julebuger.png" alt="Billede af mums flæskestegsburger" loading="lazy" />
+        <img
+          src="../assets/pictures/nyhed.svg"
+          alt="Nyhed"
+          class="nyhed"
+          loading="lazy"
+        />
+        <img
+          src="../assets/pictures/Julebuger.png"
+          alt="Billede af mums flæskestegsburger"
+          loading="lazy"
+        />
       </div>
     </section>
     <img src="../assets/pictures/patterenFirkant.svg" class="pynt" />
-    <img src="../assets/pictures/patterenDiamant.svg" class="pynt" alt="ny section" />
+    <img
+      src="../assets/pictures/patterenDiamant.svg"
+      class="pynt"
+      alt="ny section"
+    />
     <section class="menuForside">
       <article class="menuForsideCard">
-        <img src="../assets/pictures/TakeawayForside.png" alt="Take-away menu bugers" />
+        <img
+          src="../assets/pictures/TakeawayForside.png"
+          alt="Take-away menu bugers"
+        />
         <h3>Take-away Menu</h3>
         <p>
           Vores nye menukort er skabt med respekt for den gastronomiske
@@ -126,7 +178,10 @@ onMounted(() => {
         <Btn label="Se take-away menu" to="https://takeaway.mumsshop.dk/" />
       </article>
       <article class="menuForsideCard">
-        <img src="../assets/pictures/CateringForside.png" alt="Take-away menu bugers" />
+        <img
+          src="../assets/pictures/CateringForside.png"
+          alt="Take-away menu bugers"
+        />
         <h3>Catering Menu</h3>
         <p>
           Lad os tage os af madlavningen, mens du fokuserer på at have det sjovt
@@ -143,7 +198,11 @@ onMounted(() => {
     </section>
     <section>
       <article class="delikatesseForside">
-        <img src="../assets/pictures/delikatesseForside.png" alt="billedea af mums delikatesse butik" loading="lazy" />
+        <img
+          src="../assets/pictures/delikatesseForside.png"
+          alt="billedea af mums delikatesse butik"
+          loading="lazy"
+        />
         <div class="forsideText">
           <h3>Deliktatesse</h3>
           <p>
@@ -175,7 +234,11 @@ onMounted(() => {
           </p>
           <Btn label="Læs mere om os" to="omOs" />
         </div>
-        <img src="../assets/pictures/omOsForside.png" alt="billedea af mums delikatesse butik" loading="lazy" />
+        <img
+          src="../assets/pictures/omOsForside.png"
+          alt="billedea af mums delikatesse butik"
+          loading="lazy"
+        />
       </article>
     </section>
     <section class="infoForside">
@@ -192,17 +255,22 @@ onMounted(() => {
           </div>
         </div>
         <div class="lokation">
-          <img src="../assets/pictures/Homeicon.svg" alt="Lokation">
+          <img src="../assets/pictures/Homeicon.svg" alt="Lokation" />
           <h4>Mums v/Charlotte Blak Frost Gugvej 1849210 Aalborg SØ</h4>
-          <Btn label="Se på google Maps"
-            to="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" />
+          <Btn
+            label="Se på google Maps"
+            to="https://www.google.com/maps/place/MUMS/@57.008658,9.9235782,17z/data=!3m1!4b1!4m6!3m5!1s0x4649333e5d3c7c9f:0x3ac03837fa0616d5!8m2!3d57.0086551!4d9.9261531!16s%2Fg%2F1hc5vc1pv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+          />
         </div>
       </div>
     </section>
-    <img src="../assets/pictures/patterenKlover.svg" class="pynt">
+    <img src="../assets/pictures/patterenKlover.svg" class="pynt" />
     <section class="forsideReviws">
       <!-- Wally widget reviews -->
-      <div data-wally-widget="695f0db9d8841c001407cb2a" style="width: 100%; height: 100%;"></div>
+      <div
+        data-wally-widget="695f0db9d8841c001407cb2a"
+        style="width: 100%; height: 100%"
+      ></div>
       <!-- <button><img src="../assets/pictures/pilV.svg" alt="gaa til venstre i andmeldser"></button>
   <review/>
   <review/>
@@ -219,7 +287,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
 .mobil {
   display: none;
 }
@@ -240,8 +307,6 @@ onMounted(() => {
   object-fit: cover;
   transform: translate(-50%, -50%) scale(1.25);
 }
-
-
 
 .forsideIntro {
   display: flex;
@@ -435,6 +500,15 @@ onMounted(() => {
     width: 100%;
     height: 400px;
     object-fit: cover;
+  }
+  .bgvid {
+    display: none;
+  }
+
+  .videoWrap {
+    background-image: url("../assets/pictures/hero-poster.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 </style>

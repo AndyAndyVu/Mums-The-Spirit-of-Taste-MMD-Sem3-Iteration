@@ -8,8 +8,6 @@ import { ref, computed } from "vue";
 const images = [
   new URL("../assets/img/Drinks-MUMS.png", import.meta.url).href,
   new URL("../assets/img/valentinesMUMS.svg", import.meta.url).href,
-  new URL("../assets/img/Placeholder.jpg", import.meta.url).href,
-  new URL("../assets/img/Placeholder.jpg", import.meta.url).href,
 ];
 
 // Aktuel index af slideshow
@@ -31,6 +29,18 @@ const prevSlide = () => {
   currentIndex.value =
     currentIndex.value - 2 < 0 ? images.length - 2 : currentIndex.value - 2;
 };
+
+useHead({
+  title: "MUMS - Delikatessebutik i Aalborg",
+  meta: [
+    {
+      name: "description",
+      content:
+        "MUMS delikatessebutik i Aalborg tilbyder udvalgte specialiteter, gourmetprodukter og kvalitetsfødevarer med fokus på smag og håndværk.",
+    },
+  ],
+});
+``;
 </script>
 
 <template>
@@ -62,6 +72,9 @@ const prevSlide = () => {
         <img
           src="../assets/img/Delikatesse.jpg"
           alt="Salg af varer i MUMS butikken"
+          width="800"
+          height="533"
+          fetchpriority="high"
         />
       </figure>
     </section>
@@ -69,7 +82,12 @@ const prevSlide = () => {
       <!-- Eventlistener der lytter til når der bliver clicked skal den gå tilbage funktionen vi lavede tidligere samme med frem. -->
       <div class="slider">
         <button class="arrow left" @click="prevSlide">
-          <img src="../assets/img/pilV.svg" alt="Forrige billeder" />
+          <img
+            src="../assets/img/pilV.svg"
+            alt="Forrige billeder"
+            loading="lazy"
+            decoding="async"
+          />
         </button>
 
         <div class="slides">
@@ -78,11 +96,18 @@ const prevSlide = () => {
             :key="index"
             :src="image"
             alt="Delikatesse produkt"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
         <button class="arrow right" @click="nextSlide">
-          <img src="../assets/img/pilH.svg" alt="Næste billeder" />
+          <img
+            src="../assets/img/pilH.svg"
+            alt="Næste billeder"
+            loading="lazy"
+            decoding="async"
+          />
         </button>
       </div>
     </section>
@@ -103,7 +128,13 @@ const prevSlide = () => {
         <Btn class="btn" label="Bestil dem her" to="#" />
       </article>
       <figure>
-        <img src="../assets/img/gave-kurv.jpg" alt="gavekurv fra MUMS" />
+        <img
+          src="../assets/img/gave-kurv.jpg"
+          alt="Gavekurv fra MUMS"
+          loading="lazy"
+          width="800"
+          height="533"
+        />
       </figure>
     </section>
     <section class="deli-box tapas">
