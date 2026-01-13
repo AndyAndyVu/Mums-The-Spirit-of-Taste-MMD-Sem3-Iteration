@@ -8,6 +8,8 @@ import { ref, computed } from "vue";
 const images = [
   new URL("../assets/img/Drinks-MUMS.png", import.meta.url).href,
   new URL("../assets/img/valentinesMUMS.svg", import.meta.url).href,
+  new URL("../assets/img/Delikatesse.jpg", import.meta.url).href,
+  new URL("../assets/img/valentinesMUMS.svg", import.meta.url).href,
 ];
 
 // Aktuel index af slideshow
