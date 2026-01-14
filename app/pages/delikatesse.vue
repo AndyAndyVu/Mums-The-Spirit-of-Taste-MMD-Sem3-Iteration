@@ -7,9 +7,9 @@ import { ref, computed } from "vue";
 // Array af billeder
 const images = [
   new URL("../assets/img/Drinks-MUMS.png", import.meta.url).href,
-  new URL("../assets/img/valentinesMUMS.svg", import.meta.url).href,
+  new URL("../assets/img/Drinks-MUMS.png", import.meta.url).href,
   new URL("../assets/img/Delikatesse.jpg", import.meta.url).href,
-  new URL("../assets/img/valentinesMUMS.svg", import.meta.url).href,
+  new URL("../assets/img/Drinks-MUMS.png", import.meta.url).href,
 ];
 
 // Aktuel index af slideshow
@@ -75,7 +75,7 @@ useHead({
           src="../assets/img/Delikatesse.jpg"
           alt="Salg af varer i MUMS butikken"
           width="800"
-          height="533"
+          height="auto"
           fetchpriority="high"
         />
       </figure>
@@ -98,7 +98,6 @@ useHead({
             :key="index"
             :src="image"
             alt="Delikatesse produkt"
-            loading="lazy"
             decoding="async"
           />
         </div>
@@ -171,7 +170,7 @@ useHead({
 
 .deli-box img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .deli-text {
@@ -179,10 +178,11 @@ useHead({
 }
 
 figure {
+  max-width: 800px;
+
   margin: 0;
 }
 figure img {
-  width: 100%;
   height: 100%;
 }
 .tapas {
