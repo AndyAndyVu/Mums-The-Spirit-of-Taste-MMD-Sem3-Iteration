@@ -4,15 +4,13 @@ import { onMounted } from "vue"
 onMounted(() => {
   const pilOp = document.querySelector(".pilOp")
 
-//Naar brugen scrolle skal knappen komme fre med funktion visKnap
 window.onscroll = function() {visKnap()};
-//holder øje med hvor langt brugen er scrollede vis de er scrolled mere end 50px
-// skal knapen vise sig
+
 function visKnap(){
 if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550){
     pilOp.style.display = "block";} //viser knappen
     else
-    {pilOp.style.display = "none"; }//vis ikke der bliver scrollede 400px skal knappen ikke vises   
+    {pilOp.style.display = "none"; }//vis ikke der bliver scrollede 550px skal knappen ikke vises   
 }
 
 //topknapen får nu en eventlistner hvor vis den bliver trygede går den til toppen. hjælp fundet https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo
