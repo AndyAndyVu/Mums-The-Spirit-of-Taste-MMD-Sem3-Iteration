@@ -1,6 +1,7 @@
 <script setup>
 import { takeawayMenu } from '../data/menuItems.js';
 import { allTakeAwayItems } from "../composable/takeAwayFlatMap.js";
+import { animate, splitText, stagger, random, spring } from 'animejs';
 
 const baseItems = ref(allTakeAwayItems);
 
@@ -93,6 +94,31 @@ function toggleAllergy(a) {
 function toggleDiet(tag) {
     toggleArray(activeDietTags, tag);
 }
+
+// animejs animation on visibleItems change
+watch(visibleItems, async () => {
+  await nextTick();
+
+  animate(".takeAwayCard", {
+    x: ["5cqw", "0cqw"],
+    ease: spring({ bounce: 0.4, duration: 500 }),
+  });
+});
+
+
+// animejs animation on mounted
+onMounted(
+async () => {
+    await nextTick();
+
+    animate(".takeAwayCard", {
+      x: ["5cqw", "0cqw"],
+      ease: spring({ bounce: 0.4, duration: 500 }),
+    });
+  });
+
+
+
 
 </script>
 
