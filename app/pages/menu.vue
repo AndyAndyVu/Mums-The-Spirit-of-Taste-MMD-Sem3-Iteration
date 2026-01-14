@@ -96,17 +96,15 @@ function toggleDiet(tag) {
 }
 
 // animejs animation on visibleItems change
-watch(
-    () => visibleItems.value.map(i => i.id).join(","),
-    async () => {
-        await nextTick();
-        
-        animate(".takeAwayCard", {
-            x: ["5cqw", "0cqw"],
-            ease: spring({ bounce: 0.4, duration: 500 }),
-        });
-    }
-);
+watch(visibleItems, async () => {
+  await nextTick();
+
+  animate(".takeAwayCard", {
+    x: ["5cqw", "0cqw"],
+    ease: spring({ bounce: 0.4, duration: 500 }),
+  });
+});
+
 
 // animejs animation on mounted
 onMounted(
